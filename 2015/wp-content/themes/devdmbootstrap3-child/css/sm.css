@@ -1,0 +1,294 @@
+/*!
+Custom CSS Styles for EPIC - SM
+*/
+
+html, body {
+    overflow-x: hidden;
+}
+
+/* Home Styles */
+
+
+
+.jumbo-container {
+	background-color: none;
+	height: 200px;
+	  	width: 100%;
+
+}
+
+.row {
+	margin:0;
+}
+
+.jumbo {
+    background-image: url("http://epicpeople.org/2015/wp-content/themes/devdmbootstrap3-child/img/graffitiBridge.png");
+    background-repeat: no-repeat;
+	height: 100%;
+	  	width: 100%;
+	background-position:center; 
+	margin:0;
+}
+
+.jumbo-copy {
+	font-family: 'Lato', sans-serif;
+   	font-size:61px;
+   	font-weight: 500;
+	color: #FFF;
+	line-height: 36px;
+	width: 80%;
+	margin: 73px 0 80px 35px;
+	text-transform: uppercase;
+
+}
+
+
+.jumbo-sub-copy {
+	font-family: 'Lato', sans-serif;
+   	font-size:21px;
+   	font-weight: 400;
+	color: #FFF;
+	line-height: 36px;
+	width: 80%;
+	margin: -70px 0 0 38px;
+	text-transform: uppercase;
+}
+
+.content-above {
+	position:relative;
+	width: 95%;
+	margin: 40px 0 0 6px;
+	/*border-style:solid;
+	border-width:1px;
+	border-color: red;*/
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #434343;
+    margin-right: 20px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #434343;
+}
+
+.container > .navbar-header, .container > .navbar-collapse {
+    margin-left: 0px;
+}
+
+.navbar {
+	border-radius: 0px;
+	min-height: 39px;
+z-index:1000;
+}
+
+.headshot-size {
+	height:100%;
+	width:100%;
+}
+
+.cfp-left {
+	padding: 0;
+	margin-left:15px;
+	width: 95%;
+}
+
+.venue_container {
+    background-image: url("http://epiconference.com/2014/wp-content/themes/devdmbootstrap3-child/img/venue_container.png");
+    background-repeat: repeat;
+  	height: 100%;
+  	width: 768px;
+  	padding: 6px 25px 35px 45px;
+  	margin-top: 36px;
+  	margin-left: -45px;
+  	margin-bottom: 0px;
+  }
+
+  .dmbs-footer {
+	color: #FFF;
+    width: 100%;
+    padding: 35px 0 0 0;
+    padding-left: 60px;
+    height: 100%;
+
+ }
+
+ .dmbs-content {
+	background-color: #FFF;
+	width: 100%;
+	margin: auto;
+}
+
+
+ .right-col-placement {
+	margin-top:-30px;
+	margin-bottom: 20px;
+}
+
+.committee-placement {
+	margin-left: 22px;
+}
+/* schedule styles */
+
+#nav-daily-schedule ul {
+	width: 99.25%;
+}
+
+#nav-daily-schedule ul li {
+	display: list-item;
+}
+
+.placement-schedule {
+	margin-left: 38px;
+}
+
+.placement-schedule-nav {
+	margin: -2px 0px 13px 22px;
+
+}
+
+.accent-back-schedule {
+	margin-left: -15px;
+}
+
+.sg-padding-daily {
+	padding: 0px 15px 15px 15px;
+	margin-left: 0px;
+}
+
+.sg-back {
+  height: 480px;
+} 
+
+.sg-back-white {
+  height: 1235px;
+
+} 
+.sg-back-2 {
+  height: 885px;
+} 
+
+.sg-back-white-2 {
+  height: 630px;
+}
+
+.sg-back-head-1 {
+	background-color: #c7c7c6;
+	height: 40px;
+	padding: 10px 15px;
+	width: 104.5%
+
+}
+
+.sg-back-head-2 {
+	background-color: #b1b1b1;
+	height: 40px;
+	padding: 10px 15px;
+	width: 104.5%
+}
+
+.sg-back-head-3 {
+	background-color: #b3bec4;
+	padding: 15px;
+	margin-left: -15px;
+	width: 104.3%;
+	margin-bottom: 0px;
+}
+
+.schedule-img img {
+	width: 100%;
+	max-width: 326px;
+	margin: 15px 300px 0px -15px;
+	display: none;
+}
+/* schedule end */
+.horiz-line {
+	display: none;
+}
+
+.container > .navbar-header, .container > .navbar-collapse {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.navbar-nav > li > a {
+    padding: 5px 12px 4px 12px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    color: #000000;
+    /*border-style:solid;
+	border-width:1px;
+	border-color: #bebebe;*/
+	background-color: none;
+	padding-left: 35px;
+
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #bebebe;
+}
+
+.background-blue {
+	margin: 30px 0 30px -5px;
+	background-color: #d5e5ef;
+	color: #000;
+	width: 100%;
+	padding: 2px 20px 20px 20px;
+
+}
+
+.horiz-line-home {
+  display: none;
+}
+
+    .about_container {
+    background-image: url("http://epiconference.com/2014/wp-content/themes/devdmbootstrap3-child/img/venue_container.png");
+    background-repeat: repeat;
+  	height: 100%;
+  	width:100%;
+  	padding: 6px 25px 35px 25px;
+  	margin: 0 0 0 15px;
+  }
+
+  h3 {
+	font-size:18px;
+	line-height: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.masthead-copy {
+	font-size:15px;
+	line-height: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: right;
+	padding: 17px -33px 0 0;
+	margin-top: -45px;
+	margin-right: 277px;
+}
+
+#nav-daily-schedule ul li { 
+	display: inline; 
+}
+
+#nav-daily-schedule ul li a
+{
+	background-color: #e9e9e9;
+	text-decoration: none;
+	float: left;
+	border-right: 1px solid #fff;
+	width: 100%;
+	text-transform: uppercase;
+	border-style:solid;
+	border-width:1px;
+	border-color: #fff;
+	list-style-type: none;
+}

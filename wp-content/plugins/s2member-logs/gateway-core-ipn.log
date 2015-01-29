@@ -1,0 +1,351 @@
+LOG ENTRY: Mon Apr 21st, 2014 @ precisely 3:29 pm UTC
+PHP v5.3.28 :: WordPress v3.8.3 :: s2Member v140409 :: s2Member Pro v140409
+Memory 45.73 MB :: Real Memory 46.00 MB :: Peak Memory 45.81 MB :: Real Peak Memory 46.00 MB
+powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1
+User-Agent: WordPress/3.8.3; http://powinteractive.pairserver.com/epic-org
+array (
+  'txn_type' => 'subscr_signup',
+  'subscr_id' => 'I-U42UU5920AAP',
+  'custom' => 'powinteractive.pairserver.com',
+  'txn_id' => 'I-U42UU5920AAP',
+  'period1' => '0 D',
+  'period3' => '1 M',
+  'mc_amount1' => '0.00',
+  'mc_amount3' => '0.01',
+  'mc_gross' => '0.01',
+  'mc_currency' => 'USD',
+  'tax' => '0.00',
+  'recurring' => '0.01',
+  'payer_email' => 'sheagegan@gmail.com',
+  'first_name' => 'Jungle',
+  'last_name' => 'Jim',
+  'option_name1' => 'Referencing Customer ID',
+  'option_selection1' => '2',
+  'option_name2' => 'Customer IP Address',
+  'option_selection2' => '108.41.219.67',
+  'item_name' => 'Access to restricted content',
+  'item_number' => '1',
+  'proxy_verified' => 'paypal',
+  's2member_log' => 
+  array (
+    0 => 'IPN received on: Mon Apr 21, 2014 3:29:55 pm UTC',
+    1 => 's2Member POST vars verified with a Proxy Key',
+    2 => 's2Member originating domain ( `$_SERVER["HTTP_HOST"]` ) validated.',
+    3 => 's2Member `txn_type` identified as ( `web_accept|subscr_signup` ).',
+    4 => 's2Member `txn_type` identified as ( `web_accept|subscr_signup` ) w/ update vars.',
+    5 => 's2Member Level/Capabilities updated w/ advanced update routines.',
+    6 => 'Modification Confirmation Email sent to: "Jungle Jim" <sheagegan@gmail.com>.',
+    7 => 'User exists. Handling `payment` for Subscription via ( `subscr-signup-as-subscr-payment` ).',
+    8 => 'Storing IPN signup vars now. These are associated with a User\'s account record; for future reference.',
+  ),
+  'subscr_gateway' => 'paypal',
+  'eotper' => NULL,
+  'ccaps' => NULL,
+  'level' => '1',
+  'ip' => '108.41.219.67',
+  'initial_term' => '0 D',
+  'initial' => '0.01',
+  'regular' => '0.01',
+  'regular_term' => '1 M',
+  's2member_paypal_proxy' => 'paypal',
+  's2member_paypal_proxy_use' => 'pro-emails,subscr-signup-as-subscr-payment',
+  's2member_paypal_proxy_coupon' => 
+  array (
+    'coupon_code' => '',
+    'full_coupon_code' => '',
+    'affiliate_id' => '',
+  ),
+  's2member_paypal_proxy_verification' => 'bc05ec31eda14addb983b8ada3b6d7f5',
+)
+
+LOG ENTRY: Mon Apr 28th, 2014 @ precisely 8:48 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 52.99 MB :: Real Memory 53.25 MB :: Peak Memory 53.08 MB :: Real Peak Memory 53.25 MB
+powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1
+User-Agent: WordPress/3.9; http://powinteractive.pairserver.com/epic-org
+array (
+  'txn_type' => 'subscr_signup',
+  'subscr_id' => 'FREE-535EBE86D51BE',
+  'custom' => 'powinteractive.pairserver.com',
+  'txn_id' => 'FREE-535EBE86D51BE',
+  'period1' => '0 D',
+  'period3' => '1 M',
+  'mc_amount1' => '0.00',
+  'mc_amount3' => '0.00',
+  'mc_gross' => '0.00',
+  'mc_currency' => 'USD',
+  'tax' => '0.00',
+  'recurring' => '0.00',
+  'payer_email' => 'big.t@test.net',
+  'first_name' => 'Tommy',
+  'last_name' => 'Testosterone',
+  'option_name1' => 'Originating Domain',
+  'option_selection1' => 'powinteractive.pairserver.com',
+  'option_name2' => 'Customer IP Address',
+  'option_selection2' => '108.41.219.67',
+  'item_name' => 'COUPON 100% off. (Now: $0.00 / monthly) ~ ORIGINALLY: Full Access Monthly Subscription/ $0.01 per month',
+  'item_number' => '1',
+  'proxy_verified' => 'paypal',
+  's2member_log' => 
+  array (
+    0 => 'IPN received on: Mon Apr 28, 2014 8:48:08 pm UTC',
+    1 => 's2Member POST vars verified with a Proxy Key',
+    2 => 's2Member originating domain ( `$_SERVER["HTTP_HOST"]` ) validated.',
+    3 => 's2Member `txn_type` identified as ( `web_accept|subscr_signup` ).',
+    4 => 's2Member `txn_type` identified as ( `web_accept|subscr_signup` ) w/o update vars.',
+    5 => 'Signup Confirmation Email sent to: "Tommy Testosterone" <big.t@test.net>.',
+    6 => 'Storing IPN signup vars now. These are associated with a User\'s account record; for future reference.',
+  ),
+  'subscr_gateway' => 'paypal',
+  'eotper' => NULL,
+  'ccaps' => NULL,
+  'level' => '1',
+  'ip' => '108.41.219.67',
+  'initial_term' => '0 D',
+  'initial' => '0.00',
+  'regular' => '0.00',
+  'regular_term' => '1 M',
+  's2member_paypal_proxy' => 'paypal',
+  's2member_paypal_proxy_use' => 'pro-emails',
+  's2member_paypal_proxy_coupon' => 
+  array (
+    'coupon_code' => 'epicdiscount!',
+    'full_coupon_code' => 'epicdiscount!',
+    'affiliate_id' => '',
+  ),
+  's2member_paypal_proxy_verification' => 'bc05ec31eda14addb983b8ada3b6d7f5',
+)
+
+LOG ENTRY: Mon Apr 28th, 2014 @ precisely 8:57 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 52.99 MB :: Real Memory 53.25 MB :: Peak Memory 53.09 MB :: Real Peak Memory 53.25 MB
+powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1
+User-Agent: WordPress/3.9; http://powinteractive.pairserver.com/epic-org
+array (
+  'txn_type' => 'subscr_signup',
+  'subscr_id' => 'I-C6SU8PYNBRBP',
+  'custom' => 'powinteractive.pairserver.com',
+  'txn_id' => 'I-C6SU8PYNBRBP',
+  'period1' => '0 D',
+  'period3' => '1 Y',
+  'mc_amount1' => '0.00',
+  'mc_amount3' => '0.10',
+  'mc_gross' => '0.10',
+  'mc_currency' => 'USD',
+  'tax' => '0.00',
+  'recurring' => '0.10',
+  'payer_email' => 'toretto@test.net',
+  'first_name' => 'Dominic',
+  'last_name' => 'Toretto',
+  'option_name1' => 'Originating Domain',
+  'option_selection1' => 'powinteractive.pairserver.com',
+  'option_name2' => 'Customer IP Address',
+  'option_selection2' => '108.41.219.67',
+  'item_name' => 'Full Access Annual Subscription/ $0.10 per year',
+  'item_number' => '1',
+  'proxy_verified' => 'paypal',
+  's2member_log' => 
+  array (
+    0 => 'IPN received on: Mon Apr 28, 2014 8:57:00 pm UTC',
+    1 => 's2Member POST vars verified with a Proxy Key',
+    2 => 's2Member originating domain ( `$_SERVER["HTTP_HOST"]` ) validated.',
+    3 => 's2Member `txn_type` identified as ( `web_accept|subscr_signup` ).',
+    4 => 's2Member `txn_type` identified as ( `web_accept|subscr_signup` ) w/o update vars.',
+    5 => 'Signup Confirmation Email sent to: "Dominic Toretto" <toretto@test.net>.',
+    6 => 'User exists. Handling `payment` for Subscription via ( `subscr-signup-as-subscr-payment` ).',
+    7 => 'Storing IPN signup vars now. These are associated with a User\'s account record; for future reference.',
+  ),
+  'subscr_gateway' => 'paypal',
+  'eotper' => NULL,
+  'ccaps' => NULL,
+  'level' => '1',
+  'ip' => '108.41.219.67',
+  'initial_term' => '0 D',
+  'initial' => '0.10',
+  'regular' => '0.10',
+  'regular_term' => '1 Y',
+  's2member_paypal_proxy' => 'paypal',
+  's2member_paypal_proxy_use' => 'pro-emails,subscr-signup-as-subscr-payment',
+  's2member_paypal_proxy_coupon' => 
+  array (
+    'coupon_code' => '',
+    'full_coupon_code' => '',
+    'affiliate_id' => '',
+  ),
+  's2member_paypal_proxy_verification' => 'bc05ec31eda14addb983b8ada3b6d7f5',
+)
+
+LOG ENTRY: Tue Apr 29th, 2014 @ precisely 2:58 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 53.14 MB :: Real Memory 53.50 MB :: Peak Memory 53.23 MB :: Real Peak Memory 53.50 MB
+powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1
+User-Agent: WordPress/3.9; http://powinteractive.pairserver.com/epic-org
+array (
+  'txn_type' => 'subscr_signup',
+  'subscr_id' => 'FREE-535FBDFB9E160',
+  'custom' => 'powinteractive.pairserver.com',
+  'txn_id' => 'FREE-535FBDFB9E160',
+  'period1' => '0 D',
+  'period3' => '1 M',
+  'mc_amount1' => '0.00',
+  'mc_amount3' => '0.00',
+  'mc_gross' => '0.00',
+  'mc_currency' => 'USD',
+  'tax' => '0.00',
+  'recurring' => '0.00',
+  'payer_email' => 'jimmy@powinteractive.net',
+  'first_name' => 'Jimmy',
+  'last_name' => 'Gnass',
+  'option_name1' => 'Originating Domain',
+  'option_selection1' => 'powinteractive.pairserver.com',
+  'option_name2' => 'Customer IP Address',
+  'option_selection2' => '108.41.219.67',
+  'item_name' => 'COUPON 100% off. (Now: $0.00 / monthly) ~ ORIGINALLY: Full Access Monthly Subscription/ $0.01 per month',
+  'item_number' => '1',
+  'proxy_verified' => 'paypal',
+  's2member_log' => 
+  array (
+    0 => 'IPN received on: Tue Apr 29, 2014 2:58:04 pm UTC',
+    1 => 's2Member POST vars verified with a Proxy Key',
+    2 => 's2Member originating domain ( `$_SERVER["HTTP_HOST"]` ) validated.',
+    3 => 's2Member `txn_type` identified as ( `web_accept|subscr_signup` ).',
+    4 => 's2Member `txn_type` identified as ( `web_accept|subscr_signup` ) w/o update vars.',
+    5 => 'Signup Confirmation Email sent to: "Jimmy Gnass" <jimmy@powinteractive.net>.',
+    6 => 'Storing IPN signup vars now. These are associated with a User\'s account record; for future reference.',
+  ),
+  'subscr_gateway' => 'paypal',
+  'eotper' => NULL,
+  'ccaps' => NULL,
+  'level' => '1',
+  'ip' => '108.41.219.67',
+  'initial_term' => '0 D',
+  'initial' => '0.00',
+  'regular' => '0.00',
+  'regular_term' => '1 M',
+  's2member_paypal_proxy' => 'paypal',
+  's2member_paypal_proxy_use' => 'pro-emails',
+  's2member_paypal_proxy_coupon' => 
+  array (
+    'coupon_code' => 'epicdiscount!',
+    'full_coupon_code' => 'epicdiscount!',
+    'affiliate_id' => '',
+  ),
+  's2member_paypal_proxy_verification' => 'bc05ec31eda14addb983b8ada3b6d7f5',
+)
+
+LOG ENTRY: Wed May 7th, 2014 @ precisely 7:21 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 56.96 MB :: Real Memory 57.25 MB :: Peak Memory 57.04 MB :: Real Peak Memory 57.25 MB
+powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1
+User-Agent: WordPress/3.9; http://powinteractive.pairserver.com/epic-org
+array (
+  'txn_type' => 'subscr_signup',
+  'subscr_id' => 'FREE-536A87C034C03',
+  'custom' => 'powinteractive.pairserver.com',
+  'txn_id' => 'FREE-536A87C034C03',
+  'period1' => '0 D',
+  'period3' => '1 M',
+  'mc_amount1' => '0.00',
+  'mc_amount3' => '0.00',
+  'mc_gross' => '0.00',
+  'mc_currency' => 'USD',
+  'tax' => '0.00',
+  'recurring' => '0.00',
+  'payer_email' => 'bgordon@test.net',
+  'first_name' => 'Bill',
+  'last_name' => 'Gordon',
+  'option_name1' => 'Originating Domain',
+  'option_selection1' => 'powinteractive.pairserver.com',
+  'option_name2' => 'Customer IP Address',
+  'option_selection2' => '108.41.219.67',
+  'item_name' => 'COUPON 100% off. (Now: $0.00 / monthly) ~ ORIGINALLY: Full Access Monthly Subscription/ $0.01 per month',
+  'item_number' => '1',
+  'proxy_verified' => 'paypal',
+  's2member_log' => 
+  array (
+    0 => 'IPN received on: Wed May 7, 2014 7:21:37 pm UTC',
+    1 => 's2Member POST vars verified with a Proxy Key',
+    2 => 's2Member originating domain ( `$_SERVER["HTTP_HOST"]` ) validated.',
+    3 => 's2Member `txn_type` identified as ( `web_accept|subscr_signup` ).',
+    4 => 's2Member `txn_type` identified as ( `web_accept|subscr_signup` ) w/o update vars.',
+    5 => 'Signup Confirmation Email sent to: "Bill Gordon" <bgordon@test.net>.',
+    6 => 'Storing IPN signup vars now. These are associated with a User\'s account record; for future reference.',
+  ),
+  'subscr_gateway' => 'paypal',
+  'eotper' => NULL,
+  'ccaps' => NULL,
+  'level' => '1',
+  'ip' => '108.41.219.67',
+  'initial_term' => '0 D',
+  'initial' => '0.00',
+  'regular' => '0.00',
+  'regular_term' => '1 M',
+  's2member_paypal_proxy' => 'paypal',
+  's2member_paypal_proxy_use' => 'pro-emails',
+  's2member_paypal_proxy_coupon' => 
+  array (
+    'coupon_code' => 'epicdiscount!',
+    'full_coupon_code' => 'epicdiscount!',
+    'affiliate_id' => '',
+  ),
+  's2member_paypal_proxy_verification' => 'bc05ec31eda14addb983b8ada3b6d7f5',
+)
+
+LOG ENTRY: Thu May 15th, 2014 @ precisely 1:28 am UTC
+PHP v5.3.28 :: WordPress v3.9.1 :: s2Member v140409 :: s2Member Pro v140409
+Memory 56.97 MB :: Real Memory 57.25 MB :: Peak Memory 57.06 MB :: Real Peak Memory 57.25 MB
+powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1
+User-Agent: WordPress/3.9.1; http://powinteractive.pairserver.com/epic-org
+array (
+  'txn_type' => 'subscr_signup',
+  'subscr_id' => 'FREE-5374184FD6F77',
+  'custom' => 'powinteractive.pairserver.com',
+  'txn_id' => 'FREE-5374184FD6F77',
+  'period1' => '0 D',
+  'period3' => '1 M',
+  'mc_amount1' => '0.00',
+  'mc_amount3' => '0.00',
+  'mc_gross' => '0.00',
+  'mc_currency' => 'USD',
+  'tax' => '0.00',
+  'recurring' => '0.00',
+  'payer_email' => 'robinsanders@test.com',
+  'first_name' => 'Robin',
+  'last_name' => 'Sanders',
+  'option_name1' => 'Originating Domain',
+  'option_selection1' => 'powinteractive.pairserver.com',
+  'option_name2' => 'Customer IP Address',
+  'option_selection2' => '69.122.38.140',
+  'item_name' => 'COUPON 100% off. (Now: $0.00 / monthly) ~ ORIGINALLY: Full Access Monthly Subscription/ $0.01 per month',
+  'item_number' => '1',
+  'proxy_verified' => 'paypal',
+  's2member_log' => 
+  array (
+    0 => 'IPN received on: Thu May 15, 2014 1:28:49 am UTC',
+    1 => 's2Member POST vars verified with a Proxy Key',
+    2 => 's2Member originating domain ( `$_SERVER["HTTP_HOST"]` ) validated.',
+    3 => 's2Member `txn_type` identified as ( `web_accept|subscr_signup` ).',
+    4 => 's2Member `txn_type` identified as ( `web_accept|subscr_signup` ) w/o update vars.',
+    5 => 'Signup Confirmation Email sent to: "Robin Sanders" <robinsanders@test.com>.',
+    6 => 'Storing IPN signup vars now. These are associated with a User\'s account record; for future reference.',
+  ),
+  'subscr_gateway' => 'paypal',
+  'eotper' => NULL,
+  'ccaps' => NULL,
+  'level' => '1',
+  'ip' => '69.122.38.140',
+  'initial_term' => '0 D',
+  'initial' => '0.00',
+  'regular' => '0.00',
+  'regular_term' => '1 M',
+  's2member_paypal_proxy' => 'paypal',
+  's2member_paypal_proxy_use' => 'pro-emails',
+  's2member_paypal_proxy_coupon' => 
+  array (
+    'coupon_code' => 'epicdiscount!',
+    'full_coupon_code' => 'epicdiscount!',
+    'affiliate_id' => '',
+  ),
+  's2member_paypal_proxy_verification' => 'bc05ec31eda14addb983b8ada3b6d7f5',
+)
+

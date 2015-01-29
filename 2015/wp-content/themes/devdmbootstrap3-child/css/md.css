@@ -1,0 +1,202 @@
+/*!
+Custom CSS Styles for EPIC - MD
+*/
+
+/*! Homepage */
+
+html, body {
+    overflow-x: hidden;
+}
+
+.jumbo-container {
+	background-color: #2b4bac;
+	width: 100%;
+	height: 395px;
+	margin:0;
+}
+
+.navbar {
+    margin: 0px;
+}
+.navbar-nav > li > a {
+    padding: 10px 15px 9px;
+}
+
+.container > .navbar-header, .container > .navbar-collapse {
+    margin-left: 7px;
+}
+
+.dmbs-main-register {
+    margin-left: 22px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.dmbs-header {
+	width: 1024px;
+}
+
+.logo-placement {
+	padding: 20px 0 0 0;
+	margin-left: 38px;
+}
+
+.masthead-copy {
+	font-size:15px;
+	line-height: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: right;
+	padding: 17px -63px 0 0;
+	margin-top: 18px;
+	margin-right: 47px;
+}
+
+.white-background {
+	background-color:#FFF;
+	width: 100%;
+	height: 395px;
+	margin:0;
+}
+
+.content-above {
+	position:relative;
+	z-index: 600;
+	width: 847px;
+	margin: -55px 0 0 69px;
+	/*border-style:solid;
+	border-width:1px;
+	border-color: red;*/
+}
+
+
+
+.cfp-left {
+	padding: 30px 20px 0 15px;
+}
+
+ .venue_container {
+    background-image: url("http://epiconference.com/2014/wp-content/themes/devdmbootstrap3-child/img/venue_container.png");
+    background-repeat: repeat;
+  	height: 100%;
+  	width: 546px;
+  	padding: 6px 25px 35px 25px;
+  	margin-top: 20px;
+  	margin-bottom: 0px;
+  }
+
+.dmbs-footer {
+	color: #FFF;
+    width: 100%;
+    padding: 35px 0;
+    padding-left: 79px;
+    height: 100%;
+
+ }
+
+.row {
+	margin:0;
+}
+
+/*! Content Left Col - Right Rail */
+
+.dmbs-main {
+	width: 600px;
+	margin: 0 0 0 40px;
+	padding: 0 0 40px 0;
+}
+
+/*! Committee */
+
+.committee-placement {
+	margin-left: 22px;
+}
+
+/* schedule code */
+
+#nav-daily-schedule ul {
+	width: 100%;
+}
+
+#nav-daily-schedule ul li {
+	display: inline;
+}
+
+.placement-schedule {
+	margin-left: 38px;
+}
+
+.placement-schedule-nav {
+	margin: -2px 0px 13px 22px;
+}
+
+
+.accent-back-schedule {
+	margin-left: -15px;
+}
+
+.sg-padding-daily {
+	padding: 0px 15px 15px 15px;
+	margin-left: 0px;
+
+}
+.sg-back, .sg-back-white, .sg-back-2, .sg-back-white-2 {
+	height: 1510px;
+}
+
+.sg-back-head-1 {
+	background-color: #c7c7c6;
+	height: 40px;
+	padding: 10px 15px;
+	width: 115%
+
+}
+
+.sg-back-head-2 {
+	background-color: #b1b1b1;
+	height: 40px;
+	padding: 10px 15px;
+	width: 115%
+}
+
+.sg-back-head-3 {
+	background-color: #b3bec4;
+	padding: 15px;
+	margin-left: -15px;
+	width: 115%
+}
+
+.schedule-img {
+	width: 120%;
+}
+
+.schedule-img img {
+	width: 235px;
+	margin: 15px 0px 0px -15px;
+}
+/* end schedule */
+
+.background-blue {
+	margin: 30px 0 30px -5px;
+	background-color: #d5e5ef;
+	color: #000;
+	width: 230px;
+	padding: 2px 20px 20px 20px;
+
+}
+
+.horiz-line-home {
+	background-color: #bebebe;
+	width: 100%;
+	height: 1px;
+	margin-left: 16px;
+	margin-right: 16px;
+	margin-top: 21px;
+}
+
+.headshot-size {
+  height:99%;
+  width:99%;
+  margin: 0 15px 0 0;
+}

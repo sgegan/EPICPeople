@@ -1,0 +1,2 @@
+[30-Nov-2014 19:03:20 UTC] PHP Fatal error:  Call to undefined function add_action() in /usr/www/users/epic1/epicpeople.org/wp-content/plugins/addthis/addthis_post_metabox.php on line 72
+[16-Dec-2014 04:29:31 UTC] PHP Fatal error:  Call to undefined function add_action() in /usr/www/users/epic1/epicpeople.org/wp-content/plugins/addthis/addthis_post_metabox.php on line 72

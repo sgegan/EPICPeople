@@ -1,0 +1,1187 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "\"Read More\" Text"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/content-header.php:33
+msgid "% Comments"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/functions.php:527
+msgid "%1$s at %2$s"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/archive.php:33
+msgid "%s Archives"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/footer.php:85
+msgid "%s created by %s."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/search.php:12
+msgid "%s search results for \"%s\""
+msgstr ""
+
+#. Text in function
+#: magazine-premium/single.php:19
+msgid "%title &rarr;"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/single.php:18
+msgid "&larr; %title"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/comments.php:42
+msgid "&larr; Older Comments"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/content-footer.php:10
+#: magazine-premium/functions.php:527
+#: magazine-premium/functions.php:552
+msgid "(edit)"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/custom-css-editor.php:80
+msgid "/*
+Welcome to the Custom CSS editor!
+
+Please add all your custom CSS here and avoid modifying the core theme files, since that\\'ll make upgrading the theme problematic. Your custom CSS will be loaded after the theme\\'s stylesheets, which means that your rules will take precedence. Just add your CSS here for what you want to change, you don\\'t need to copy all the theme\\'s style.css content.
+*/"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/content-header.php:33
+msgid "0 Comments"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+#: magazine-premium/library/advanced-front-page.php:214
+msgid "1 Column"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "1 Column Image Width (pixels)"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/content-header.php:33
+msgid "1 Comment"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "1 Sidebar - Left"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "1 Sidebar - Right"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "2 Column Image Width (pixels)"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+#: magazine-premium/library/advanced-front-page.php:215
+msgid "2 Columns"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "2 Sidebars - Left"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "2 Sidebars - Right"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "2 Sidebars - Separate"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "3 Column Image Width (pixels)"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+#: magazine-premium/library/advanced-front-page.php:216
+msgid "3 Columns"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+#: magazine-premium/library/advanced-front-page.php:217
+msgid "4 Columns"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/404.php:14
+msgid "404 Error"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+#: magazine-premium/library/advanced-front-page.php:218
+msgid "6 Columns"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "640px"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "960px"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/pointers.php:105
+msgid "A home page slider is a great way to feature important posts or pages. Take a look at the brand new Slider admin page and choose from 4 different slider designs."
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:137
+msgid "Add New Lower Section"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:98
+msgid "Add New Upper Section"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/slider.php:162
+msgid "Add Post/Page to Slider"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/slider.php:168
+msgid "Add to Slider"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/sidebar-second.php:22
+#: magazine-premium/sidebar.php:21
+msgid "Add your own widgets by going to the %sWidgets admin page%s."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/pointers.php:105
+#: magazine-premium/library/theme-options.php:80
+#: magazine-premium/library/advanced-front-page.php:1
+msgid "Advanced Front Page"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/advanced-front-page.php:93
+msgid "Advanced Front Page updated."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/widgets/widget-feature.php:51
+#: magazine-premium/library/theme-options.php:80
+#: magazine-premium/library/advanced-front-page.php:173
+msgid "All"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/sidebar-second.php:26
+msgid "Archives"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/content-aside.php:12
+msgid "Aside"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/slider.php:1
+msgid "Autoplay"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/widgets/widget-authors.php:73
+msgid "Avatar size"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Basic Front Page"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/import-export.php:66
+msgid "Before you can upload your import file, you will need to fix the following error:"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/archive.php:35
+msgid "Blog Archives"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:230
+msgid "Border"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/widgets/widget-feature.php:51
+#: magazine-premium/library/advanced-front-page.php:172
+#: magazine-premium/library/slider.php:1
+msgid "Category"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Center"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/import-export.php:85
+msgid "Choose the JSON file named \"theme-options-export.json\" to upload your theme options, then click the Upload file and import button below."
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:212
+msgid "Columns"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/comments.php:57
+msgid "Comment"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/comments.php:41
+msgid "Comment navigation"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/comments.php:52
+msgid "Comments are closed."
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:205
+msgid "Content"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Copyright Notice"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/slider.php:173
+msgid "Current Slider Items"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/custom-css-editor.php:1
+msgid "Custom CSS"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/custom-css-editor.php:1
+msgid "Custom CSS Editor"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/custom-css-editor.php:100
+msgid "Custom CSS updated."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/pointers.php:105
+msgid "Customize your front page with a unique grid-style layout using the new Sections tool. Add as many new sections as you like!"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/archive.php:27
+msgid "Daily Archives: %s"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/widgets/widget-authors.php:74
+msgid "Display Admins"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Display Author"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Display Categories"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Display Comment Count"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Display Date"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Display Image Bar"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/widgets/widget-authors.php:69
+msgid "Display Name"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Display Tagline"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/widgets/widget-authors.php:1
+msgid "Display a list of authors"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/widgets/widget-feature.php:1
+msgid "Display featured posts from a category"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/functions.php:199
+msgid "Documentation & FAQs"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/import-export.php:93
+msgid "Download export file"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/slider.php:187
+msgid "Edit"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/widgets/widget-authors.php:66
+msgid "Email"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:203
+msgid "Excerpt"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:208
+msgid "Excerpt Length"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/import-export.php:88
+msgid "Export Theme Options"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/functions.php:199
+msgid "Extended Footer"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Extended Footer Columns"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/widgets/widget-feature.php:1
+msgid "Featured Posts"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+#: magazine-premium/functions.php:199
+msgid "First Sidebar"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Fonts"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Footer"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Full Content"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Full Width"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/pointers.php:105
+msgid "Full Width Option"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Go to the Advanced Front Page admin page for more options."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/pointers.php:105
+msgid "Got something important to say? Then include it as a headline to make it stand out."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Grid Layout"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Header Alignment"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/functions.php:199
+msgid "Header Area"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Headers (h1, h2, h3, etc...)"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/pointers.php:105
+msgid "Headline"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/functions.php:199
+msgid "Home Page Lower Sidebar"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/slider.php:1
+msgid "Home Page Slider"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/pointers.php:105
+msgid "If you want this post/page to expand the full width of your site, check the box above and the sidebar(s) will be removed."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/custom-css-editor.php:102
+msgid "If you\\'re new to CSS, start with a %sbeginner tutorial%s."
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:175
+msgid "Image Alignment"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Image Bar Category"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Image Bar Columns"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:183
+msgid "Image Width"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/import-export.php:84
+msgid "Import Theme Options"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/import-export.php:79
+msgid "Import successful."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/import-export.php:1
+msgid "Import/Export"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/import-export.php:1
+msgid "Import/Export Theme Options"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/slider.php:1
+msgid "Interval"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/content-none.php:18
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Maybe searching will help."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Layout"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+#: magazine-premium/library/advanced-front-page.php:132
+#: magazine-premium/library/advanced-front-page.php:178
+#: magazine-premium/library/advanced-front-page.php:233
+msgid "Left"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/content-link.php:12
+msgid "Link"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Link Color"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Link Hover Color"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:169
+msgid "Link Title to Category"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/slider.php:187
+msgid "Link:"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/widgets/widget-authors.php:1
+msgid "List Authors"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Lower Content Width"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:114
+msgid "Lower Content Width:"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:110
+msgid "Lower Layout"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:130
+msgid "Lower Sidebar Alignment:"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Lower Sidebar Position"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Main Content"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Main Text"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Main Text Color"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Main Text Size (in pixels)"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/header.php:73
+msgid "Main menu"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/sidebar.php:25
+msgid "Meta"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/archive.php:29
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Nav Background Color"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Nav Background Hover Color"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Nav Text"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Nav Text Color"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Nav Text Hover Color"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/comments.php:43
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/widgets/widget-authors.php:65
+msgid "Nicename"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "No Sidebars"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:177
+#: magazine-premium/library/advanced-front-page.php:232
+#: magazine-premium/library/slider.php:90
+msgid "None"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/content-none.php:9
+#: magazine-premium/library/slider.php:187
+msgid "Nothing found"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/widgets/widget-feature.php:52
+#: magazine-premium/library/theme-options.php:80
+#: magazine-premium/library/advanced-front-page.php:222
+msgid "Number of Posts"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:226
+msgid "Offset"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/import-export.php:91
+msgid "Once you\\'ve saved the download file, you can use the Import function in another WordPress installation to import the theme options from this site."
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/widgets/widget-authors.php:63
+msgid "Order by"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/functions.php:199
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/functions.php:199
+msgid "Page %s"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Page Background Color"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/content-footer.php:10
+msgid "Pages:"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/content-gallery.php:35
+msgid "Permalink to %s"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/functions.php:552
+msgid "Pingback:"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/import-export.php:72
+msgid "Please select a file from your desktop."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Post Category"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Post Category Size (in pixels)"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Post Content Display"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/widgets/widget-authors.php:70
+msgid "Post Count"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Post Meta"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Post Meta Size (in pixels)"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Post Title"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Post Title Size (in pixels)"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/single.php:17
+msgid "Post navigation"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/content-status.php:20
+msgid "Posted on %1$s at %2$s"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Posts"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/content-header.php:33
+msgid "Posts by %s"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/functions.php:1
+msgid "Primary Menu"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Primary Nav Text Size (in pixels)"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Read More Background Color"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Read More Text Color"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/content-none.php:14
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/widgets/widget-authors.php:68
+msgid "Registered"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+#: magazine-premium/library/advanced-front-page.php:133
+#: magazine-premium/library/advanced-front-page.php:179
+#: magazine-premium/library/advanced-front-page.php:234
+msgid "Right"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/custom-css-editor.php:115
+#: magazine-premium/library/advanced-front-page.php:145
+msgid "Save Changes"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/slider.php:94
+msgid "Scrollerota"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/slider.php:165
+msgid "Search by content:"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/functions.php:199
+msgid "Second Sidebar"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/functions.php:1
+msgid "Secondary Menu"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Secondary Nav Text Size (in pixels)"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/advanced-front-page.php:163
+msgid "Section %s"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/import-export.php:70
+msgid "Security issue."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Sidebar Background Color"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Single"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Single - Three Columns"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Single - Two Columns"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Single - Two Columns - Three Columns"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Site Description"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Site Description Size (in pixels)"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Site Layout"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Site Logo"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Site Title"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Site Title Size (in pixels)"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Site Width"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/header.php:74
+msgid "Skip to content"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/pointers.php:105
+#: magazine-premium/library/slider.php:1
+msgid "Slider"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/slider.php:93
+msgid "Sliderota"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/404.php:18
+msgid "Sorry. We can\\'t seem to find the page you\\'re looking for."
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/slider.php:166
+msgid "Start typing..."
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/content-status.php:13
+msgid "Status"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/header.php:79
+msgid "Sub menu"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/slider.php:91
+msgid "Tabberota"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/slider.php:92
+msgid "Tabberota Nu"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/slider.php:1
+msgid "Tabberota requires 4 slides. Taberrota Nu requires 5 slides. Both will only display the required number of slides."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/archive.php:25
+msgid "Tag Archive for %s"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/content-footer.php:10
+msgid "Tags:"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Teaser Excerpt"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/slider.php:187
+msgid "Text:"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "Theme Options"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/slider.php:187
+msgid "There was an error. Please try again."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/theme-options.php:80
+msgid "These settings only work if you haven\\'t added sections to the Advanced Front Page."
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/import-export.php:90
+msgid "This format will contain your current theme options and custom CSS."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/functions.php:199
+msgid "This is the extended footer widgetized area. Widgets will appear in three columns. All defaults widgets work great here."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/functions.php:199
+msgid "This is the first sidebar area. All defaults widgets work great here."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/functions.php:199
+msgid "This is the home page lower sidebar area. All defaults widgets work great here. You must add a widget to this sidebar in order to view this area on the front end."
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:111
+msgid "This is the lower area of the front page. You can manipulate how your posts appear using the section controls below. Click on the \"Add New Lower Section\" button to get started."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/functions.php:199
+msgid "This is the second sidebar area. All defaults widgets work great here. You must select one of the \"2 sidebar\" layout options in order to view this area on the front end."
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:96
+msgid "This is the upper area of the front page. You can manipulate how your posts appear using the section controls below. Click on the \"Add New Upper Section\" button to get started."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/slider.php:1
+msgid "This setting is only utilized if no custom slides have been added below."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/slider.php:1
+msgid "Time in milliseconds before the slides switch if Autoplay is checked."
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/widgets/widget-feature.php:50
+#: magazine-premium/library/widgets/widget-authors.php:62
+#: magazine-premium/library/advanced-front-page.php:165
+msgid "Title"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/slider.php:187
+msgid "Title:"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:238
+msgid "Top Separator"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/slider.php:1
+msgid "Type"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/widgets/widget-authors.php:67
+msgid "URL"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:95
+msgid "Upper Layout"
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/import-export.php:89
+msgid "When you click the button below, WordPress will create a JSON file for you to save to your computer."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/functions.php:199
+msgid "Widgetized area in the header to the right of the site name. Great place for a search box or a banner ad."
+msgstr ""
+
+#. Text in echo
+#: magazine-premium/library/advanced-front-page.php:187
+msgid "Width"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/archive.php:31
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/functions.php:533
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. Text in function
+#: magazine-premium/content-header.php:33
+msgid "by %s"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/content-video.php:15
+#: magazine-premium/content-image.php:15
+#: magazine-premium/content-quote.php:14
+#: magazine-premium/content-chat.php:15
+#: magazine-premium/content.php:12
+#: magazine-premium/content-gallery.php:15
+#: magazine-premium/content-audio.php:15
+#: magazine-premium/content-aside.php:15
+#: magazine-premium/content-link.php:15
+#: magazine-premium/content-status.php:23
+msgid "read_more"
+msgstr ""
+
+#. Text in function
+#: magazine-premium/library/advanced-front-page.php:309
+msgid "title"
+msgstr ""

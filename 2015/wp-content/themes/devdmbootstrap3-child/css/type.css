@@ -1,0 +1,133 @@
+/*!
+Type Styles
+*/
+
+@import url('http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic');
+@import url('http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic');
+
+body {
+    color: #333333;
+	font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+ 	font-weight: 400;
+}
+
+a {
+    color: #8B272D;
+    text-decoration: none;
+   	font-family: 'Quattrocento Sans', sans-serif;
+   	font-size:16px;
+   	line-height: 22px;
+}
+
+p {
+    margin: 15px 0 15px 0;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+ 	font-weight: 400;
+}
+
+h1 {
+	color: #8b272d;
+	font-size:23px;
+	line-height: 28px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+    vertical-align: middle;
+}
+
+
+h2 {
+	color: #222222;
+	font-size:23px;
+	line-height: 28px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: 400;
+	text-transform: normal;
+    vertical-align: middle;
+}
+
+h3 {
+	font-size:18px;
+	line-height: 25px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.navbar-nav > li > a {
+	font-family: 'Quattrocento Sans', sans-serif;
+   	font-size:14px;
+   	text-transform: uppercase;
+   	font-weight: 700;
+}
+
+.navigation-custom {
+
+	background-color: #FFF;
+	color: 000;
+}
+
+.nav-text a:hover
+{ 
+	color: 000;text-decoration: none;
+}
+
+.navigation-custom a:hover {
+
+	background-color: #000;
+	color: 000;
+}
+
+.jumbo-copy {
+	font-family: 'Quattrocento Sans', sans-serif;
+   	font-size:31px;
+   	font-weight: 700;
+	color: #FFF;
+	line-height: 41px;
+	width: 750px;
+	margin: 83px 0 0 56px;
+	text-shadow: 1px 1px 1px #858484;
+}
+
+.white-text {
+	color: #FFF;
+}
+
+.masthead-copy {
+	font-size:15px;
+	line-height: 20px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: right;
+	padding: 17px 75px 0 0;
+}
+
+.masthead-copy-bold {
+	font-size:15px;
+	line-height: 20px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.footer-copy {
+	font-family: 'Crimson Text', serif;
+    font-size: 15px;
+    line-height: 20px;
+    padding-top: 30px;
+}
+
+.footer-copy a {
+	font-family: 'Crimson Text', serif;
+    font-size: 15px;
+    line-height: 20px;
+    padding-top: 30px;
+    color: #FFF;
+    text-decoration: underline;

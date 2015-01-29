@@ -1,0 +1,83 @@
+/* custom styles */
+
+body #masthead {
+overflow-x:hidden;
+}
+
+#header-widgets.fl {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	position: relative;
+	float: none;
+}
+
+.bp-login-widget-user-link, .bp-login-widget-user-link a, .bp-login-widget-user-avatar, .bp-login-widget-user-avatar a {
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.widget_bp_core_login_widget input {
+	margin-top: 0px;
+}
+
+#slider-wrap h1 {
+	margin-top: 40px;
+	font-size: 40px;
+}
+
+#slider-wrap p {
+	/*display: none; */
+	font-size: 21px;
+	font-family:  'Crimson Text', serif;
+	margin-top: 5px;
+}
+
+#slider-wrap {
+	margin-left: 0px;
+}
+
+#upper-section-1 {
+	margin: 20px 20px 20px 0px;
+}
+
+.row .c12 {
+	margin-bottom: 0 !important;
+}
+
+.widget-text-large {
+	font-size: 20px;
+}
+
+.header-widget {
+	margin-left: 10px;
+}
+
+/* Papers Landing Page */
+
+.papers-featured li {
+	width: 46%;
+}
+
+#papers-search {
+	width: 94%;
+}
+
+/* #text-2 {
+	min-height: 300px;
+	max-height: 0px;
+} 
+unused widget? carried over from dev server, unsure of the "text-#" */
+
+
+#text-7 {
+	margin: 7px 15px 15px 10px;
+}
+
+#text-7 h5 {
+	float: left;
+	padding-bottom: 10px
+}
+
+#text-7 h5 {
+	padding-top: 12px;
+}

@@ -1,0 +1,25 @@
+/*
+ Theme Name:   Magazine Premium Child
+ Theme URI:    https://themes.bavotasan.com/themes/magazine-premium/
+ Description:  Magazine Premium Child Theme
+ Author:       Pow Interactive
+ Author URI:   http://powinteractive.net
+ Template:     magazine-premium
+ Version:      1.0.0
+ Tags:         
+ Text Domain:  magazine-premium-child
+*/
+
+@import url("../magazine-premium/style.css");
+@import url('css/lg.css');  
+@import url('css/md.css')  (max-width: 1085px);
+@import url('css/sm.css')  (max-width: 767px);
+@import url('css/xs.css')  (max-width: 320px);
+
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic);
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+

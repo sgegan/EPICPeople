@@ -1,0 +1,2056 @@
+LOG ENTRY: Mon Apr 21st, 2014 @ precisely 3:24 pm UTC
+PHP v5.3.28 :: WordPress v3.8.3 :: s2Member v140409 :: s2Member Pro v140409
+Memory 40.66 MB :: Real Memory 41.00 MB :: Peak Memory 40.70 MB :: Real Peak Memory 41.00 MB
+powinteractive.pairserver.com/epic-org/subscribe/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.8.3; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 877,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'METHOD=SetExpressCheckout&RETURNURL=http%3A%2F%2Fpowinteractive.pairserver.com%2Fepic-org%2Fsubscribe%2F%3Fs2p-option%26s2member_paypal_xco%3Ds2member_pro_paypal_checkout_return&CANCELURL=http%3A%2F%2Fpowinteractive.pairserver.com%2Fepic-org%2Fsubscribe%2F%3Fs2p-option%26s2member_paypal_xco%3Ds2member_pro_paypal_checkout_cancel&PAGESTYLE=paypal&LOCALECODE=&NOSHIPPING=1&SOLUTIONTYPE=Sole&LANDINGPAGE=Billing&ALLOWNOTE=0&L_BILLINGTYPE0=RecurringPayments&L_BILLINGAGREEMENTDESCRIPTION0=Access+to+restricted+content&MAXAMT=0.01&PAYMENTREQUEST_0_SHIPTONAME=Jungle+Jim&PAYMENTREQUEST_0_SHIPTOSTREET=&PAYMENTREQUEST_0_SHIPTOCITY=&PAYMENTREQUEST_0_SHIPTOSTATE=&PAYMENTREQUEST_0_SHIPTOCOUNTRYCODE=US&PAYMENTREQUEST_0_SHIPTOZIP=&EMAIL=sheagegan%40gmail.com&VERSION=71.0&USER=biz_api1.powinteractive.net&PWD=1397747934&SIGNATURE=AXPkKH951ZgFZMoKHNNtfbOlVmV4A5NLXiQPNGaBha0CGiTVKKPjAekx',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => true,
+    'local' => false,
+  ),
+  'url' => 'https://api-3t.sandbox.paypal.com/nvp',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'server' => 'Apache',
+      'content-length' => '137',
+      'content-type' => 'text/plain; charset=utf-8',
+      'dc' => 'origin1-api-3t.sandbox.paypal.com',
+      'date' => 'Mon, 21 Apr 2014 15:24:33 GMT',
+      'connection' => 'close',
+      'set-cookie' => 'DC=origin1-api-3t.sandbox.paypal.com; secure',
+    ),
+    'body' => 'TOKEN=EC%2d7XY172286J467535B&TIMESTAMP=2014%2d04%2d21T15%3a24%3a33Z&CORRELATIONID=65e0116c379cc&ACK=Success&VERSION=71%2e0&BUILD=10567876',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+      0 => 
+      WP_Http_Cookie::__set_state(array(
+         'name' => 'DC',
+         'value' => 'origin1-api-3t.sandbox.paypal.com',
+         'expires' => NULL,
+         'path' => '//',
+         'domain' => 'api-3t.sandbox.paypal.com',
+         'secure' => '',
+      )),
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Mon Apr 21st, 2014 @ precisely 3:29 pm UTC
+PHP v5.3.28 :: WordPress v3.8.3 :: s2Member v140409 :: s2Member Pro v140409
+Memory 40.66 MB :: Real Memory 41.25 MB :: Peak Memory 40.68 MB :: Real Peak Memory 41.25 MB
+powinteractive.pairserver.com/epic-org/subscribe/?s2p-option&s2member_paypal_xco=s2member_pro_paypal_checkout_return&token=EC-7XY172286J467535B
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.8.3; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 187,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'METHOD=GetExpressCheckoutDetails&TOKEN=EC-7XY172286J467535B&VERSION=71.0&USER=biz_api1.powinteractive.net&PWD=1397747934&SIGNATURE=AXPkKH951ZgFZMoKHNNtfbOlVmV4A5NLXiQPNGaBha0CGiTVKKPjAekx',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => true,
+    'local' => false,
+  ),
+  'url' => 'https://api-3t.sandbox.paypal.com/nvp',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'server' => 'Apache',
+      'content-length' => '768',
+      'content-type' => 'text/plain; charset=utf-8',
+      'dc' => 'origin2-api-3t.sandbox.paypal.com',
+      'date' => 'Mon, 21 Apr 2014 15:29:54 GMT',
+      'connection' => 'close',
+      'set-cookie' => 'DC=origin2-api-3t.sandbox.paypal.com; secure',
+    ),
+    'body' => 'TOKEN=EC%2d7XY172286J467535B&BILLINGAGREEMENTACCEPTEDSTATUS=1&CHECKOUTSTATUS=PaymentActionNotInitiated&TIMESTAMP=2014%2d04%2d21T15%3a29%3a54Z&CORRELATIONID=53a7268f1ace0&ACK=Success&VERSION=71%2e0&BUILD=10567876&EMAIL=shea%40powinteractive%2enet&PAYERID=GNYKU8GQKHX4C&PAYERSTATUS=verified&FIRSTNAME=John&LASTNAME=Depp&COUNTRYCODE=US&CURRENCYCODE=USD&AMT=0%2e00&SHIPPINGAMT=0%2e00&HANDLINGAMT=0%2e00&TAXAMT=0%2e00&INSURANCEAMT=0%2e00&SHIPDISCAMT=0%2e00&PAYMENTREQUEST_0_CURRENCYCODE=USD&PAYMENTREQUEST_0_AMT=0%2e00&PAYMENTREQUEST_0_SHIPPINGAMT=0%2e00&PAYMENTREQUEST_0_HANDLINGAMT=0%2e00&PAYMENTREQUEST_0_TAXAMT=0%2e00&PAYMENTREQUEST_0_INSURANCEAMT=0%2e00&PAYMENTREQUEST_0_SHIPDISCAMT=0%2e00&PAYMENTREQUEST_0_INSURANCEOPTIONOFFERED=false&PAYMENTREQUESTINFO_0_ERRORCODE=0',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+      0 => 
+      WP_Http_Cookie::__set_state(array(
+         'name' => 'DC',
+         'value' => 'origin2-api-3t.sandbox.paypal.com',
+         'expires' => NULL,
+         'path' => '//',
+         'domain' => 'api-3t.sandbox.paypal.com',
+         'secure' => '',
+      )),
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Mon Apr 21st, 2014 @ precisely 3:29 pm UTC
+PHP v5.3.28 :: WordPress v3.8.3 :: s2Member v140409 :: s2Member Pro v140409
+Memory 40.67 MB :: Real Memory 41.25 MB :: Peak Memory 40.70 MB :: Real Peak Memory 41.25 MB
+powinteractive.pairserver.com/epic-org/subscribe/?s2p-option&s2member_paypal_xco=s2member_pro_paypal_checkout_return&token=EC-7XY172286J467535B
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.8.3; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 627,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'METHOD=CreateRecurringPaymentsProfile&EMAIL=sheagegan%40gmail.com&FIRSTNAME=Jungle&LASTNAME=Jim&SUBSCRIBERNAME=Jungle+Jim&DESC=Access+to+restricted+content&PROFILEREFERENCE=1400729393%3A0+D%3A1+M%7Epowinteractive.pairserver.com%7E1&INITAMT=0.01&FAILEDINITAMTACTION=CancelOnFailure&CURRENCYCODE=USD&AMT=0.01&TAXAMT=0.00&MAXFAILEDPAYMENTS=2&AUTOBILLOUTAMT=AddToNextBilling&PROFILESTARTDATE=2014-05-22T00%3A00%3A00Z&BILLINGPERIOD=Month&TOTALBILLINGCYCLES=0&BILLINGFREQUENCY=1&TOKEN=EC-7XY172286J467535B&VERSION=71.0&USER=biz_api1.powinteractive.net&PWD=1397747934&SIGNATURE=AXPkKH951ZgFZMoKHNNtfbOlVmV4A5NLXiQPNGaBha0CGiTVKKPjAekx',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => true,
+    'local' => false,
+  ),
+  'url' => 'https://api-3t.sandbox.paypal.com/nvp',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'server' => 'Apache',
+      'content-length' => '164',
+      'content-type' => 'text/plain; charset=utf-8',
+      'dc' => 'origin2-api-3t.sandbox.paypal.com',
+      'date' => 'Mon, 21 Apr 2014 15:29:54 GMT',
+      'connection' => 'close',
+      'set-cookie' => 'DC=origin2-api-3t.sandbox.paypal.com; secure',
+    ),
+    'body' => 'PROFILEID=I%2dU42UU5920AAP&PROFILESTATUS=PendingProfile&TIMESTAMP=2014%2d04%2d21T15%3a29%3a54Z&CORRELATIONID=77d4e071983ba&ACK=Success&VERSION=71%2e0&BUILD=10433064',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+      0 => 
+      WP_Http_Cookie::__set_state(array(
+         'name' => 'DC',
+         'value' => 'origin2-api-3t.sandbox.paypal.com',
+         'expires' => NULL,
+         'path' => '//',
+         'domain' => 'api-3t.sandbox.paypal.com',
+         'secure' => '',
+      )),
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Mon Apr 21st, 2014 @ precisely 3:29 pm UTC
+PHP v5.3.28 :: WordPress v3.8.3 :: s2Member v140409 :: s2Member Pro v140409
+Memory 40.78 MB :: Real Memory 41.25 MB :: Peak Memory 40.82 MB :: Real Peak Memory 41.25 MB
+powinteractive.pairserver.com/epic-org/subscribe/?s2p-option&s2member_paypal_xco=s2member_pro_paypal_checkout_return&token=EC-7XY172286J467535B
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.8.3; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 803,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'txn_type=subscr_signup&subscr_id=I-U42UU5920AAP&custom=powinteractive.pairserver.com&txn_id=I-U42UU5920AAP&period1=0+D&period3=1+M&mc_amount1=0.00&mc_amount3=0.01&mc_gross=0.01&mc_currency=USD&tax=0.00&recurring=1&payer_email=sheagegan%40gmail.com&first_name=Jungle&last_name=Jim&option_name1=Referencing+Customer+ID&option_selection1=2&option_name2=Customer+IP+Address&option_selection2=108.41.219.67&item_name=Access+to+restricted+content&item_number=1&s2member_paypal_proxy=paypal&s2member_paypal_proxy_use=pro-emails%2Csubscr-signup-as-subscr-payment&s2member_paypal_proxy_coupon%5Bcoupon_code%5D=&s2member_paypal_proxy_coupon%5Bfull_coupon_code%5D=&s2member_paypal_proxy_coupon%5Baffiliate_id%5D=&s2member_paypal_proxy_verification=bc05ec31eda14addb983b8ada3b6d7f5&s2member_paypal_proxy_return_url=',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => false,
+    'local' => true,
+  ),
+  'url' => 'http://powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'date' => 'Mon, 21 Apr 2014 15:29:54 GMT',
+      'server' => 'Apache/2.2.26',
+      'expires' => 'Wed, 11 Jan 1984 05:00:00 GMT',
+      'cache-control' => 'no-cache, must-revalidate, max-age=0',
+      'pragma' => 'no-cache',
+      'content-length' => '0',
+      'connection' => 'close',
+      'content-type' => 'text/plain; charset=UTF-8',
+    ),
+    'body' => '',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Mon Apr 21st, 2014 @ precisely 5:16 pm UTC
+PHP v5.3.28 :: WordPress v3.8.3 :: s2Member v140409 :: s2Member Pro v140409
+Memory 39.54 MB :: Real Memory 40.25 MB :: Peak Memory 39.76 MB :: Real Peak Memory 40.25 MB
+powinteractive.pairserver.com/epic-org/register/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 5,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.8.3; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 316,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'privatekey=6LeCANsSAAAAAGBXMIKAirv6G4PmaGa-ORxdD-oZ&remoteip=108.41.219.67&challenge=03AHJ_VuuMOq7IffIIlaWZISTqshM6Hp08z10EXqygugxuwaZUOM-VjWjVm_5LpPEzy78IoltUKeJ8H5BbzpLQh3qM9Yx4xVeRcPW8ZiH8mYO3JsGc5CNfzIai6Q35SD9A9ixEu8Iu27Q5tDlDbpURNnzY3YZauOPiF7XtT5duc7daHTnBuw8AXl50MxZiTAgsXiIy_k8BX8v7&response=without+epoweer',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => false,
+    'local' => false,
+  ),
+  'url' => 'http://www.google.com/recaptcha/api/verify',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'cache-control' => 'no-cache, no-store, max-age=0, must-revalidate',
+      'pragma' => 'no-cache',
+      'expires' => 'Fri, 01 Jan 1990 00:00:00 GMT',
+      'date' => 'Mon, 21 Apr 2014 17:16:00 GMT',
+      'content-type' => 'text/plain',
+      'x-recaptcha-request-duration' => '111',
+      'x-content-type-options' => 'nosniff',
+      'x-xss-protection' => '1; mode=block',
+      'server' => 'GSE',
+      'alternate-protocol' => '80:quic',
+      'connection' => 'close',
+    ),
+    'body' => 'true
+success',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Thu Apr 24th, 2014 @ precisely 6:10 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 41.49 MB :: Real Memory 42.00 MB :: Peak Memory 41.71 MB :: Real Peak Memory 42.00 MB
+powinteractive.pairserver.com/epic-org/register/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.74.9 (KHTML, like Gecko) Version/6.1.2 Safari/537.74.9
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 5,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 309,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'privatekey=6LeCANsSAAAAAGBXMIKAirv6G4PmaGa-ORxdD-oZ&remoteip=108.41.219.67&challenge=03AHJ_Vuv_xFD2B_i-tSFjtKv5XzP2Achh6MpPBA3E5P21mtpYKGqJ7QI4SquUP8NxOmD9z0E_Kmac6aCXzm6Js9p9cZadHEZTIz9PtRsQPtxmXZvcP-QUZHl2zVrtU5DEChuR3L79AfrQkB1nEydsvC5a3jp4mqRPjgIlVBGqIxz4cdN3QkWgFYP12TI1OrLLLRlzs2d1_cA7&response=33425653',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => false,
+    'local' => false,
+  ),
+  'url' => 'http://www.google.com/recaptcha/api/verify',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'cache-control' => 'no-cache, no-store, max-age=0, must-revalidate',
+      'pragma' => 'no-cache',
+      'expires' => 'Fri, 01 Jan 1990 00:00:00 GMT',
+      'date' => 'Thu, 24 Apr 2014 18:10:09 GMT',
+      'content-type' => 'text/plain',
+      'x-recaptcha-request-duration' => '76',
+      'x-content-type-options' => 'nosniff',
+      'x-xss-protection' => '1; mode=block',
+      'server' => 'GSE',
+      'alternate-protocol' => '80:quic',
+      'connection' => 'close',
+    ),
+    'body' => 'true
+success',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Fri Apr 25th, 2014 @ precisely 4:25 am UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 41.70 MB :: Real Memory 42.25 MB :: Peak Memory 42.01 MB :: Real Peak Memory 42.25 MB
+powinteractive.pairserver.com/epic-org/register/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 5,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 309,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'privatekey=6LeCANsSAAAAAGBXMIKAirv6G4PmaGa-ORxdD-oZ&remoteip=69.122.38.140&challenge=03AHJ_Vus11PAwsfkX9Y2U41LYl2eyiTlI6FSR8ALBWtwJGEJdRvHMLw9g6-BkjfPAZ_EleaYG37ENK53C-1cLX5_4wRSESRf7j3lyVrWDFq9PCP_ZoKteR72snpw05HncfLBVUQ0RcToUXudvGWpO2Q4e5YC4zwkyq9kgj0vuaYCaBtjo0WbKQmQ45uxUsnG1MnYX4tqBeZLW&response=64583963',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => false,
+    'local' => false,
+  ),
+  'url' => 'http://www.google.com/recaptcha/api/verify',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'cache-control' => 'no-cache, no-store, max-age=0, must-revalidate',
+      'pragma' => 'no-cache',
+      'expires' => 'Fri, 01 Jan 1990 00:00:00 GMT',
+      'date' => 'Fri, 25 Apr 2014 04:25:17 GMT',
+      'content-type' => 'text/plain',
+      'x-recaptcha-request-duration' => '79',
+      'x-content-type-options' => 'nosniff',
+      'x-xss-protection' => '1; mode=block',
+      'server' => 'GSE',
+      'alternate-protocol' => '80:quic',
+      'connection' => 'close',
+    ),
+    'body' => 'true
+success',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Mon Apr 28th, 2014 @ precisely 8:48 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 51.81 MB :: Real Memory 53.25 MB :: Peak Memory 52.74 MB :: Real Peak Memory 53.25 MB
+powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1
+User-Agent: WordPress/3.9; http://powinteractive.pairserver.com/epic-org
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'GET',
+    'timeout' => 5,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => NULL,
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => false,
+    'local' => false,
+  ),
+  'url' => 'http://tinyurl.com/api-create.php?url=http%3A%2F%2Fpowinteractive.pairserver.com%2Fepic-org%2F%3Fs2member_register%3DfnIyOlZJQ0pIN1hQMm81N3FTMUZ1WDh0VEZIOFpZT0RMZmE4OmJhNDQyNWQ2NDE0ZTZjMTRmZGRlNTk5MDlkMWNhZjJmfAPoHaxQIGzr91cYO-FffbBaFvQSTOPMpT2XHa2yoMChcxyPU6XwIsq7Ekksktn52FvEr2L-OZUxSpD0-3tPmtz4AtmazY7gvCWS-454O_5OUF1Q8rnWLEngHptwqNsyfpTPFwRc1uVHIk7NEDuJT_Jm_0xrCHGlQ6HxYXWa-OjjeUYbOVmP8o4jMM1LXkShDeaSrAKam-Z63f-OwlmgkC0',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'x-powered-by' => 'PHP/5.4.27',
+      'content-type' => 'text/plain',
+      'connection' => 'close',
+      'transfer-encoding' => 'chunked',
+      'date' => 'Mon, 28 Apr 2014 20:48:07 GMT',
+      'server' => 'TinyURL/1.6',
+    ),
+    'body' => 'http://tinyurl.com/mtf3n6w',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Mon Apr 28th, 2014 @ precisely 8:48 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 51.65 MB :: Real Memory 51.75 MB :: Peak Memory 51.67 MB :: Real Peak Memory 51.75 MB
+powinteractive.pairserver.com/epic-org/register-2/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 928,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'txn_type=subscr_signup&subscr_id=FREE-535EBE86D51BE&custom=powinteractive.pairserver.com&txn_id=FREE-535EBE86D51BE&period1=0+D&period3=1+M&mc_amount1=0.00&mc_amount3=0.00&mc_gross=0.00&mc_currency=USD&tax=0.00&recurring=1&payer_email=big.t%40test.net&first_name=Tommy&last_name=Testosterone&option_name1=Originating+Domain&option_selection1=powinteractive.pairserver.com&option_name2=Customer+IP+Address&option_selection2=108.41.219.67&item_name=COUPON+100%25+off.+%28Now%3A+%240.00+%2F+monthly%29+%7E+ORIGINALLY%3A+Full+Access+Monthly+Subscription%2F+%240.01+per+month&item_number=1&s2member_paypal_proxy=paypal&s2member_paypal_proxy_use=pro-emails&s2member_paypal_proxy_coupon%5Bcoupon_code%5D=epicdiscount%21&s2member_paypal_proxy_coupon%5Bfull_coupon_code%5D=epicdiscount%21&s2member_paypal_proxy_coupon%5Baffiliate_id%5D=&s2member_paypal_proxy_verification=bc05ec31eda14addb983b8ada3b6d7f5&s2member_paypal_proxy_return_url=',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => false,
+    'local' => true,
+  ),
+  'url' => 'http://powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'date' => 'Mon, 28 Apr 2014 20:48:07 GMT',
+      'server' => 'Apache/2.2.26',
+      'expires' => 'Wed, 11 Jan 1984 05:00:00 GMT',
+      'cache-control' => 'no-cache, must-revalidate, max-age=0',
+      'pragma' => 'no-cache',
+      'content-length' => '0',
+      'connection' => 'close',
+      'content-type' => 'text/plain; charset=UTF-8',
+    ),
+    'body' => '',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Mon Apr 28th, 2014 @ precisely 8:55 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 49.31 MB :: Real Memory 49.50 MB :: Peak Memory 49.35 MB :: Real Peak Memory 49.50 MB
+powinteractive.pairserver.com/epic-org/register-2/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 912,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'METHOD=SetExpressCheckout&RETURNURL=http%3A%2F%2Fpowinteractive.pairserver.com%2Fepic-org%2Fregister-2%2F%3Fs2p-option%3D2%26s2member_paypal_xco%3Ds2member_pro_paypal_checkout_return&CANCELURL=http%3A%2F%2Fpowinteractive.pairserver.com%2Fepic-org%2Fregister-2%2F%3Fs2p-option%3D2%26s2member_paypal_xco%3Ds2member_pro_paypal_checkout_cancel&PAGESTYLE=paypal&LOCALECODE=&NOSHIPPING=1&SOLUTIONTYPE=Sole&LANDINGPAGE=Billing&ALLOWNOTE=0&L_BILLINGTYPE0=RecurringPayments&L_BILLINGAGREEMENTDESCRIPTION0=Full+Access+Annual+Subscription%2F+%240.10+per+year&MAXAMT=0.10&PAYMENTREQUEST_0_SHIPTONAME=Dominic+Toretto&PAYMENTREQUEST_0_SHIPTOSTREET=&PAYMENTREQUEST_0_SHIPTOCITY=&PAYMENTREQUEST_0_SHIPTOSTATE=&PAYMENTREQUEST_0_SHIPTOCOUNTRYCODE=US&PAYMENTREQUEST_0_SHIPTOZIP=&EMAIL=toretto%40test.net&VERSION=71.0&USER=biz_api1.powinteractive.net&PWD=1397747934&SIGNATURE=AXPkKH951ZgFZMoKHNNtfbOlVmV4A5NLXiQPNGaBha0CGiTVKKPjAekx',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => true,
+    'local' => false,
+  ),
+  'url' => 'https://api-3t.sandbox.paypal.com/nvp',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'server' => 'Apache',
+      'content-length' => '136',
+      'content-type' => 'text/plain; charset=utf-8',
+      'dc' => 'origin2-api-3t.sandbox.paypal.com',
+      'date' => 'Mon, 28 Apr 2014 20:55:31 GMT',
+      'connection' => 'close',
+      'set-cookie' => 'DC=origin2-api-3t.sandbox.paypal.com; secure',
+    ),
+    'body' => 'TOKEN=EC%2d1R54982594099920F&TIMESTAMP=2014%2d04%2d28T20%3a55%3a31Z&CORRELATIONID=2a50c16e0a4f&ACK=Success&VERSION=71%2e0&BUILD=10800277',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+      0 => 
+      WP_Http_Cookie::__set_state(array(
+         'name' => 'DC',
+         'value' => 'origin2-api-3t.sandbox.paypal.com',
+         'expires' => NULL,
+         'path' => '//',
+         'domain' => 'api-3t.sandbox.paypal.com',
+         'secure' => '',
+      )),
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Mon Apr 28th, 2014 @ precisely 8:56 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 49.29 MB :: Real Memory 49.50 MB :: Peak Memory 49.33 MB :: Real Peak Memory 49.50 MB
+powinteractive.pairserver.com/epic-org/register-2/?s2p-option=2&s2member_paypal_xco=s2member_pro_paypal_checkout_return&token=EC-1R54982594099920F
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 187,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'METHOD=GetExpressCheckoutDetails&TOKEN=EC-1R54982594099920F&VERSION=71.0&USER=biz_api1.powinteractive.net&PWD=1397747934&SIGNATURE=AXPkKH951ZgFZMoKHNNtfbOlVmV4A5NLXiQPNGaBha0CGiTVKKPjAekx',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => true,
+    'local' => false,
+  ),
+  'url' => 'https://api-3t.sandbox.paypal.com/nvp',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'server' => 'Apache',
+      'content-length' => '761',
+      'content-type' => 'text/plain; charset=utf-8',
+      'dc' => 'origin1-api-3t.sandbox.paypal.com',
+      'date' => 'Mon, 28 Apr 2014 20:56:58 GMT',
+      'connection' => 'close',
+      'set-cookie' => 'DC=origin1-api-3t.sandbox.paypal.com; secure',
+    ),
+    'body' => 'TOKEN=EC%2d1R54982594099920F&BILLINGAGREEMENTACCEPTEDSTATUS=1&CHECKOUTSTATUS=PaymentActionNotInitiated&TIMESTAMP=2014%2d04%2d28T20%3a56%3a58Z&CORRELATIONID=421414fb3716&ACK=Success&VERSION=71%2e0&BUILD=10800277&EMAIL=toretto%40test%2enet&PAYERID=CPWYAFRECGYF4&PAYERSTATUS=verified&FIRSTNAME=Shea&LASTNAME=Gegan&COUNTRYCODE=US&CURRENCYCODE=USD&AMT=0%2e00&SHIPPINGAMT=0%2e00&HANDLINGAMT=0%2e00&TAXAMT=0%2e00&INSURANCEAMT=0%2e00&SHIPDISCAMT=0%2e00&PAYMENTREQUEST_0_CURRENCYCODE=USD&PAYMENTREQUEST_0_AMT=0%2e00&PAYMENTREQUEST_0_SHIPPINGAMT=0%2e00&PAYMENTREQUEST_0_HANDLINGAMT=0%2e00&PAYMENTREQUEST_0_TAXAMT=0%2e00&PAYMENTREQUEST_0_INSURANCEAMT=0%2e00&PAYMENTREQUEST_0_SHIPDISCAMT=0%2e00&PAYMENTREQUEST_0_INSURANCEOPTIONOFFERED=false&PAYMENTREQUESTINFO_0_ERRORCODE=0',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+      0 => 
+      WP_Http_Cookie::__set_state(array(
+         'name' => 'DC',
+         'value' => 'origin1-api-3t.sandbox.paypal.com',
+         'expires' => NULL,
+         'path' => '//',
+         'domain' => 'api-3t.sandbox.paypal.com',
+         'secure' => '',
+      )),
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Mon Apr 28th, 2014 @ precisely 8:56 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 49.30 MB :: Real Memory 49.50 MB :: Peak Memory 49.34 MB :: Real Peak Memory 49.50 MB
+powinteractive.pairserver.com/epic-org/register-2/?s2p-option=2&s2member_paypal_xco=s2member_pro_paypal_checkout_return&token=EC-1R54982594099920F
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 656,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'METHOD=CreateRecurringPaymentsProfile&EMAIL=toretto%40test.net&FIRSTNAME=Dominic&LASTNAME=Toretto&SUBSCRIBERNAME=Dominic+Toretto&DESC=Full+Access+Annual+Subscription%2F+%240.10+per+year&PROFILEREFERENCE=1430297818%3A0+D%3A1+Y%7Epowinteractive.pairserver.com%7E1&INITAMT=0.10&FAILEDINITAMTACTION=CancelOnFailure&CURRENCYCODE=USD&AMT=0.10&TAXAMT=0.00&MAXFAILEDPAYMENTS=2&AUTOBILLOUTAMT=AddToNextBilling&PROFILESTARTDATE=2015-04-29T00%3A00%3A00Z&BILLINGPERIOD=Year&TOTALBILLINGCYCLES=0&BILLINGFREQUENCY=1&TOKEN=EC-1R54982594099920F&VERSION=71.0&USER=biz_api1.powinteractive.net&PWD=1397747934&SIGNATURE=AXPkKH951ZgFZMoKHNNtfbOlVmV4A5NLXiQPNGaBha0CGiTVKKPjAekx',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => true,
+    'local' => false,
+  ),
+  'url' => 'https://api-3t.sandbox.paypal.com/nvp',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'server' => 'Apache',
+      'content-length' => '164',
+      'content-type' => 'text/plain; charset=utf-8',
+      'dc' => 'origin2-api-3t.sandbox.paypal.com',
+      'date' => 'Mon, 28 Apr 2014 20:56:59 GMT',
+      'connection' => 'close',
+      'set-cookie' => 'DC=origin2-api-3t.sandbox.paypal.com; secure',
+    ),
+    'body' => 'PROFILEID=I%2dC6SU8PYNBRBP&PROFILESTATUS=PendingProfile&TIMESTAMP=2014%2d04%2d28T20%3a56%3a59Z&CORRELATIONID=1e04c4522df77&ACK=Success&VERSION=71%2e0&BUILD=10800277',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+      0 => 
+      WP_Http_Cookie::__set_state(array(
+         'name' => 'DC',
+         'value' => 'origin2-api-3t.sandbox.paypal.com',
+         'expires' => NULL,
+         'path' => '//',
+         'domain' => 'api-3t.sandbox.paypal.com',
+         'secure' => '',
+      )),
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Mon Apr 28th, 2014 @ precisely 8:57 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 51.81 MB :: Real Memory 53.25 MB :: Peak Memory 52.74 MB :: Real Peak Memory 53.25 MB
+powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1
+User-Agent: WordPress/3.9; http://powinteractive.pairserver.com/epic-org
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'GET',
+    'timeout' => 5,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => NULL,
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => false,
+    'local' => false,
+  ),
+  'url' => 'http://tinyurl.com/api-create.php?url=http%3A%2F%2Fpowinteractive.pairserver.com%2Fepic-org%2F%3Fs2member_register%3DfnIyOjZWSE5qZkZGVmUxVVI1YTcwTW90eEJLZVVYVW4zN2IyOmE1ZWIyNTRhNzgyMDFjMmY1M2QzZTE3Y2I0YzNhMzdjfGg-ZBYzXE11_COcYhaYWr5DZk7dg8cWprh8e2WQgsEZupSTBrBby9DR6McxaweoAuWjTRJGcXChLLARFZ0mEB9JZDt4i3GYVJ-guKOnGMmLDF8kWTrBpgQr8rnieaSAZQ-Va8EBtF7RBjJciyeWKrJ2k7dEFpQ_ALTLzEHBqxslTfJ9wIdz8okvejTk8aLk7dC052X4_5Ya4nD3LXeerE8',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'x-powered-by' => 'PHP/5.4.27',
+      'content-type' => 'text/plain',
+      'connection' => 'close',
+      'transfer-encoding' => 'chunked',
+      'date' => 'Mon, 28 Apr 2014 20:56:59 GMT',
+      'server' => 'TinyURL/1.6',
+    ),
+    'body' => 'http://tinyurl.com/maruqtz',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Mon Apr 28th, 2014 @ precisely 8:57 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 51.49 MB :: Real Memory 51.75 MB :: Peak Memory 51.52 MB :: Real Peak Memory 51.75 MB
+powinteractive.pairserver.com/epic-org/register-2/?s2p-option=2&s2member_paypal_xco=s2member_pro_paypal_checkout_return&token=EC-1R54982594099920F
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 851,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'txn_type=subscr_signup&subscr_id=I-C6SU8PYNBRBP&custom=powinteractive.pairserver.com&txn_id=I-C6SU8PYNBRBP&period1=0+D&period3=1+Y&mc_amount1=0.00&mc_amount3=0.10&mc_gross=0.10&mc_currency=USD&tax=0.00&recurring=1&payer_email=toretto%40test.net&first_name=Dominic&last_name=Toretto&option_name1=Originating+Domain&option_selection1=powinteractive.pairserver.com&option_name2=Customer+IP+Address&option_selection2=108.41.219.67&item_name=Full+Access+Annual+Subscription%2F+%240.10+per+year&item_number=1&s2member_paypal_proxy=paypal&s2member_paypal_proxy_use=pro-emails%2Csubscr-signup-as-subscr-payment&s2member_paypal_proxy_coupon%5Bcoupon_code%5D=&s2member_paypal_proxy_coupon%5Bfull_coupon_code%5D=&s2member_paypal_proxy_coupon%5Baffiliate_id%5D=&s2member_paypal_proxy_verification=bc05ec31eda14addb983b8ada3b6d7f5&s2member_paypal_proxy_return_url=',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => false,
+    'local' => true,
+  ),
+  'url' => 'http://powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'date' => 'Mon, 28 Apr 2014 20:57:00 GMT',
+      'server' => 'Apache/2.2.26',
+      'expires' => 'Wed, 11 Jan 1984 05:00:00 GMT',
+      'cache-control' => 'no-cache, must-revalidate, max-age=0',
+      'pragma' => 'no-cache',
+      'content-length' => '0',
+      'connection' => 'close',
+      'content-type' => 'text/plain; charset=UTF-8',
+    ),
+    'body' => '',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Mon Apr 28th, 2014 @ precisely 9:53 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 50.16 MB :: Real Memory 51.00 MB :: Peak Memory 50.67 MB :: Real Peak Memory 51.00 MB
+powinteractive.pairserver.com/epic-org/cancel-subscription/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 194,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'PROFILEID=I-C6SU8PYNBRBP&METHOD=GetRecurringPaymentsProfileDetails&VERSION=71.0&USER=biz_api1.powinteractive.net&PWD=1397747934&SIGNATURE=AXPkKH951ZgFZMoKHNNtfbOlVmV4A5NLXiQPNGaBha0CGiTVKKPjAekx',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => true,
+    'local' => false,
+  ),
+  'url' => 'https://api-3t.sandbox.paypal.com/nvp',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'server' => 'Apache',
+      'content-length' => '953',
+      'content-type' => 'text/plain; charset=utf-8',
+      'dc' => 'origin2-api-3t.sandbox.paypal.com',
+      'date' => 'Mon, 28 Apr 2014 21:53:50 GMT',
+      'connection' => 'close',
+      'set-cookie' => 'DC=origin2-api-3t.sandbox.paypal.com; secure',
+    ),
+    'body' => 'PROFILEID=I%2dC6SU8PYNBRBP&STATUS=Pending&AUTOBILLOUTAMT=AddToNextBilling&DESC=Full%20Access%20Annual%20Subscription%2f%20%240%2e10%20per%20year&MAXFAILEDPAYMENTS=2&SUBSCRIBERNAME=Dominic%20Toretto&PROFILESTARTDATE=2015%2d04%2d29T07%3a00%3a00Z&PROFILEREFERENCE=1430297818%3a0%20D%3a1%20Y%7epowinteractive%2epairserver%2ecom%7e1&NUMCYCLESCOMPLETED=0&NUMCYCLESREMAINING=0&OUTSTANDINGBALANCE=0%2e00&FAILEDPAYMENTCOUNT=0&TRIALAMTPAID=0%2e00&REGULARAMTPAID=0%2e00&AGGREGATEAMT=0%2e00&AGGREGATEOPTIONALAMT=0%2e00&FINALPAYMENTDUEDATE=1970%2d01%2d01T00%3a00%3a00Z&TIMESTAMP=2014%2d04%2d28T21%3a53%3a50Z&CORRELATIONID=244c08e1ef667&ACK=Success&VERSION=71%2e0&BUILD=10800277&BILLINGPERIOD=Year&BILLINGFREQUENCY=1&TOTALBILLINGCYCLES=0&CURRENCYCODE=USD&AMT=0%2e10&SHIPPINGAMT=0%2e00&TAXAMT=0%2e00&REGULARBILLINGPERIOD=Year&REGULARBILLINGFREQUENCY=1&REGULARTOTALBILLINGCYCLES=0&REGULARCURRENCYCODE=USD&REGULARAMT=0%2e10&REGULARSHIPPINGAMT=0%2e00&REGULARTAXAMT=0%2e00',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+      0 => 
+      WP_Http_Cookie::__set_state(array(
+         'name' => 'DC',
+         'value' => 'origin2-api-3t.sandbox.paypal.com',
+         'expires' => NULL,
+         'path' => '//',
+         'domain' => 'api-3t.sandbox.paypal.com',
+         'secure' => '',
+      )),
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Tue Apr 29th, 2014 @ precisely 2:55 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 49.42 MB :: Real Memory 49.75 MB :: Peak Memory 49.47 MB :: Real Peak Memory 49.75 MB
+powinteractive.pairserver.com/epic-org/register-2/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 780,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'METHOD=CreateRecurringPaymentsProfile&EMAIL=jimmy%40powinteractive.net&FIRSTNAME=Jimmy&LASTNAME=Gnass&SUBSCRIBERNAME=Jimmy+Gnass&DESC=Full+Access+Monthly+Subscription%2F+%240.01+per+month&PROFILEREFERENCE=1401418539%3A0+D%3A1+M%7Epowinteractive.pairserver.com%7E1&INITAMT=0.01&FAILEDINITAMTACTION=CancelOnFailure&CURRENCYCODE=USD&AMT=0.01&TAXAMT=0.00&MAXFAILEDPAYMENTS=2&AUTOBILLOUTAMT=AddToNextBilling&PROFILESTARTDATE=2014-05-30T00%3A00%3A00Z&BILLINGPERIOD=Month&TOTALBILLINGCYCLES=0&BILLINGFREQUENCY=1&CREDITCARDTYPE=Amex&ACCT=111111111111111&EXPDATE=012017&CVV2=1234&STREET=355+Stratford+Rd%2C+Apt+2C&CITY=Brooklyn&STATE=NY&COUNTRYCODE=US&ZIP=11218&VERSION=71.0&USER=biz_api1.powinteractive.net&PWD=1397747934&SIGNATURE=AXPkKH951ZgFZMoKHNNtfbOlVmV4A5NLXiQPNGaBha0CGiTVKKPjAekx',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => true,
+    'local' => false,
+  ),
+  'url' => 'https://api-3t.sandbox.paypal.com/nvp',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'server' => 'Apache',
+      'content-length' => '313',
+      'content-type' => 'text/plain; charset=utf-8',
+      'dc' => 'origin2-api-3t.sandbox.paypal.com',
+      'date' => 'Tue, 29 Apr 2014 14:55:40 GMT',
+      'connection' => 'close',
+      'set-cookie' => 'DC=origin2-api-3t.sandbox.paypal.com; secure',
+    ),
+    'body' => 'TIMESTAMP=2014%2d04%2d29T14%3a55%3a40Z&CORRELATIONID=7af9cf0057aaa&ACK=Failure&VERSION=71%2e0&BUILD=10800277&L_ERRORCODE0=10527&L_SHORTMESSAGE0=Invalid%20Data&L_LONGMESSAGE0=This%20transaction%20cannot%20be%20processed%2e%20Please%20enter%20a%20valid%20credit%20card%20number%20and%20type%2e&L_SEVERITYCODE0=Error',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+      0 => 
+      WP_Http_Cookie::__set_state(array(
+         'name' => 'DC',
+         'value' => 'origin2-api-3t.sandbox.paypal.com',
+         'expires' => NULL,
+         'path' => '//',
+         'domain' => 'api-3t.sandbox.paypal.com',
+         'secure' => '',
+      )),
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Tue Apr 29th, 2014 @ precisely 2:56 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 49.42 MB :: Real Memory 49.75 MB :: Peak Memory 49.47 MB :: Real Peak Memory 49.75 MB
+powinteractive.pairserver.com/epic-org/register-2/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 780,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'METHOD=CreateRecurringPaymentsProfile&EMAIL=jimmy%40powinteractive.net&FIRSTNAME=Jimmy&LASTNAME=Gnass&SUBSCRIBERNAME=Jimmy+Gnass&DESC=Full+Access+Monthly+Subscription%2F+%240.01+per+month&PROFILEREFERENCE=1401418590%3A0+D%3A1+M%7Epowinteractive.pairserver.com%7E1&INITAMT=0.01&FAILEDINITAMTACTION=CancelOnFailure&CURRENCYCODE=USD&AMT=0.01&TAXAMT=0.00&MAXFAILEDPAYMENTS=2&AUTOBILLOUTAMT=AddToNextBilling&PROFILESTARTDATE=2014-05-30T00%3A00%3A00Z&BILLINGPERIOD=Month&TOTALBILLINGCYCLES=0&BILLINGFREQUENCY=1&CREDITCARDTYPE=Amex&ACCT=xxxxxxxxxxxx3000&EXPDATE=012018&CVV2=1463&STREET=355+Stratford+Rd%2C+Apt+2C&CITY=Brooklyn&STATE=NY&COUNTRYCODE=US&ZIP=11218&VERSION=71.0&USER=biz_api1.powinteractive.net&PWD=1397747934&SIGNATURE=AXPkKH951ZgFZMoKHNNtfbOlVmV4A5NLXiQPNGaBha0CGiTVKKPjAekx',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => true,
+    'local' => false,
+  ),
+  'url' => 'https://api-3t.sandbox.paypal.com/nvp',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'server' => 'Apache',
+      'content-length' => '252',
+      'content-type' => 'text/plain; charset=utf-8',
+      'dc' => 'origin2-api-3t.sandbox.paypal.com',
+      'date' => 'Tue, 29 Apr 2014 14:56:31 GMT',
+      'connection' => 'close',
+      'set-cookie' => 'DC=origin2-api-3t.sandbox.paypal.com; secure',
+    ),
+    'body' => 'TIMESTAMP=2014%2d04%2d29T14%3a56%3a31Z&CORRELATIONID=5fa477aee14b8&ACK=Failure&VERSION=71%2e0&BUILD=10800277&L_ERRORCODE0=11586&L_SHORTMESSAGE0=DPRP%20is%20disabled%2e&L_LONGMESSAGE0=DPRP%20is%20disabled%20for%20this%20merchant%2e&L_SEVERITYCODE0=Error',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+      0 => 
+      WP_Http_Cookie::__set_state(array(
+         'name' => 'DC',
+         'value' => 'origin2-api-3t.sandbox.paypal.com',
+         'expires' => NULL,
+         'path' => '//',
+         'domain' => 'api-3t.sandbox.paypal.com',
+         'secure' => '',
+      )),
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Tue Apr 29th, 2014 @ precisely 2:58 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 51.96 MB :: Real Memory 53.50 MB :: Peak Memory 52.89 MB :: Real Peak Memory 53.50 MB
+powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1
+User-Agent: WordPress/3.9; http://powinteractive.pairserver.com/epic-org
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'GET',
+    'timeout' => 5,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => NULL,
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => false,
+    'local' => false,
+  ),
+  'url' => 'http://tinyurl.com/api-create.php?url=http%3A%2F%2Fpowinteractive.pairserver.com%2Fepic-org%2F%3Fs2member_register%3DfnIyOmJIaVFnR3lXSUxpN3M3QVJnOENtZm1ZT1didUVveGJNOmE2YjY2MTUzMGRmOTc4MjA4ZDA5YjE3OGFkYTlmZmNjfA670FGXdTs86KFLg-APsah5bLGYNvxwajpb8d51mmSYY8LjJBZBkmtb81qPEuyDAwJVYZD6HguF4Lmb8b6HgE_VWvGT0154ko41KARM7gk24ERAK8i2AdT9N4RrOYyQrrQ67Rfx-tqYVIJqSo_v0BTB6E92gkOBgvwigFMvZBvactQRqeXL9GDGn84ZpmsZmfmrQrvfQwTnDRNefbDhkeY',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'x-powered-by' => 'PHP/5.4.27',
+      'content-type' => 'text/plain',
+      'connection' => 'close',
+      'transfer-encoding' => 'chunked',
+      'date' => 'Tue, 29 Apr 2014 14:58:03 GMT',
+      'server' => 'TinyURL/1.6',
+    ),
+    'body' => 'Error',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Tue Apr 29th, 2014 @ precisely 2:58 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 51.96 MB :: Real Memory 53.50 MB :: Peak Memory 52.89 MB :: Real Peak Memory 53.50 MB
+powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1
+User-Agent: WordPress/3.9; http://powinteractive.pairserver.com/epic-org
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 5,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'Content-Type' => 'application/json',
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Length' => 390,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => '{"longUrl":"http:\\/\\/powinteractive.pairserver.com\\/epic-org\\/?s2member_register=fnIyOmJIaVFnR3lXSUxpN3M3QVJnOENtZm1ZT1didUVveGJNOmE2YjY2MTUzMGRmOTc4MjA4ZDA5YjE3OGFkYTlmZmNjfA670FGXdTs86KFLg-APsah5bLGYNvxwajpb8d51mmSYY8LjJBZBkmtb81qPEuyDAwJVYZD6HguF4Lmb8b6HgE_VWvGT0154ko41KARM7gk24ERAK8i2AdT9N4RrOYyQrrQ67Rfx-tqYVIJqSo_v0BTB6E92gkOBgvwigFMvZBvactQRqeXL9GDGn84ZpmsZmfmrQrvfQwTnDRNefbDhkeY"}',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => true,
+    'local' => false,
+  ),
+  'url' => 'https://www.googleapis.com/urlshortener/v1/url',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'cache-control' => 'no-cache, no-store, max-age=0, must-revalidate',
+      'pragma' => 'no-cache',
+      'expires' => 'Fri, 01 Jan 1990 00:00:00 GMT',
+      'date' => 'Tue, 29 Apr 2014 14:58:05 GMT',
+      'etag' => '"p46sUqkiDU3x2iW-__L83v5t5Fc/3M0p_UBz9oyFS0K33hzj7TqMHUQ"',
+      'content-type' => 'application/json; charset=UTF-8',
+      'x-content-type-options' => 'nosniff',
+      'x-frame-options' => 'SAMEORIGIN',
+      'x-xss-protection' => '1; mode=block',
+      'server' => 'GSE',
+      'alternate-protocol' => '443:quic',
+      'connection' => 'close',
+      'transfer-encoding' => 'chunked',
+    ),
+    'body' => '{
+ "kind": "urlshortener#url",
+ "id": "http://goo.gl/vZEhbN",
+ "longUrl": "http://powinteractive.pairserver.com/epic-org/?s2member_register=fnIyOmJIaVFnR3lXSUxpN3M3QVJnOENtZm1ZT1didUVveGJNOmE2YjY2MTUzMGRmOTc4MjA4ZDA5YjE3OGFkYTlmZmNjfA670FGXdTs86KFLg-APsah5bLGYNvxwajpb8d51mmSYY8LjJBZBkmtb81qPEuyDAwJVYZD6HguF4Lmb8b6HgE_VWvGT0154ko41KARM7gk24ERAK8i2AdT9N4RrOYyQrrQ67Rfx-tqYVIJqSo_v0BTB6E92gkOBgvwigFMvZBvactQRqeXL9GDGn84ZpmsZmfmrQrvfQwTnDRNefbDhkeY"
+}
+',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Tue Apr 29th, 2014 @ precisely 2:58 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 51.76 MB :: Real Memory 52.00 MB :: Peak Memory 51.79 MB :: Real Peak Memory 52.00 MB
+powinteractive.pairserver.com/epic-org/register-2/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 931,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'txn_type=subscr_signup&subscr_id=FREE-535FBDFB9E160&custom=powinteractive.pairserver.com&txn_id=FREE-535FBDFB9E160&period1=0+D&period3=1+M&mc_amount1=0.00&mc_amount3=0.00&mc_gross=0.00&mc_currency=USD&tax=0.00&recurring=1&payer_email=jimmy%40powinteractive.net&first_name=Jimmy&last_name=Gnass&option_name1=Originating+Domain&option_selection1=powinteractive.pairserver.com&option_name2=Customer+IP+Address&option_selection2=108.41.219.67&item_name=COUPON+100%25+off.+%28Now%3A+%240.00+%2F+monthly%29+%7E+ORIGINALLY%3A+Full+Access+Monthly+Subscription%2F+%240.01+per+month&item_number=1&s2member_paypal_proxy=paypal&s2member_paypal_proxy_use=pro-emails&s2member_paypal_proxy_coupon%5Bcoupon_code%5D=epicdiscount%21&s2member_paypal_proxy_coupon%5Bfull_coupon_code%5D=epicdiscount%21&s2member_paypal_proxy_coupon%5Baffiliate_id%5D=&s2member_paypal_proxy_verification=bc05ec31eda14addb983b8ada3b6d7f5&s2member_paypal_proxy_return_url=',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => false,
+    'local' => true,
+  ),
+  'url' => 'http://powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'date' => 'Tue, 29 Apr 2014 14:58:04 GMT',
+      'server' => 'Apache/2.2.26',
+      'expires' => 'Wed, 11 Jan 1984 05:00:00 GMT',
+      'cache-control' => 'no-cache, must-revalidate, max-age=0',
+      'pragma' => 'no-cache',
+      'content-length' => '0',
+      'connection' => 'close',
+      'content-type' => 'text/plain; charset=UTF-8',
+    ),
+    'body' => '',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Tue Apr 29th, 2014 @ precisely 5:51 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 54.27 MB :: Real Memory 55.25 MB :: Peak Memory 54.80 MB :: Real Peak Memory 55.25 MB
+powinteractive.pairserver.com/epic-org/update-billing-info/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 194,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'PROFILEID=I-C6SU8PYNBRBP&METHOD=GetRecurringPaymentsProfileDetails&VERSION=71.0&USER=biz_api1.powinteractive.net&PWD=1397747934&SIGNATURE=AXPkKH951ZgFZMoKHNNtfbOlVmV4A5NLXiQPNGaBha0CGiTVKKPjAekx',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => true,
+    'local' => false,
+  ),
+  'url' => 'https://api-3t.sandbox.paypal.com/nvp',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'server' => 'Apache',
+      'content-length' => '1064',
+      'content-type' => 'text/plain; charset=utf-8',
+      'dc' => 'origin1-api-3t.sandbox.paypal.com',
+      'date' => 'Tue, 29 Apr 2014 17:51:44 GMT',
+      'connection' => 'close',
+      'set-cookie' => 'DC=origin1-api-3t.sandbox.paypal.com; secure',
+    ),
+    'body' => 'PROFILEID=I%2dC6SU8PYNBRBP&STATUS=Active&AUTOBILLOUTAMT=AddToNextBilling&DESC=Full%20Access%20Annual%20Subscription%2f%20%240%2e10%20per%20year&MAXFAILEDPAYMENTS=2&SUBSCRIBERNAME=Dominic%20Toretto&PROFILESTARTDATE=2015%2d04%2d29T07%3a00%3a00Z&PROFILEREFERENCE=1430297818%3a0%20D%3a1%20Y%7epowinteractive%2epairserver%2ecom%7e1&NEXTBILLINGDATE=2015%2d04%2d29T10%3a00%3a00Z&NUMCYCLESCOMPLETED=0&NUMCYCLESREMAINING=0&OUTSTANDINGBALANCE=0%2e00&FAILEDPAYMENTCOUNT=0&LASTPAYMENTDATE=2014%2d04%2d28T23%3a59%3a36Z&LASTPAYMENTAMT=0%2e10&TRIALAMTPAID=0%2e00&REGULARAMTPAID=0%2e00&AGGREGATEAMT=0%2e00&AGGREGATEOPTIONALAMT=0%2e10&FINALPAYMENTDUEDATE=1970%2d01%2d01T00%3a00%3a00Z&TIMESTAMP=2014%2d04%2d29T17%3a51%3a44Z&CORRELATIONID=a44a4a50a908a&ACK=Success&VERSION=71%2e0&BUILD=10800277&BILLINGPERIOD=Year&BILLINGFREQUENCY=1&TOTALBILLINGCYCLES=0&CURRENCYCODE=USD&AMT=0%2e10&SHIPPINGAMT=0%2e00&TAXAMT=0%2e00&REGULARBILLINGPERIOD=Year&REGULARBILLINGFREQUENCY=1&REGULARTOTALBILLINGCYCLES=0&REGULARCURRENCYCODE=USD&REGULARAMT=0%2e10&REGULARSHIPPINGAMT=0%2e00&REGULARTAXAMT=0%2e00',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+      0 => 
+      WP_Http_Cookie::__set_state(array(
+         'name' => 'DC',
+         'value' => 'origin1-api-3t.sandbox.paypal.com',
+         'expires' => NULL,
+         'path' => '//',
+         'domain' => 'api-3t.sandbox.paypal.com',
+         'secure' => '',
+      )),
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Tue Apr 29th, 2014 @ precisely 8:54 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 54.28 MB :: Real Memory 55.25 MB :: Peak Memory 54.80 MB :: Real Peak Memory 55.25 MB
+powinteractive.pairserver.com/epic-org/update-billing-info/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 194,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'PROFILEID=I-C6SU8PYNBRBP&METHOD=GetRecurringPaymentsProfileDetails&VERSION=71.0&USER=biz_api1.powinteractive.net&PWD=1397747934&SIGNATURE=AXPkKH951ZgFZMoKHNNtfbOlVmV4A5NLXiQPNGaBha0CGiTVKKPjAekx',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => true,
+    'local' => false,
+  ),
+  'url' => 'https://api-3t.sandbox.paypal.com/nvp',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'server' => 'Apache',
+      'content-length' => '1064',
+      'content-type' => 'text/plain; charset=utf-8',
+      'dc' => 'origin2-api-3t.sandbox.paypal.com',
+      'date' => 'Tue, 29 Apr 2014 20:54:09 GMT',
+      'connection' => 'close',
+      'set-cookie' => 'DC=origin2-api-3t.sandbox.paypal.com; secure',
+    ),
+    'body' => 'PROFILEID=I%2dC6SU8PYNBRBP&STATUS=Active&AUTOBILLOUTAMT=AddToNextBilling&DESC=Full%20Access%20Annual%20Subscription%2f%20%240%2e10%20per%20year&MAXFAILEDPAYMENTS=2&SUBSCRIBERNAME=Dominic%20Toretto&PROFILESTARTDATE=2015%2d04%2d29T07%3a00%3a00Z&PROFILEREFERENCE=1430297818%3a0%20D%3a1%20Y%7epowinteractive%2epairserver%2ecom%7e1&NEXTBILLINGDATE=2015%2d04%2d29T10%3a00%3a00Z&NUMCYCLESCOMPLETED=0&NUMCYCLESREMAINING=0&OUTSTANDINGBALANCE=0%2e00&FAILEDPAYMENTCOUNT=0&LASTPAYMENTDATE=2014%2d04%2d28T23%3a59%3a36Z&LASTPAYMENTAMT=0%2e10&TRIALAMTPAID=0%2e00&REGULARAMTPAID=0%2e00&AGGREGATEAMT=0%2e00&AGGREGATEOPTIONALAMT=0%2e10&FINALPAYMENTDUEDATE=1970%2d01%2d01T00%3a00%3a00Z&TIMESTAMP=2014%2d04%2d29T20%3a54%3a09Z&CORRELATIONID=2dc3110cc02d7&ACK=Success&VERSION=71%2e0&BUILD=10800277&BILLINGPERIOD=Year&BILLINGFREQUENCY=1&TOTALBILLINGCYCLES=0&CURRENCYCODE=USD&AMT=0%2e10&SHIPPINGAMT=0%2e00&TAXAMT=0%2e00&REGULARBILLINGPERIOD=Year&REGULARBILLINGFREQUENCY=1&REGULARTOTALBILLINGCYCLES=0&REGULARCURRENCYCODE=USD&REGULARAMT=0%2e10&REGULARSHIPPINGAMT=0%2e00&REGULARTAXAMT=0%2e00',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+      0 => 
+      WP_Http_Cookie::__set_state(array(
+         'name' => 'DC',
+         'value' => 'origin2-api-3t.sandbox.paypal.com',
+         'expires' => NULL,
+         'path' => '//',
+         'domain' => 'api-3t.sandbox.paypal.com',
+         'secure' => '',
+      )),
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Tue Apr 29th, 2014 @ precisely 8:54 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 54.27 MB :: Real Memory 55.25 MB :: Peak Memory 54.79 MB :: Real Peak Memory 55.25 MB
+powinteractive.pairserver.com/epic-org/cancel-subscription/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 194,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'PROFILEID=I-C6SU8PYNBRBP&METHOD=GetRecurringPaymentsProfileDetails&VERSION=71.0&USER=biz_api1.powinteractive.net&PWD=1397747934&SIGNATURE=AXPkKH951ZgFZMoKHNNtfbOlVmV4A5NLXiQPNGaBha0CGiTVKKPjAekx',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => true,
+    'local' => false,
+  ),
+  'url' => 'https://api-3t.sandbox.paypal.com/nvp',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'server' => 'Apache',
+      'content-length' => '1064',
+      'content-type' => 'text/plain; charset=utf-8',
+      'dc' => 'origin1-api-3t.sandbox.paypal.com',
+      'date' => 'Tue, 29 Apr 2014 20:54:11 GMT',
+      'connection' => 'close',
+      'set-cookie' => 'DC=origin1-api-3t.sandbox.paypal.com; secure',
+    ),
+    'body' => 'PROFILEID=I%2dC6SU8PYNBRBP&STATUS=Active&AUTOBILLOUTAMT=AddToNextBilling&DESC=Full%20Access%20Annual%20Subscription%2f%20%240%2e10%20per%20year&MAXFAILEDPAYMENTS=2&SUBSCRIBERNAME=Dominic%20Toretto&PROFILESTARTDATE=2015%2d04%2d29T07%3a00%3a00Z&PROFILEREFERENCE=1430297818%3a0%20D%3a1%20Y%7epowinteractive%2epairserver%2ecom%7e1&NEXTBILLINGDATE=2015%2d04%2d29T10%3a00%3a00Z&NUMCYCLESCOMPLETED=0&NUMCYCLESREMAINING=0&OUTSTANDINGBALANCE=0%2e00&FAILEDPAYMENTCOUNT=0&LASTPAYMENTDATE=2014%2d04%2d28T23%3a59%3a36Z&LASTPAYMENTAMT=0%2e10&TRIALAMTPAID=0%2e00&REGULARAMTPAID=0%2e00&AGGREGATEAMT=0%2e00&AGGREGATEOPTIONALAMT=0%2e10&FINALPAYMENTDUEDATE=1970%2d01%2d01T00%3a00%3a00Z&TIMESTAMP=2014%2d04%2d29T20%3a54%3a11Z&CORRELATIONID=52f04fdb55563&ACK=Success&VERSION=71%2e0&BUILD=10800277&BILLINGPERIOD=Year&BILLINGFREQUENCY=1&TOTALBILLINGCYCLES=0&CURRENCYCODE=USD&AMT=0%2e10&SHIPPINGAMT=0%2e00&TAXAMT=0%2e00&REGULARBILLINGPERIOD=Year&REGULARBILLINGFREQUENCY=1&REGULARTOTALBILLINGCYCLES=0&REGULARCURRENCYCODE=USD&REGULARAMT=0%2e10&REGULARSHIPPINGAMT=0%2e00&REGULARTAXAMT=0%2e00',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+      0 => 
+      WP_Http_Cookie::__set_state(array(
+         'name' => 'DC',
+         'value' => 'origin1-api-3t.sandbox.paypal.com',
+         'expires' => NULL,
+         'path' => '//',
+         'domain' => 'api-3t.sandbox.paypal.com',
+         'secure' => '',
+      )),
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Tue Apr 29th, 2014 @ precisely 8:55 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 54.27 MB :: Real Memory 55.25 MB :: Peak Memory 54.80 MB :: Real Peak Memory 55.25 MB
+powinteractive.pairserver.com/epic-org/cancel-subscription/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 194,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'PROFILEID=I-C6SU8PYNBRBP&METHOD=GetRecurringPaymentsProfileDetails&VERSION=71.0&USER=biz_api1.powinteractive.net&PWD=1397747934&SIGNATURE=AXPkKH951ZgFZMoKHNNtfbOlVmV4A5NLXiQPNGaBha0CGiTVKKPjAekx',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => true,
+    'local' => false,
+  ),
+  'url' => 'https://api-3t.sandbox.paypal.com/nvp',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'server' => 'Apache',
+      'content-length' => '1063',
+      'content-type' => 'text/plain; charset=utf-8',
+      'dc' => 'origin1-api-3t.sandbox.paypal.com',
+      'date' => 'Tue, 29 Apr 2014 20:55:35 GMT',
+      'connection' => 'close',
+      'set-cookie' => 'DC=origin1-api-3t.sandbox.paypal.com; secure',
+    ),
+    'body' => 'PROFILEID=I%2dC6SU8PYNBRBP&STATUS=Active&AUTOBILLOUTAMT=AddToNextBilling&DESC=Full%20Access%20Annual%20Subscription%2f%20%240%2e10%20per%20year&MAXFAILEDPAYMENTS=2&SUBSCRIBERNAME=Dominic%20Toretto&PROFILESTARTDATE=2015%2d04%2d29T07%3a00%3a00Z&PROFILEREFERENCE=1430297818%3a0%20D%3a1%20Y%7epowinteractive%2epairserver%2ecom%7e1&NEXTBILLINGDATE=2015%2d04%2d29T10%3a00%3a00Z&NUMCYCLESCOMPLETED=0&NUMCYCLESREMAINING=0&OUTSTANDINGBALANCE=0%2e00&FAILEDPAYMENTCOUNT=0&LASTPAYMENTDATE=2014%2d04%2d28T23%3a59%3a36Z&LASTPAYMENTAMT=0%2e10&TRIALAMTPAID=0%2e00&REGULARAMTPAID=0%2e00&AGGREGATEAMT=0%2e00&AGGREGATEOPTIONALAMT=0%2e10&FINALPAYMENTDUEDATE=1970%2d01%2d01T00%3a00%3a00Z&TIMESTAMP=2014%2d04%2d29T20%3a55%3a35Z&CORRELATIONID=7dc99d295b33&ACK=Success&VERSION=71%2e0&BUILD=10800277&BILLINGPERIOD=Year&BILLINGFREQUENCY=1&TOTALBILLINGCYCLES=0&CURRENCYCODE=USD&AMT=0%2e10&SHIPPINGAMT=0%2e00&TAXAMT=0%2e00&REGULARBILLINGPERIOD=Year&REGULARBILLINGFREQUENCY=1&REGULARTOTALBILLINGCYCLES=0&REGULARCURRENCYCODE=USD&REGULARAMT=0%2e10&REGULARSHIPPINGAMT=0%2e00&REGULARTAXAMT=0%2e00',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+      0 => 
+      WP_Http_Cookie::__set_state(array(
+         'name' => 'DC',
+         'value' => 'origin1-api-3t.sandbox.paypal.com',
+         'expires' => NULL,
+         'path' => '//',
+         'domain' => 'api-3t.sandbox.paypal.com',
+         'secure' => '',
+      )),
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Tue Apr 29th, 2014 @ precisely 8:55 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 54.27 MB :: Real Memory 55.25 MB :: Peak Memory 54.80 MB :: Real Peak Memory 55.25 MB
+powinteractive.pairserver.com/epic-org/update-billing-info/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 194,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'PROFILEID=I-C6SU8PYNBRBP&METHOD=GetRecurringPaymentsProfileDetails&VERSION=71.0&USER=biz_api1.powinteractive.net&PWD=1397747934&SIGNATURE=AXPkKH951ZgFZMoKHNNtfbOlVmV4A5NLXiQPNGaBha0CGiTVKKPjAekx',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => true,
+    'local' => false,
+  ),
+  'url' => 'https://api-3t.sandbox.paypal.com/nvp',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'server' => 'Apache',
+      'content-length' => '1064',
+      'content-type' => 'text/plain; charset=utf-8',
+      'dc' => 'origin1-api-3t.sandbox.paypal.com',
+      'date' => 'Tue, 29 Apr 2014 20:55:42 GMT',
+      'connection' => 'close',
+      'set-cookie' => 'DC=origin1-api-3t.sandbox.paypal.com; secure',
+    ),
+    'body' => 'PROFILEID=I%2dC6SU8PYNBRBP&STATUS=Active&AUTOBILLOUTAMT=AddToNextBilling&DESC=Full%20Access%20Annual%20Subscription%2f%20%240%2e10%20per%20year&MAXFAILEDPAYMENTS=2&SUBSCRIBERNAME=Dominic%20Toretto&PROFILESTARTDATE=2015%2d04%2d29T07%3a00%3a00Z&PROFILEREFERENCE=1430297818%3a0%20D%3a1%20Y%7epowinteractive%2epairserver%2ecom%7e1&NEXTBILLINGDATE=2015%2d04%2d29T10%3a00%3a00Z&NUMCYCLESCOMPLETED=0&NUMCYCLESREMAINING=0&OUTSTANDINGBALANCE=0%2e00&FAILEDPAYMENTCOUNT=0&LASTPAYMENTDATE=2014%2d04%2d28T23%3a59%3a36Z&LASTPAYMENTAMT=0%2e10&TRIALAMTPAID=0%2e00&REGULARAMTPAID=0%2e00&AGGREGATEAMT=0%2e00&AGGREGATEOPTIONALAMT=0%2e10&FINALPAYMENTDUEDATE=1970%2d01%2d01T00%3a00%3a00Z&TIMESTAMP=2014%2d04%2d29T20%3a55%3a42Z&CORRELATIONID=8f9600da598c9&ACK=Success&VERSION=71%2e0&BUILD=10800277&BILLINGPERIOD=Year&BILLINGFREQUENCY=1&TOTALBILLINGCYCLES=0&CURRENCYCODE=USD&AMT=0%2e10&SHIPPINGAMT=0%2e00&TAXAMT=0%2e00&REGULARBILLINGPERIOD=Year&REGULARBILLINGFREQUENCY=1&REGULARTOTALBILLINGCYCLES=0&REGULARCURRENCYCODE=USD&REGULARAMT=0%2e10&REGULARSHIPPINGAMT=0%2e00&REGULARTAXAMT=0%2e00',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+      0 => 
+      WP_Http_Cookie::__set_state(array(
+         'name' => 'DC',
+         'value' => 'origin1-api-3t.sandbox.paypal.com',
+         'expires' => NULL,
+         'path' => '//',
+         'domain' => 'api-3t.sandbox.paypal.com',
+         'secure' => '',
+      )),
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Wed May 7th, 2014 @ precisely 7:21 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 55.77 MB :: Real Memory 57.25 MB :: Peak Memory 56.70 MB :: Real Peak Memory 57.25 MB
+powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1
+User-Agent: WordPress/3.9; http://powinteractive.pairserver.com/epic-org
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'GET',
+    'timeout' => 5,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => NULL,
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => false,
+    'local' => false,
+  ),
+  'url' => 'http://tinyurl.com/api-create.php?url=http%3A%2F%2Fpowinteractive.pairserver.com%2Fepic-org%2F%3Fs2member_register%3DfnIyOkI4UVBPeTdoSDZvNVZ6RDFxVDI1MUhUaWxFb0k3NEZBOmRiYmI3NjIzNTliMGIwMTlmZTUyMWE2YWY1MTI0M2U0fObTYGZ4ng2mr3dg7xFIdgvcIfOwI4R9syHhj3Ey2jJ9nIEYXx6R5Edju7-dPu35HOnsfH53VFsQUS4MJRTtg2QEKemRBAMa2g6wlMckeu209UfLcILG68-VbANAw0waA3Z2TK9iXg8rocatRFbtAcKoWtL9PJ-zU0-8i_JyPLw_49NKCWqGRc23eWB4io1lAp3v9zgXlt8InKCmg6aAYUg',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'content-type' => 'text/plain',
+      'server' => 'TinyURL/1.6',
+      'date' => 'Wed, 07 May 2014 19:21:37 GMT',
+      'content-length' => '26',
+      'connection' => 'close',
+    ),
+    'body' => 'http://tinyurl.com/pp8jate',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Wed May 7th, 2014 @ precisely 7:21 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 55.61 MB :: Real Memory 55.75 MB :: Peak Memory 55.63 MB :: Real Peak Memory 55.75 MB
+powinteractive.pairserver.com/epic-org/register-2/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:29.0) Gecko/20100101 Firefox/29.0
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 923,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'txn_type=subscr_signup&subscr_id=FREE-536A87C034C03&custom=powinteractive.pairserver.com&txn_id=FREE-536A87C034C03&period1=0+D&period3=1+M&mc_amount1=0.00&mc_amount3=0.00&mc_gross=0.00&mc_currency=USD&tax=0.00&recurring=1&payer_email=bgordon%40test.net&first_name=Bill&last_name=Gordon&option_name1=Originating+Domain&option_selection1=powinteractive.pairserver.com&option_name2=Customer+IP+Address&option_selection2=108.41.219.67&item_name=COUPON+100%25+off.+%28Now%3A+%240.00+%2F+monthly%29+%7E+ORIGINALLY%3A+Full+Access+Monthly+Subscription%2F+%240.01+per+month&item_number=1&s2member_paypal_proxy=paypal&s2member_paypal_proxy_use=pro-emails&s2member_paypal_proxy_coupon%5Bcoupon_code%5D=epicdiscount%21&s2member_paypal_proxy_coupon%5Bfull_coupon_code%5D=epicdiscount%21&s2member_paypal_proxy_coupon%5Baffiliate_id%5D=&s2member_paypal_proxy_verification=bc05ec31eda14addb983b8ada3b6d7f5&s2member_paypal_proxy_return_url=',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => false,
+    'local' => true,
+  ),
+  'url' => 'http://powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'date' => 'Wed, 07 May 2014 19:21:36 GMT',
+      'server' => 'Apache/2.2.27',
+      'expires' => 'Wed, 11 Jan 1984 05:00:00 GMT',
+      'cache-control' => 'no-cache, must-revalidate, max-age=0',
+      'pragma' => 'no-cache',
+      'content-length' => '0',
+      'connection' => 'close',
+      'content-type' => 'text/plain; charset=UTF-8',
+    ),
+    'body' => '',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Thu May 15th, 2014 @ precisely 1:28 am UTC
+PHP v5.3.28 :: WordPress v3.9.1 :: s2Member v140409 :: s2Member Pro v140409
+Memory 55.79 MB :: Real Memory 57.25 MB :: Peak Memory 56.72 MB :: Real Peak Memory 57.25 MB
+powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1
+User-Agent: WordPress/3.9.1; http://powinteractive.pairserver.com/epic-org
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'GET',
+    'timeout' => 5,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9.1; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => NULL,
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => false,
+    'local' => false,
+  ),
+  'url' => 'http://tinyurl.com/api-create.php?url=http%3A%2F%2Fpowinteractive.pairserver.com%2Fepic-org%2F%3Fs2member_register%3DfnIyOm1HcGZrQVZ2QWZoN3VINThBTW85SmVTTVBETE1mMlNYOmNhYTQwMjM1NjA3MDlkMzRjNTg1NTk1NmVkOWU2ZDZjfFWOfplYjDZE7TqvxaqduuYTwPp4sFv_VG6VqLt7RBsj7_ysIctD1CCb2eV_5kOgN0LkA_l3XyxqUm6XR7HfwbEhOhSaY5ICBtxiYOIukkF2fUMRJfJIkvgCFr7YPNTLNSGSeRhjIfFKDlt_BH1IuCfsEIojxfSZB04jj724lgl_m0UO7WitQgsPvLSjv3nfTeFdhqBeipVpJYbwphiyJI0',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'x-powered-by' => 'PHP/5.4.27',
+      'content-type' => 'text/plain',
+      'server' => 'TinyURL/1.6',
+      'date' => 'Thu, 15 May 2014 01:28:49 GMT',
+      'content-length' => '26',
+      'connection' => 'close',
+    ),
+    'body' => 'http://tinyurl.com/mz4l3n7',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'filename' => NULL,
+  ),
+)
+
+LOG ENTRY: Thu May 15th, 2014 @ precisely 1:28 am UTC
+PHP v5.3.28 :: WordPress v3.9.1 :: s2Member v140409 :: s2Member Pro v140409
+Memory 55.63 MB :: Real Memory 55.75 MB :: Peak Memory 55.66 MB :: Real Peak Memory 55.75 MB
+powinteractive.pairserver.com/epic-org/register-2/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36
+array (
+  'state' => 'response',
+  'transport_class' => 'WP_HTTP_curl',
+  'args' => 
+  array (
+    'method' => 'POST',
+    'timeout' => 20,
+    'redirection' => 5,
+    'httpversion' => '1.1',
+    'user-agent' => 'WordPress/3.9.1; http://powinteractive.pairserver.com/epic-org',
+    'reject_unsafe_urls' => false,
+    'blocking' => true,
+    'headers' => 
+    array (
+      'connection' => 'close',
+      'Accept-Encoding' => 'deflate;q=1.0, compress;q=0.5',
+      'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+      'Content-Length' => 930,
+    ),
+    'cookies' => 
+    array (
+    ),
+    'body' => 'txn_type=subscr_signup&subscr_id=FREE-5374184FD6F77&custom=powinteractive.pairserver.com&txn_id=FREE-5374184FD6F77&period1=0+D&period3=1+M&mc_amount1=0.00&mc_amount3=0.00&mc_gross=0.00&mc_currency=USD&tax=0.00&recurring=1&payer_email=robinsanders%40test.com&first_name=Robin&last_name=Sanders&option_name1=Originating+Domain&option_selection1=powinteractive.pairserver.com&option_name2=Customer+IP+Address&option_selection2=69.122.38.140&item_name=COUPON+100%25+off.+%28Now%3A+%240.00+%2F+monthly%29+%7E+ORIGINALLY%3A+Full+Access+Monthly+Subscription%2F+%240.01+per+month&item_number=1&s2member_paypal_proxy=paypal&s2member_paypal_proxy_use=pro-emails&s2member_paypal_proxy_coupon%5Bcoupon_code%5D=epicdiscount%21&s2member_paypal_proxy_coupon%5Bfull_coupon_code%5D=epicdiscount%21&s2member_paypal_proxy_coupon%5Baffiliate_id%5D=&s2member_paypal_proxy_verification=bc05ec31eda14addb983b8ada3b6d7f5&s2member_paypal_proxy_return_url=',
+    'compress' => false,
+    'decompress' => true,
+    'sslverify' => false,
+    'sslcertificates' => '/usr/home/powinteractive/public_html/powinteractive.pairserver.com/epic-org/wp-includes/certificates/ca-bundle.crt',
+    'stream' => false,
+    'filename' => NULL,
+    'limit_response_size' => NULL,
+    's2member' => '140409',
+    '_redirection' => 5,
+    'ssl' => false,
+    'local' => true,
+  ),
+  'url' => 'http://powinteractive.pairserver.com/epic-org/?s2member_paypal_notify=1',
+  'response' => 
+  array (
+    'headers' => 
+    array (
+      'date' => 'Thu, 15 May 2014 01:28:49 GMT',
+      'server' => 'Apache/2.2.27',
+      'expires' => 'Wed, 11 Jan 1984 05:00:00 GMT',
+      'cache-control' => 'no-cache, must-revalidate, max-age=0',
+      'pragma' => 'no-cache',
+      'content-length' => '0',
+      'connection' => 'close',
+      'content-type' => 'text/plain; charset=UTF-8',
+    ),
+    'body' => '',
+    'response' => 
+    array (
+      'code' => 200,
+      'message' => 'OK',
+    ),
+    'cookies' => 
+    array (
+    ),
+    'filename' => NULL,
+  ),
+)
+

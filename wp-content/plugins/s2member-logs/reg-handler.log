@@ -1,0 +1,920 @@
+LOG ENTRY: Mon Apr 21st, 2014 @ precisely 5:16 pm UTC
+PHP v5.3.28 :: WordPress v3.8.3 :: s2Member v140409 :: s2Member Pro v140409
+Memory 40.80 MB :: Real Memory 41.25 MB :: Peak Memory 40.95 MB :: Real Peak Memory 41.25 MB
+powinteractive.pairserver.com/epic-org/register/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'user_id' => 3,
+  'password' => false,
+  'pagenow' => 'index.php',
+  'email_config' => true,
+  'processed' => 'yes',
+  'user' => 
+  WP_User::__set_state(array(
+     'data' => 
+    stdClass::__set_state(array(
+       'ID' => '3',
+       'user_login' => 'donnyjepp',
+       'user_pass' => 'xxxxxxxx/pass',
+       'user_nicename' => 'donnyjepp',
+       'user_email' => 'the21stdrummer@hotmail.com',
+       'user_url' => '',
+       'user_registered' => '2014-04-21 17:16:00',
+       'user_activation_key' => '',
+       'user_status' => '0',
+       'display_name' => 'donnyjepp',
+    )),
+     'ID' => 3,
+     'caps' => 
+    array (
+      'subscriber' => true,
+    ),
+     'cap_key' => 'wp_capabilities',
+     'roles' => 
+    array (
+      0 => 'subscriber',
+    ),
+     'allcaps' => 
+    array (
+      'subscriber' => true,
+    ),
+     'filter' => NULL,
+  )),
+  '_pmr' => 
+  array (
+    's2member_pro_paypal_registration' => 
+    array (
+      'first_name' => 'John',
+      'last_name' => 'Depp',
+      'email' => 'the21stdrummer@hotmail.com',
+      'username' => 'donny jepp',
+      'password1' => 'xxxxxxxx/pass',
+      'password2' => 'xxxxxxxx/pass',
+      'nonce' => 'ee92c20e7a',
+      'attr' => 'fnIyOlo5a2R6SzdraG45VURNTGJyS3VDTmVDTm41R0NETE51OmM5ODlkMWQ4ZDQxYjMwODRkNjg5MzRiMGQ3OTdiMDI4fOP0z1S9MHLJhTWNGBB-LF_-lW8gNbAyca7DoNLeNr3ggSOyA_gcdggijf9tAPgQQKECrxy0ax8MgEFOHWtcHyDJU-wJuXq7x89QQ4K9jDHEdWeJJ08L2QXwNHS57-7vr2x44_EXqDPTJE5XbVyvMzIt8O0bHhX2Lm6UkkNJO9Rz8K-v49S1XJuW1m3bH1wJ4ObkjAbnMdQZLhqBbFBRtNQebMVv0XDxInFt17E9kPiOUkTx13U3cV4jjn1n-fKj6MiZxhzOgv55ccObxuZ_imwAEWSP9Fc59G4-oc791fEm8zYlIDL3lK5zmsLBHD2K6nmrhjnQAyfFEyZ0IxjlYwVDZjwzU9HuGQYbX58rnC1HOGmTC8nmJFvzKYqeWPt7KIDToeYSIBjyWEwRRMNFbkOvwgGZhX7UMULWzmFHC0ZYikzTPY_QUbg3HdvQ-iY7cWTwJ_aSVB4F4fdXfDk3hXRe6u41P38q6xfGW0sVAfE9X_er3pUwXsG4i9fEMvvuTEyTvyNuJem4payy_yftgABxSzgQGDwZLRbnTz9eqYsTX7FEKCvldM7NE6dG2uKQIaq6OiuCuHp-mNaY-6vK9sYTFn1GhGdx7yyianPyc6R-2hTHgWz251Kf9ewblCoBm6TfMjzdxaWoy_HlqC3QkD7_lfL1HKKlxML-_PHwUgtxnTKU4ac2yn3emgbcorrVGV-kI-lWUdsfECdbk_DIZlSDLDAHe2D3tL0HYD03-XXIp8olA31krVW6JcWoXdKCgjH6IEBsU7iRK0o6oPGkhmVgwrnjjBDLG4nAqul0nHgRt-lCf8Rj1148WIG7XcxiAZuzOAv-tyzy_ZUyO2rv1yfJZpvgwm1_CZhokXhf29gYkNkBVNzVTIelfPoMxjMKyw9QQEGkTYIrAsHHz1aNTnNLf9YqND6ql7lsQgqbHIq1a5CsJx-5AF7lMysiKV0lzWJTcipcUvGqtQsbceiv75OiGFv17OUyaZkpualW89YcZSVexmxMtmOc-av1CzOGT05RfWAwav7YUqnYi-26JA43FFdJrj4nx_WQpWpCe6d2W4CP3OgphEC6wpAwSpqdpmdytyyAHiPYZN6gr9WLwa_rBO_1JINVrpkkLBTRtkBEWPt9pDpOvpC7nARcxuSPlQc6sAhHmRouQXF-vIR1B4S2-8OsNh3pksJ_GNDhyjMVJeh4Aupz4T43SzbnXbLlXKIbNLYiNFUF89zXiLtBi9w',
+    ),
+    'recaptcha_challenge_field' => '03AHJ_VuuMOq7IffIIlaWZISTqshM6Hp08z10EXqygugxuwaZUOM-VjWjVm_5LpPEzy78IoltUKeJ8H5BbzpLQh3qM9Yx4xVeRcPW8ZiH8mYO3JsGc5CNfzIai6Q35SD9A9ixEu8Iu27Q5tDlDbpURNnzY3YZauOPiF7XtT5duc7daHTnBuw8AXl50MxZiTAgsXiIy_k8BX8v7',
+    'recaptcha_response_field' => 'without epoweer',
+    's2p-option' => '',
+    'ws_plugin__s2member_custom_reg_field_user_pass1' => 'xxxxxxxx/pass',
+    'ws_plugin__s2member_custom_reg_field_first_name' => 'John',
+    'ws_plugin__s2member_custom_reg_field_last_name' => 'Depp',
+    'ws_plugin__s2member_custom_reg_field_opt_in' => '',
+    0 => '',
+    'ws_plugin__s2member_custom_reg_field_s2member_level' => '0',
+    'ws_plugin__s2member_custom_reg_field_s2member_ccaps' => '',
+    'ws_plugin__s2member_custom_reg_field_s2member_auto_eot_time' => '',
+    'ws_plugin__s2member_custom_reg_field_s2member_custom' => 'powinteractive.pairserver.com',
+  ),
+  'custom_reg_display_name' => 'full',
+  'reg_cookies' => false,
+  'current_role' => 'subscriber',
+  'role' => 'subscriber',
+  'level' => '0',
+  'ccaps' => '',
+  'email' => 'the21stdrummer@hotmail.com',
+  'login' => 'donnyjepp',
+  'ip' => '108.41.219.67',
+  'custom' => 'powinteractive.pairserver.com',
+  'subscr_id' => '',
+  'subscr_baid' => '',
+  'subscr_gateway' => '',
+  'cv' => 
+  array (
+    0 => 'powinteractive.pairserver.com',
+  ),
+  'eot' => '',
+  'auto_eot_time' => '',
+  'notes' => '',
+  'opt_in' => false,
+  'fname' => 'John',
+  'lname' => 'Depp',
+  'name' => 'John Depp',
+  'pass' => 'xxxxxxxx/pass',
+  'fields' => 
+  array (
+  ),
+)
+
+LOG ENTRY: Thu Apr 24th, 2014 @ precisely 6:10 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 42.75 MB :: Real Memory 43.25 MB :: Peak Memory 42.92 MB :: Real Peak Memory 43.25 MB
+powinteractive.pairserver.com/epic-org/register/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.74.9 (KHTML, like Gecko) Version/6.1.2 Safari/537.74.9
+array (
+  'user_id' => 4,
+  'password' => false,
+  'pagenow' => 'index.php',
+  'email_config' => true,
+  'processed' => 'yes',
+  'user' => 
+  WP_User::__set_state(array(
+     'data' => 
+    stdClass::__set_state(array(
+       'ID' => '4',
+       'user_login' => 'mosomoso',
+       'user_pass' => 'xxxxxxxx/pass',
+       'user_nicename' => 'mosomoso',
+       'user_email' => 'monica@powinteractive.net',
+       'user_url' => '',
+       'user_registered' => '2014-04-24 18:10:09',
+       'user_activation_key' => '',
+       'user_status' => '0',
+       'display_name' => 'mosomoso',
+    )),
+     'ID' => 4,
+     'caps' => 
+    array (
+      'subscriber' => true,
+    ),
+     'cap_key' => 'wp_capabilities',
+     'roles' => 
+    array (
+      0 => 'subscriber',
+    ),
+     'allcaps' => 
+    array (
+      'subscriber' => true,
+    ),
+     'filter' => NULL,
+  )),
+  '_pmr' => 
+  array (
+    's2member_pro_paypal_registration' => 
+    array (
+      'first_name' => 'Mo',
+      'last_name' => 'So',
+      'email' => 'monica@powinteractive.net',
+      'username' => 'mosomoso',
+      'password1' => 'xxxxxxxx/pass',
+      'password2' => 'xxxxxxxx/pass',
+      'nonce' => 'e5d5b4378a',
+      'attr' => 'fnIyOkl5ZWFxdURkOWVmZVBTT2tKSTRBVkUzUVFIemx2NHdTOjA2MWQ0NDgzNjU2MjBkZTQ0MDdmOWU2MDcyMjIxOWRlfFJ0WMD0T3xlEtSYZkIpjvLYpg2UCc4h14n9Bw_vPxmpXJOkWLH3ERnT6G4ChGhF_JvImNhmdtf8-lMR41hBHxInGbH9wCpsgf-JbgH5PMNfgdCeaCu0gpD8Gk_WwU5sVUDOSInhy_vZTlLZklblBjzhcfpGVsiBD73udE3DN3Eu9yXz5Ho6tulr1YIiVR-xv10G9LyjMRpSfXBMHo-WcP8bdL2AMcOPZ0V55no0IMi_s2JmnIpumdIPiyKcX4O115Fg4QoRbeSQapsFLnWklJ_1DuZmXBxmt4KYRUDqvVhYP6f51hXk6AWPLXpRzL7IB5R06m9LRIl6rgwvcK8YWVE2zOrTCXUqOLz1bdAcL5m4dmVm6ab_L171S-qbdVxU-ZpnOlBFWIkj2JEpTUs8HXEpsG2cRQmCnnrpeQlWhlfb0a0prD938OUv3RyoOSvHtnSMyLsS11XHstAONUMKGn4cFZv-ngyJ5tgiZska4i3O-qo_XcJY3uDFrq3D6lxvWI1WILyQLyzS2b9cT5b5Yh3rzcPemZwgU1piSZV34IzocvT5-0r-w7-adbtzjFd4-6dTQLuLPdxkcq0EZkDPNRp6KHkvgpev1pApAr0JLkyxBHbdRTdaxihCo7JBG-zwc7JgclYk7lPEfTRCQgIOH45yzsJi3l1-8LjtbsGczW3AgeIL3W7IXW6gRuO351DbFqeBeM25yGAVdAOhz-1cC2_s_jGozXs7AT1ZjQ9u150sySIXrTMjpka9Lc5qnDD5H4_UBGawwFLhCTiDLBl2P-gWQxkawUBF80CMQHwOhUROBmEFen6eYltjKmchXFnbNl-UyRD6x-KGBo167XF3uPlp-o1BgsIIIciDr7yvg7h1Q8xhzuIUv4OUZqD9PCtumeCAemtuKPtq59rjditqkOlPD1ZBFPWWjjB97O5svTmYoYn-w02zFh1aQnKfRZ7iFYYqalb7DyRFXDGcghSZ3jAgtnk2n1SCujoAL1IFbLD8ssLEcwcI0ST1fbvAQ6XatHPkjwA8inZBsV5GiVUBMxuVU22o9B_TfZd3pOBxgmvFj_nN348ZsgzTnUHLPD4PknKN9mQ_Xm_BoPNw_B5-DBzYKJISrJ-uPNJtr9kSbtp0MNfUSDPca0P9vOYvLK95xkBapsv5wW2_SgsOTQh6nM_sJYfouU8M_Cf-pZ_Y3RCN1qCKt8kBH4irLzsuB1n-ickL3FpqMTd3dr6HhEYXEYQ',
+    ),
+    'recaptcha_challenge_field' => '03AHJ_Vuv_xFD2B_i-tSFjtKv5XzP2Achh6MpPBA3E5P21mtpYKGqJ7QI4SquUP8NxOmD9z0E_Kmac6aCXzm6Js9p9cZadHEZTIz9PtRsQPtxmXZvcP-QUZHl2zVrtU5DEChuR3L79AfrQkB1nEydsvC5a3jp4mqRPjgIlVBGqIxz4cdN3QkWgFYP12TI1OrLLLRlzs2d1_cA7',
+    'recaptcha_response_field' => '33425653',
+    's2p-option' => '',
+    'ws_plugin__s2member_custom_reg_field_user_pass1' => 'xxxxxxxx/pass',
+    'ws_plugin__s2member_custom_reg_field_first_name' => 'Mo',
+    'ws_plugin__s2member_custom_reg_field_last_name' => 'So',
+    'ws_plugin__s2member_custom_reg_field_opt_in' => '',
+    0 => '',
+    'ws_plugin__s2member_custom_reg_field_s2member_level' => '0',
+    'ws_plugin__s2member_custom_reg_field_s2member_ccaps' => '',
+    'ws_plugin__s2member_custom_reg_field_s2member_auto_eot_time' => '',
+    'ws_plugin__s2member_custom_reg_field_s2member_custom' => 'powinteractive.pairserver.com',
+  ),
+  'custom_reg_display_name' => 'full',
+  'reg_cookies' => false,
+  'current_role' => 'subscriber',
+  'role' => 'subscriber',
+  'level' => '0',
+  'ccaps' => '',
+  'email' => 'monica@powinteractive.net',
+  'login' => 'mosomoso',
+  'ip' => '108.41.219.67',
+  'custom' => 'powinteractive.pairserver.com',
+  'subscr_id' => '',
+  'subscr_baid' => '',
+  'subscr_gateway' => '',
+  'cv' => 
+  array (
+    0 => 'powinteractive.pairserver.com',
+  ),
+  'eot' => '',
+  'auto_eot_time' => '',
+  'notes' => '',
+  'opt_in' => false,
+  'fname' => 'Mo',
+  'lname' => 'So',
+  'name' => 'Mo So',
+  'pass' => 'xxxxxxxx/pass',
+  'fields' => 
+  array (
+  ),
+)
+
+LOG ENTRY: Fri Apr 25th, 2014 @ precisely 4:25 am UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 42.96 MB :: Real Memory 43.25 MB :: Peak Memory 43.14 MB :: Real Peak Memory 43.25 MB
+powinteractive.pairserver.com/epic-org/register/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36
+array (
+  'user_id' => 5,
+  'password' => false,
+  'pagenow' => 'index.php',
+  'email_config' => true,
+  'processed' => 'yes',
+  'user' => 
+  WP_User::__set_state(array(
+     'data' => 
+    stdClass::__set_state(array(
+       'ID' => '5',
+       'user_login' => 'jimmy_g',
+       'user_pass' => 'xxxxxxxx/pass',
+       'user_nicename' => 'jimmy_g',
+       'user_email' => 'jimmy@powinteractive.net',
+       'user_url' => '',
+       'user_registered' => '2014-04-25 04:25:17',
+       'user_activation_key' => '',
+       'user_status' => '0',
+       'display_name' => 'jimmy_g',
+    )),
+     'ID' => 5,
+     'caps' => 
+    array (
+      'subscriber' => true,
+    ),
+     'cap_key' => 'wp_capabilities',
+     'roles' => 
+    array (
+      0 => 'subscriber',
+    ),
+     'allcaps' => 
+    array (
+      'subscriber' => true,
+    ),
+     'filter' => NULL,
+  )),
+  '_pmr' => 
+  array (
+    's2member_pro_paypal_registration' => 
+    array (
+      'first_name' => 'Jimmy',
+      'last_name' => 'Gnass',
+      'email' => 'jimmy@powinteractive.net',
+      'username' => 'jimmy_g',
+      'password1' => 'xxxxxxxx/pass',
+      'password2' => 'xxxxxxxx/pass',
+      'nonce' => 'acc4bdd4ba',
+      'attr' => 'fnIyOlpHeG1MMXlEU0owN0ZSdG5lNW55RnVCWVJSVXNqU1pqOjU4YTE2Mzk1ZGQ1YjE4Yzg0ZGM2NDMwMmE2ZjI0YmMwfGJvp1l1CMjEBsTMGYKdfc8sO3zGY-bUenawzr8v-acIXM4DP8x848KrDb8o081MmFkGy6t6BglV7Uk8XODl-uUoThvB3OYOsPAUT2ZWv258wuYokUF4q1VfoGYWn2mC7rNSZFU2FJwm4mcd8Dl68i_vepxX6_ZjLteE_atark7P1GMnmBQv1XlOEXGjlsCBd2ClK5hqOsBpvwXN6Hm35hrdzuwOlX2Bo8ySU3rmlpoQ8-H7nOVkS5A3gDZO0K2X5BdWkBVqUkwvv6DKqeAeHrk5NDZu3MpyL9xuvv8Ou1pw2-Gh6RXsKn4QdsYSRRTvxYO51-1pmidD_gvJnQaMntYV3SThOiKsXH3u3ko0DYcLkyLp3DRKWAsmtiw-_l8DlEIBI2rWTgcdFuI3_vX8FAiBdqsgImcwqSx7h8uzAMcLtdZN8brP73LAWBShUD6gnNXFi_ylok4ZRTQmkS7I6z1KhGt0QqIZhpy7kziIcde3wwTUxbP1HL--p_gW1l67sbBaBpZvDfL9OuxCf4lCO9BcZ5QCMyhRfpbPw1bg-l9wBrEM1hg36c9CW5_sJkoy638P7ANTl2gZ5AnZ8ZRLfVFtiWM02hYM3oAqoGgUliEIFRaCkrOBTLlMyjk2pkivpcuOqtSyLz9BF1VNa-vIhr-eo1G_n3Sdz3MzAfCeZUtYzZPNQWj_VwXh7oNMPf-T2AtGMpJ032QPcXj6nswN-GJcJ_5CZmoXD3xNAup7ItXi0jjIRz9-Wzkg3CVT7tKgJBMydC0gwWY3Ex2ugaDK0m8qC7PaNKmzSDSCJM1xonYOv9cMNDHw9KLkae1uR1qps0UqxiPdZ4CcENU2C9dP6u1BmPmR70KSheW2Q-FYOAlzF91Ez8fIqnBse6YV65uMl8y71nqIJdRHn3q4Jru31rVdm4WHvbSCS09vzMBJkQ6rO9ftjEoN-giwFfZSfbtlkmctFzPoBEVmOjVREEs5PfnhCbKKbg_Yrfa8q-2MIRaeA2Kl208kVPgVDEaX_GmUmhKWXOL5O5lCuwsF72K9PrOTIovkrPJ3u4GyySJ9PY0kBWDSUAwZF4x1jAZSBHEsQtrmGI-Ax9bhUt5TrtxUpWhvSV6y1G0qjBugfu_sXrBtFcy6JCcvWh4lJfwQrjnwXitU4dw2f8vVNL5DZBE3PXvtz8QM2NkHWDYsHpCFLTeze_AwiGm5OSuK6BMgQxYQHALVE_xujQIomdgdGoHY8Qw',
+    ),
+    'recaptcha_challenge_field' => '03AHJ_Vus11PAwsfkX9Y2U41LYl2eyiTlI6FSR8ALBWtwJGEJdRvHMLw9g6-BkjfPAZ_EleaYG37ENK53C-1cLX5_4wRSESRf7j3lyVrWDFq9PCP_ZoKteR72snpw05HncfLBVUQ0RcToUXudvGWpO2Q4e5YC4zwkyq9kgj0vuaYCaBtjo0WbKQmQ45uxUsnG1MnYX4tqBeZLW',
+    'recaptcha_response_field' => '64583963',
+    's2p-option' => '',
+    'ws_plugin__s2member_custom_reg_field_user_pass1' => 'xxxxxxxx/pass',
+    'ws_plugin__s2member_custom_reg_field_first_name' => 'Jimmy',
+    'ws_plugin__s2member_custom_reg_field_last_name' => 'Gnass',
+    'ws_plugin__s2member_custom_reg_field_opt_in' => '',
+    0 => '',
+    'ws_plugin__s2member_custom_reg_field_s2member_level' => '0',
+    'ws_plugin__s2member_custom_reg_field_s2member_ccaps' => '',
+    'ws_plugin__s2member_custom_reg_field_s2member_auto_eot_time' => '',
+    'ws_plugin__s2member_custom_reg_field_s2member_custom' => 'powinteractive.pairserver.com',
+  ),
+  'custom_reg_display_name' => 'full',
+  'reg_cookies' => false,
+  'current_role' => 'subscriber',
+  'role' => 'subscriber',
+  'level' => '0',
+  'ccaps' => '',
+  'email' => 'jimmy@powinteractive.net',
+  'login' => 'jimmy_g',
+  'ip' => '69.122.38.140',
+  'custom' => 'powinteractive.pairserver.com',
+  'subscr_id' => '',
+  'subscr_baid' => '',
+  'subscr_gateway' => '',
+  'cv' => 
+  array (
+    0 => 'powinteractive.pairserver.com',
+  ),
+  'eot' => '',
+  'auto_eot_time' => '',
+  'notes' => '',
+  'opt_in' => false,
+  'fname' => 'Jimmy',
+  'lname' => 'Gnass',
+  'name' => 'Jimmy Gnass',
+  'pass' => 'xxxxxxxx/pass',
+  'fields' => 
+  array (
+  ),
+)
+
+LOG ENTRY: Mon Apr 28th, 2014 @ precisely 8:48 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 50.63 MB :: Real Memory 51.00 MB :: Peak Memory 50.80 MB :: Real Peak Memory 51.00 MB
+powinteractive.pairserver.com/epic-org/register-2/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'user_id' => 6,
+  'password' => false,
+  'pagenow' => 'index.php',
+  'email_config' => true,
+  'processed' => 'yes',
+  'user' => 
+  WP_User::__set_state(array(
+     'data' => 
+    stdClass::__set_state(array(
+       'ID' => '6',
+       'user_login' => 'BigT',
+       'user_pass' => 'xxxxxxxx/pass',
+       'user_nicename' => 'bigt',
+       'user_email' => 'big.t@test.net',
+       'user_url' => '',
+       'user_registered' => '2014-04-28 20:48:06',
+       'user_activation_key' => '',
+       'user_status' => '0',
+       'display_name' => 'BigT',
+       'user_level' => 0,
+    )),
+     'ID' => 6,
+     'caps' => 
+    array (
+      's2member_level1' => true,
+    ),
+     'cap_key' => 'wp_capabilities',
+     'roles' => 
+    array (
+      0 => 's2member_level1',
+    ),
+     'allcaps' => 
+    array (
+      'access_s2member_level1' => true,
+      's2member_level1' => true,
+    ),
+     'filter' => NULL,
+  )),
+  '_pmr' => 
+  array (
+    's2p-option' => '1',
+    's2member_pro_paypal_checkout' => 
+    array (
+      'coupon' => 'EPICdiscount!',
+      'first_name' => 'Tommy',
+      'last_name' => 'Testosterone',
+      'email' => 'big.t@test.net',
+      'username' => 'Big T',
+      'password1' => 'xxxxxxxx/pass',
+      'password2' => 'xxxxxxxx/pass',
+      'card_type' => 'Free',
+      'card_number' => '',
+      'card_expiration_month' => '',
+      'card_expiration_year' => '',
+      'card_verification' => '',
+      'card_start_date_issue_number' => '',
+      'street' => '',
+      'city' => '',
+      'state' => '',
+      'country' => 'US',
+      'zip' => '',
+      'nonce' => '8a5c28e9b1',
+      'attr' => 'fnIyOnEyUUUxQXFEQ0FSSDVMNUNSVllqbElvVkgwRFZRejkxOmU4ZmIxMmU5MTFiNTczMjVjOThkZTk1YjMyZjUxZTc1fJ4Kas-Ek9JWmr_uvnSJWKY-o3_b0IFFKA2AXCFiNLmFNt1gR6bUIlkWinUzgaT2a2nUozp_DLC8ploCuzygMgzyGZHO0ztUe39v2SfUUwSJuCbYgH19lkgFAcy_7rLa_XIkLET3m2BQRNv8zdQ_9MuCIuzF0Q7RrGSE5lpHQhnt5y6BazZK5pA8pkc1qDYwP6dVl7T731YZKIgN7sl5G3tx7dQekInbZF2YU-_iovg5RVU1tyf-vAKonDB3xPl97Z7NRNNU00ISPdyGcqMEVKoE8cxAQ9N7CmJB2k_TpuIw31_PjfHEikXO4qYzJYS_aAkcPmMMA8YDBOI2cIZDSFYdLH9N9eTJgc51r4wefsHFcl9KEAr0B6AIy5LJ4AUkRl-SC9WS_yXcROLPDEP3791mB7HCAhi9F8GBa4EcKBY-l_CtnTF0ZqqmWN2NRqVvUstt31u2141-RKGlpsphNpqX3j87VCAnMhcvxlCddAsRyAqwdLQ-6TK_vSSz5Z2LkiX_BTLCqrUUPnarP8ES_XfxsiSI8LDwl5hMPP-GfPc9pd0OsRrkliqhvxB2kxdLraYOrdkE4WcYL_1J6o9kR4OCPgwKIlVYJbYEXhTxlKf34FWOGdW9dTVSwSt5yIm8Y18LfZ-VXwb2IUUTUaz88byG2KxbHcid8bTmQZz4LTlrpP3I2BmVcu0dPsF5SloXL8dIUpDnbnxH2vMwmyL8hdZmKYgRGeAGVQN7DSMfPrjjSht5gkHz6aZLir-dtiun-JbNYbsxUZNc3_mLg7tq6hcSB7L77Ck4hZWMy0WXRkuAGt2xuato_KFNzLmWRsVsAGYBu5P9F8tjBmQNgtNsDK1QwJwUMFzOXNgD3BVx78MWc8yi562g_OLKLyrYKDRemSV7hduC9zL5GNV2j1hCoIGk72zdj79nweRtUwq7q4VM1eFNpOkotMMXteItsnIHVViVXM4z9xAlBVKZfAUaTRlsHAaMuQTJ20fbBqnRLefO2x1r_Ucw8AfT3dy7FgGb8CU37kxVoPhN3rpUhDrWoZ4znZw6RlPJ1B7oECrhY84BakOUrQy6Ry4IZAEyk9BouNtrQ_wWLreEG1G66RnJCCLFvacOq2oNgG4xPzTQ1ABS_3Gk2I1G040jrQs7osvCTKcUkIWv32Lt6BzkLsUv6w5plIC0NTpJpfK7D3C1QpyA5S1rmafcqsQNUbeSDjQsaJi2gKCZsTAPRgTioOGNkle7o-X4WoPoTOTe-DOnBb8Wq5V5zaouWXd7s-uqIpjJvNLSlHZro7ATFfGxKHrTdvoDYtUpuQlYRM9URMGe_KSJ',
+    ),
+    'ws_plugin__s2member_custom_reg_field_user_pass1' => 'xxxxxxxx/pass',
+    'ws_plugin__s2member_custom_reg_field_first_name' => 'Tommy',
+    'ws_plugin__s2member_custom_reg_field_last_name' => 'Testosterone',
+    'ws_plugin__s2member_custom_reg_field_opt_in' => '',
+    0 => '',
+  ),
+  'custom_reg_display_name' => 'full',
+  'reg_cookies' => 
+  array (
+    'subscr_gateway' => 'paypal',
+    'subscr_id' => 'FREE-535EBE86D51BE',
+    'custom' => 'powinteractive.pairserver.com',
+    'item_number' => '1',
+  ),
+  'subscr_gateway' => 'paypal',
+  'subscr_id' => 'FREE-535EBE86D51BE',
+  'custom' => 'powinteractive.pairserver.com',
+  'item_number' => '1',
+  'current_role' => 'subscriber',
+  'eotper' => NULL,
+  'ccaps' => NULL,
+  'level' => '1',
+  'role' => 's2member_level1',
+  'email' => 'big.t@test.net',
+  'login' => 'BigT',
+  'ip' => '108.41.219.67',
+  'subscr_baid' => '',
+  'cv' => 
+  array (
+    0 => 'powinteractive.pairserver.com',
+  ),
+  'auto_eot_time' => '',
+  'notes' => '',
+  'opt_in' => false,
+  'fname' => 'Tommy',
+  'lname' => 'Testosterone',
+  'name' => 'Tommy Testosterone',
+  'pass' => 'xxxxxxxx/pass',
+  'fields' => 
+  array (
+  ),
+  'pr_times' => 
+  array (
+    'level' => 1398718087,
+    'level1' => 1398718087,
+  ),
+  'transient' => 's2m_4463eb8ac813d486986b9c9fbe1f205b',
+  'ipn_signup_vars' => false,
+  'subscr_payment' => false,
+  'subscr_eot' => false,
+  's2member_tracking' => 'fnIyOkd3OHZ5YkxCRmNuSEtYVEw5anBkY0ZzdXVWYTd2SUpGOmRhNmU3NDkwM2Q5OWU2MDA5NDBmZWI5OGRjMTNhNDE5fLvh6pH0C5kqTS1qKZvWFI3glLwwqF8gSaBqmn2CHPZW',
+)
+
+LOG ENTRY: Mon Apr 28th, 2014 @ precisely 8:57 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 50.56 MB :: Real Memory 50.75 MB :: Peak Memory 50.71 MB :: Real Peak Memory 50.75 MB
+powinteractive.pairserver.com/epic-org/register-2/?s2p-option=2&s2member_paypal_xco=s2member_pro_paypal_checkout_return&token=EC-1R54982594099920F
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:18.0) Gecko/20100101 Firefox/18.0
+array (
+  'user_id' => 7,
+  'password' => false,
+  'pagenow' => 'index.php',
+  'email_config' => true,
+  'processed' => 'yes',
+  'user' => 
+  WP_User::__set_state(array(
+     'data' => 
+    stdClass::__set_state(array(
+       'ID' => '7',
+       'user_login' => 'dtoretto',
+       'user_pass' => 'xxxxxxxx/pass',
+       'user_nicename' => 'dtoretto',
+       'user_email' => 'toretto@test.net',
+       'user_url' => '',
+       'user_registered' => '2014-04-28 20:56:59',
+       'user_activation_key' => '',
+       'user_status' => '0',
+       'display_name' => 'dtoretto',
+       'user_level' => 0,
+    )),
+     'ID' => 7,
+     'caps' => 
+    array (
+      's2member_level1' => true,
+    ),
+     'cap_key' => 'wp_capabilities',
+     'roles' => 
+    array (
+      0 => 's2member_level1',
+    ),
+     'allcaps' => 
+    array (
+      'access_s2member_level1' => true,
+      's2member_level1' => true,
+    ),
+     'filter' => NULL,
+  )),
+  '_pmr' => 
+  array (
+    's2p-option' => '2',
+    's2member_pro_paypal_checkout' => 
+    array (
+      'coupon' => '',
+      'first_name' => 'Dominic',
+      'last_name' => 'Toretto',
+      'email' => 'toretto@test.net',
+      'username' => 'dtoretto',
+      'password1' => 'xxxxxxxx/pass',
+      'password2' => 'xxxxxxxx/pass',
+      'card_type' => 'PayPal',
+      'card_number' => '',
+      'card_expiration_month' => '',
+      'card_expiration_year' => '',
+      'card_verification' => '',
+      'card_start_date_issue_number' => '',
+      'street' => '',
+      'city' => '',
+      'state' => '',
+      'country' => 'US',
+      'zip' => '',
+      'nonce' => '8a5c28e9b1',
+      'attr' => 'fnIyOll5OTRQcGVjT1JUQ3BtNjFJcDVtS2tORUxxdFBxaHJNOjYwMDg5ZDIwNDI5MTUxNTRkYjk3NGI4NmI5OWI5YTBhfJD5hI6CjIFyKhpgZAalgxc3YqbivnJcvNTk-m-pwcMeZ6cLJaFNkmNnAMRJD67fk58GWvcDCnE4qOqY9toJff4vCQ5qZLV2ec8xeWPoAz3_IdUiNmy_rJI0dRT58lcY5WYqpImDgjrPNZfDZt-5U6SbiqbukPRVSnPj5zKgVHzVynMVsKyuwnihU6QS09TDXr3E_5-Qrjx-adOZ-44WWWG9-hQAhM9yY_Lb8-4slY84mZ7NUECob6jQQQF7YXnuOwFJ3zSWHTbXordkdyA00P4i4onUN0yGLEAcSd1qWcIdjjfNAuZ14q0uAkjhvHz5gVd6dB-PgaLUn46JVUrlos22iZl9ONM2gr4kUxK60vh8s3QOyNE4mhd9Zdp7Ar_FtgiENSfB686M6xtth4ftwV46ncIq63WdeYPPzQOGyKGRa9kI08AFlnHy1O_a02XeXEQ73lClr1eqvbgSCJdrXksJaPJBKn_utvrEbgMv30K0a-5MUrW27rAdlg8U7ywihAQJ2K5x7HmdCUttj2h95L_cwHA86cQ9VZ9mQQo4JvezIvMVVnxwFUntb5WHkmFKjBqh-VkqQWIgPXaHEGOB2FXuMV6IYe_HJ8pYD909IIkSVIHdwOhOh-llCubGq5uzpIvjw-gHa3FDi3hLuVEV9kR-CvmOycn3OlfzACc4lAAtMo9x8CDa5c1A1AzH8dRY_t5mOwKmxoenJS0ZibVoCG1neI5SM4xlqSXFsI51JP0G6wKoEFieGydEfaCpsGJXuW4J0HEdIlkxG2Q2nA2FEGbEv_jvh-kmZIgZ_XPxT_QOmjaep0DYU1g5BIv9kkLCHwcGuArO6JpeCDblLfMMXu3iiUq5z01-qbSlPe27hy_sJ52_82kRTUgHG6OuIH1X315-aQo7r6EK93zRr4uSqrVSdf2kJ6cUWrC2nu2ZpSOi797qOPj1SdLXhDBGKa5WbTtGMeHffeV39GBYuIzutMQP1rlfi2GggLrPTqg8e-IHli2mgX6bim9ceJpIiOMAAVZJuaWuxD-e2foihVihWjX53Xrgph7afozv-Mszs-3KpfBS_ivYFDdpcUnixjSA2vm7CMlWpsBtGkNWczlNXVHWIueFBOu5iaOk-_X4-dbsiJLqZap8ziDRMfB4SFpxAaKdAWEzIue437SOHIhFL5bcyT4_9AEbqE7FVrq4bFeycIkQ-_yIbcShhLLVouFDj7BW8R63ml-6RNnGqcR7TSpD8fKA6xolHTv2cNOg0dZ8nZEnsfVNMnZohpn97E52KaEzDjpAlGPyWORA_31vjp_EQfvIk6LSG9s0KH6IHUUP',
+    ),
+    'ws_plugin__s2member_custom_reg_field_user_pass1' => 'xxxxxxxx/pass',
+    'ws_plugin__s2member_custom_reg_field_first_name' => 'Dominic',
+    'ws_plugin__s2member_custom_reg_field_last_name' => 'Toretto',
+    'ws_plugin__s2member_custom_reg_field_opt_in' => '',
+    0 => '',
+  ),
+  'custom_reg_display_name' => 'full',
+  'reg_cookies' => 
+  array (
+    'subscr_gateway' => 'paypal',
+    'subscr_id' => 'I-C6SU8PYNBRBP',
+    'custom' => 'powinteractive.pairserver.com',
+    'item_number' => '1',
+  ),
+  'subscr_gateway' => 'paypal',
+  'subscr_id' => 'I-C6SU8PYNBRBP',
+  'custom' => 'powinteractive.pairserver.com',
+  'item_number' => '1',
+  'current_role' => 'subscriber',
+  'eotper' => NULL,
+  'ccaps' => NULL,
+  'level' => '1',
+  'role' => 's2member_level1',
+  'email' => 'toretto@test.net',
+  'login' => 'dtoretto',
+  'ip' => '108.41.219.67',
+  'subscr_baid' => '',
+  'cv' => 
+  array (
+    0 => 'powinteractive.pairserver.com',
+  ),
+  'auto_eot_time' => '',
+  'notes' => '',
+  'opt_in' => false,
+  'fname' => 'Dominic',
+  'lname' => 'Toretto',
+  'name' => 'Dominic Toretto',
+  'pass' => 'xxxxxxxx/pass',
+  'fields' => 
+  array (
+  ),
+  'pr_times' => 
+  array (
+    'level' => 1398718620,
+    'level1' => 1398718620,
+  ),
+  'transient' => 's2m_e92073b290fee4e97687dbebc7a924ef',
+  'ipn_signup_vars' => false,
+  'subscr_payment' => false,
+  'subscr_eot' => false,
+  's2member_tracking' => 'fnIyOnNNNVFCTE9KRGl4ODJ0UzdBdEp5dVNXZjJDV2dLVlQ5OjgxZWNlZjY2ZjcyNmI0ZDRjYzM5NDUxM2RiYjM1MDA2fB0WgCy9KJwidlKmS75Bb9Dn9dW8Ruy0-BW1Y8Kck_-j',
+)
+
+LOG ENTRY: Tue Apr 29th, 2014 @ precisely 2:58 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 50.74 MB :: Real Memory 51.00 MB :: Peak Memory 50.91 MB :: Real Peak Memory 51.00 MB
+powinteractive.pairserver.com/epic-org/register-2/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36
+array (
+  'user_id' => 8,
+  'password' => false,
+  'pagenow' => 'index.php',
+  'email_config' => true,
+  'processed' => 'yes',
+  'user' => 
+  WP_User::__set_state(array(
+     'data' => 
+    stdClass::__set_state(array(
+       'ID' => '8',
+       'user_login' => 'jgnass41',
+       'user_pass' => 'xxxxxxxx/pass',
+       'user_nicename' => 'jgnass41',
+       'user_email' => 'jimmy@powinteractive.net',
+       'user_url' => '',
+       'user_registered' => '2014-04-29 14:58:03',
+       'user_activation_key' => '',
+       'user_status' => '0',
+       'display_name' => 'jgnass41',
+       'user_level' => 0,
+    )),
+     'ID' => 8,
+     'caps' => 
+    array (
+      's2member_level1' => true,
+    ),
+     'cap_key' => 'wp_capabilities',
+     'roles' => 
+    array (
+      0 => 's2member_level1',
+    ),
+     'allcaps' => 
+    array (
+      'access_s2member_level1' => true,
+      's2member_level1' => true,
+    ),
+     'filter' => NULL,
+  )),
+  '_pmr' => 
+  array (
+    's2p-option' => '1',
+    's2member_pro_paypal_checkout' => 
+    array (
+      'coupon' => 'epicdiscount!',
+      'first_name' => 'Jimmy',
+      'last_name' => 'Gnass',
+      'email' => 'jimmy@powinteractive.net',
+      'username' => 'jgnass41',
+      'password1' => 'xxxxxxxx/pass',
+      'password2' => 'xxxxxxxx/pass',
+      'card_type' => 'Free',
+      'card_number' => 'xxxxxxxxxxxx3000',
+      'card_expiration_month' => '01',
+      'card_expiration_year' => '2018',
+      'card_verification' => '1463',
+      'card_start_date_issue_number' => '',
+      'street' => '355 Stratford Rd, Apt 2C',
+      'city' => 'Brooklyn',
+      'state' => 'NY',
+      'country' => 'US',
+      'zip' => '11218',
+      'nonce' => '940585810e',
+      'attr' => 'fnIyOnNBeHY2TmZ1VlFZMjNDMm0xNnZhenpqZk9TaEZMZm1nOjllYWYyM2YzMDY5N2Y5ZTNhYTQ4ZGE4OWVhNWNlNjU0fFreVeEKMzfYOOAiZmAC6ODg6IkUAg3bzTfZXNiRqFhPO2_ljftuirI9W4C27vctNnArMBGN4P06kY6mYdX_XTEZ4k3qdZri7710AfCIaSSywgj2MOg9KAL7qfqvKe3ap6ZzKtJRf9Zd8_fJvHbx2tEbmD_nWLH-EeSjqgxGy0ERsXJVD74KR7WPmFn8pghb630lEFZEnuGmsto2wQQRm9sybXiEfevLyp4NaerP43CZQExx6obi9lSWNQoj0PZEb8l0I8jxgfyNcj1m6u8nu8QQzbVr7xGsH-vSd5EUYdi6KwDqUKuq_QKn4Dt-SFHaO8FLt0RR2AOhpDiTLV8uzUGVTKol2qMS-2W2rmEvF40fVQBPhUFoxvGQTlPw1CV_jIw2swyuH1WGS7vCs8DiQSDkqJRcZzXAInSYAafzT4VHkiXyWBYPVH4Mx4gMxn793qyHDh-8eonc6bcmBKb__Bx9OlBWly1SjMiraxu2c15gweNbn7yNtu1edyJ31jCoumhKlmlhQFHfHdOx3Dp7wtHRa-NxICoU1V4vS2xSJhcAjzj82UU9l-Ig02_TvcWPXia_tiDgw6PoDsTxVDiFAv4hSnb_nVrSqFqLnqVO9jCNttxrDq50wJ7ncWmBVeqZrkVpR-JKcHPQjypz73H7ysNiFJkhQwRU4nZjnYGQ8X_LxsCsF7sI-wmM5a4oYUOWUc2fR3Uq56UfbH1j-RkdJOHI7esV-cwdDaeC6YPVmLNGqPuO6ADeXG7WGrIAE9myJ-XwlknPMDLtvIQTqXVsnEQlOcGc8J2SL_Nj0PyyPsrB1NrVp84UgUALI68EDZsFYrvoYsUxgm6bxpVTSmVqmTqB2bcOP7mkOL0xWM7GA0qE2jI28wo_9JPm0RBD4vFXlWz2SqJlbXujzZe8r0kUcM1qU-EQEKuEcoZIsfOUJLy5xpeRFy0dzdfH2sk7K3ep0d98gQVPW0ZFQNJKAJcvYPGIzNafkmxH1Bf5u3B7Yv9fw4PisU1wZw-xNMMqpBPFXZcGEXyrnaGPkd38wVniUlhDj1tmk5_nEJkChGzoJ3_r4houTSecPYgnyZL_k07QA_214b2x9jvV4zvnclCYuPS9PPYhRCqptEF6hzz5HHfEm30BuuE9FHMNxHV84HYFlCv45ICjZFZ4uEz_nPzY85vCldyaR6Uq_CCTDTQX8CtZRLX0VKn0t9dYCPJHyIehiOAu8rJHeEtydtXfLjF3LRnGQUPo1zDC_Cm0M_kxK9ysYpEchSGa21yOPuuIQxs3CmK-7MPa5XK-4XjwaNk0XEWfAGXBqCBBBoe6S_sZbKht',
+    ),
+    'ws_plugin__s2member_custom_reg_field_user_pass1' => 'xxxxxxxx/pass',
+    'ws_plugin__s2member_custom_reg_field_first_name' => 'Jimmy',
+    'ws_plugin__s2member_custom_reg_field_last_name' => 'Gnass',
+    'ws_plugin__s2member_custom_reg_field_opt_in' => '',
+    0 => '',
+  ),
+  'custom_reg_display_name' => 'full',
+  'reg_cookies' => 
+  array (
+    'subscr_gateway' => 'paypal',
+    'subscr_id' => 'FREE-535FBDFB9E160',
+    'custom' => 'powinteractive.pairserver.com',
+    'item_number' => '1',
+  ),
+  'subscr_gateway' => 'paypal',
+  'subscr_id' => 'FREE-535FBDFB9E160',
+  'custom' => 'powinteractive.pairserver.com',
+  'item_number' => '1',
+  'current_role' => 'subscriber',
+  'eotper' => NULL,
+  'ccaps' => NULL,
+  'level' => '1',
+  'role' => 's2member_level1',
+  'email' => 'jimmy@powinteractive.net',
+  'login' => 'jgnass41',
+  'ip' => '108.41.219.67',
+  'subscr_baid' => '',
+  'cv' => 
+  array (
+    0 => 'powinteractive.pairserver.com',
+  ),
+  'auto_eot_time' => '',
+  'notes' => '',
+  'opt_in' => false,
+  'fname' => 'Jimmy',
+  'lname' => 'Gnass',
+  'name' => 'Jimmy Gnass',
+  'pass' => 'xxxxxxxx/pass',
+  'fields' => 
+  array (
+  ),
+  'pr_times' => 
+  array (
+    'level' => 1398783484,
+    'level1' => 1398783484,
+  ),
+  'transient' => 's2m_afa557382f749ab402d6cc5222531f19',
+  'ipn_signup_vars' => false,
+  'subscr_payment' => false,
+  'subscr_eot' => false,
+  's2member_tracking' => 'fnIyOkNZYVpHMFlxRmZuZWFHVWNpdWlPQk1aZEFXSzZka3pDOjNjYmQxZmY5Y2E0ZTM4ZTliMzZhNmEyODNhZDYxNGZhfOwuOar33xwvx8GuzlQq09NLUEmud8aSF-StFBIhzAr2',
+)
+
+LOG ENTRY: Wed May 7th, 2014 @ precisely 7:21 pm UTC
+PHP v5.3.28 :: WordPress v3.9 :: s2Member v140409 :: s2Member Pro v140409
+Memory 54.59 MB :: Real Memory 55.00 MB :: Peak Memory 54.76 MB :: Real Peak Memory 55.00 MB
+powinteractive.pairserver.com/epic-org/register-2/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:29.0) Gecko/20100101 Firefox/29.0
+array (
+  'user_id' => 9,
+  'password' => false,
+  'pagenow' => 'index.php',
+  'email_config' => true,
+  'processed' => 'yes',
+  'user' => 
+  WP_User::__set_state(array(
+     'data' => 
+    stdClass::__set_state(array(
+       'ID' => '9',
+       'user_login' => 'bgordon',
+       'user_pass' => 'xxxxxxxx/pass',
+       'user_nicename' => 'bgordon',
+       'user_email' => 'bgordon@test.net',
+       'user_url' => '',
+       'user_registered' => '2014-05-07 19:21:36',
+       'user_activation_key' => '',
+       'user_status' => '0',
+       'display_name' => 'bgordon',
+       'user_level' => 0,
+    )),
+     'ID' => 9,
+     'caps' => 
+    array (
+      's2member_level1' => true,
+    ),
+     'cap_key' => 'wp_capabilities',
+     'roles' => 
+    array (
+      0 => 's2member_level1',
+    ),
+     'allcaps' => 
+    array (
+      'access_s2member_level1' => true,
+      's2member_level1' => true,
+    ),
+     'filter' => NULL,
+  )),
+  '_pmr' => 
+  array (
+    's2p-option' => '1',
+    's2member_pro_paypal_checkout' => 
+    array (
+      'coupon' => 'epicdiscount!',
+      'first_name' => 'Bill',
+      'last_name' => 'Gordon',
+      'email' => 'bgordon@test.net',
+      'username' => 'bgordon',
+      'password1' => 'xxxxxxxx/pass',
+      'password2' => 'xxxxxxxx/pass',
+      'card_type' => 'Free',
+      'card_number' => '',
+      'card_expiration_month' => '',
+      'card_expiration_year' => '',
+      'card_verification' => '',
+      'card_start_date_issue_number' => '',
+      'street' => '',
+      'city' => '',
+      'state' => '',
+      'country' => 'US',
+      'zip' => '',
+      'nonce' => '4ed2b2f452',
+      'attr' => 'fnIyOnQ4eXJya0V4OUNQclJ6Vk90NmZQazBOWVFyeG53Q2hsOjYxOTcyMDViMjJlMzUwZWEzNDA0YTJlZmMwNGYwY2QxfDJSLqCQ03KwyFyIHEtGguQk6L1TQZT8Zgeft3aj1EoEbRISHNSV_6mTpPVINWixq5AExXu_IS-r95pilpBGTw5qzpF7EhXxoGLkvVTEi2kzZ3a11sS0aA5tQM5r3Hi0gqrtCsElO5ZK1332WJPsVAUIJokW6dn9N2GKxxNCZ4kxwjNzIOkYv2ujrT9kFh0ARTAjzH0PN2vfVmROervdIWSsPeZ1GugnJ2N0AtDbI5bVYwl2WvhnufXuwVT4JKldJJL9KajG8fSDpQ-2Xm2ZeDQd7ePO0LWcZadviVCZ_qJhPKY62_gbydum0y5LYBOyzVjXVtrba6GlE-x8UIla-8eH2Ey6awVWFkZgywWdzcIw6yBbZKYPaQ99iA8vFkltCg0FRlwjCqJ54XsPUEBa8001MONAAmGzXBO-nN5RV855vVY6MD6lZRiiDxcNxHd88UTiAgFrOF4oLk6A7Ady1d3fdZAPnJzJgSGVIou1dN33mQjg6Ly6c_cLjg-cqsQIVCQzUVyIycFHBav8D2tziydfuPGIkJtsEN6jxgQJiXHpy2HgEkQBQDkgMJ7Xk_JZNbjswNIEuaGFKQ5mCKVM-susAlj1e1pzg69Bw7QzBlqrSXcG0ou3fip7BXNzg6sBbGMtw-_s6jT6Ekq46tjO8Rx0mARe_Sl-n7GMr9Nqndgl0jqJ9sJBPfcU5aJghPI0sbzmz66SMl4wgIbDKLKu1xvqt-8ghq007vwrEhfF2WyHnJAFEaey9-PNPVA_kEsbm9vvExLB1HKUwK9uAp1TooRqvMeaA2CtZ_h00fJcQbiOzEJFqfZZ2oLE7PsfYn7G_X8vkeiIzi4Oq1ndyV8VdPhVLm59xet_Qc5QJsldxPxAlYOk_ivkl8Nqx5phY60zJGOxK6acoWV15ueKcMKJ4IKuYLTyD9Uno9eGD-Sl3jj4ViFuTHL7p0Rx3Z8ScG--KXuLLKzEN30OwiLVBEm6tyNtAa4lTHYoyHYBs8OfCweN5aBauKUzXNI7Bic89Oyupj-LRg-lJwH_mS-oQEM5fNGknzm0BWQaaSbioK0nxxfgW4pg86g0aU-6_HtwJ9qTZxJGCpInvJkTljtCHAlZPykl3qtj4igLmjOHe8KEqtt9RrwaGlIdM0bWsX7UAwR9Wnj7HgEqd2Nn773H7pr4mPDtpRvrpBvi3ngY63-zSNDNJrflJjfIdG3TUpYgfxqPwObS48x3DJkPf2SR8NTiYg6h0C3qAcEblaEYHl6is6RoSTwAFSnhxNQjUh2HH6SFWNBw81FLcrW5a3Vg-2X9fhZ7HnWE2FXylEJyB9GL-fpG',
+    ),
+    'ws_plugin__s2member_custom_reg_field_user_pass1' => 'xxxxxxxx/pass',
+    'ws_plugin__s2member_custom_reg_field_first_name' => 'Bill',
+    'ws_plugin__s2member_custom_reg_field_last_name' => 'Gordon',
+    'ws_plugin__s2member_custom_reg_field_opt_in' => '',
+    0 => '',
+  ),
+  'custom_reg_display_name' => 'full',
+  'reg_cookies' => 
+  array (
+    'subscr_gateway' => 'paypal',
+    'subscr_id' => 'FREE-536A87C034C03',
+    'custom' => 'powinteractive.pairserver.com',
+    'item_number' => '1',
+  ),
+  'subscr_gateway' => 'paypal',
+  'subscr_id' => 'FREE-536A87C034C03',
+  'custom' => 'powinteractive.pairserver.com',
+  'item_number' => '1',
+  'current_role' => 'subscriber',
+  'eotper' => NULL,
+  'ccaps' => NULL,
+  'level' => '1',
+  'role' => 's2member_level1',
+  'email' => 'bgordon@test.net',
+  'login' => 'bgordon',
+  'ip' => '108.41.219.67',
+  'subscr_baid' => '',
+  'cv' => 
+  array (
+    0 => 'powinteractive.pairserver.com',
+  ),
+  'auto_eot_time' => '',
+  'notes' => '',
+  'opt_in' => false,
+  'fname' => 'Bill',
+  'lname' => 'Gordon',
+  'name' => 'Bill Gordon',
+  'pass' => 'xxxxxxxx/pass',
+  'fields' => 
+  array (
+  ),
+  'pr_times' => 
+  array (
+    'level' => 1399490496,
+    'level1' => 1399490496,
+  ),
+  'transient' => 's2m_ec4c589d231295c8ae06504fa1313393',
+  'ipn_signup_vars' => false,
+  'subscr_payment' => false,
+  'subscr_eot' => false,
+  's2member_tracking' => 'fnIyOnNwcElRU0pDRkVJS1c0WlFnY0E0ZDNVRGFFYkpPT2dJOjY4MmNhMzcxYjkyNDdlYzUyY2ZhNGViYTMwYTY3ZWMwfP_vnYR3cXUlfD-sFWGBzQ-zIQd4m3xFrPMloR-LUNQ5',
+)
+
+LOG ENTRY: Thu May 15th, 2014 @ precisely 1:28 am UTC
+PHP v5.3.28 :: WordPress v3.9.1 :: s2Member v140409 :: s2Member Pro v140409
+Memory 54.61 MB :: Real Memory 55.00 MB :: Peak Memory 54.79 MB :: Real Peak Memory 55.00 MB
+powinteractive.pairserver.com/epic-org/register-2/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36
+array (
+  'user_id' => 10,
+  'password' => false,
+  'pagenow' => 'index.php',
+  'email_config' => true,
+  'processed' => 'yes',
+  'user' => 
+  WP_User::__set_state(array(
+     'data' => 
+    stdClass::__set_state(array(
+       'ID' => '10',
+       'user_login' => 'rsanders',
+       'user_pass' => 'xxxxxxxx/pass',
+       'user_nicename' => 'rsanders',
+       'user_email' => 'robinsanders@test.com',
+       'user_url' => '',
+       'user_registered' => '2014-05-15 01:28:47',
+       'user_activation_key' => '',
+       'user_status' => '0',
+       'display_name' => 'rsanders',
+       'user_level' => 0,
+    )),
+     'ID' => 10,
+     'caps' => 
+    array (
+      's2member_level1' => true,
+    ),
+     'cap_key' => 'wp_capabilities',
+     'roles' => 
+    array (
+      0 => 's2member_level1',
+    ),
+     'allcaps' => 
+    array (
+      'read' => true,
+      'level_0' => true,
+      'access_s2member_level0' => true,
+      'access_s2member_level1' => true,
+      'spectate' => true,
+      'participate' => true,
+      'read_private_forums' => true,
+      'publish_topics' => true,
+      'edit_topics' => true,
+      'publish_replies' => true,
+      'edit_replies' => true,
+      'assign_topic_tags' => true,
+      's2member_level1' => true,
+    ),
+     'filter' => NULL,
+  )),
+  '_pmr' => 
+  array (
+    's2p-option' => '1',
+    's2member_pro_paypal_checkout' => 
+    array (
+      'coupon' => 'Epicdiscount!',
+      'first_name' => 'Robin',
+      'last_name' => 'Sanders',
+      'email' => 'robinsanders@test.com',
+      'username' => 'rsanders',
+      'password1' => 'xxxxxxxx/pass',
+      'password2' => 'xxxxxxxx/pass',
+      'card_type' => 'Free',
+      'card_number' => '',
+      'card_expiration_month' => '',
+      'card_expiration_year' => '',
+      'card_verification' => '',
+      'card_start_date_issue_number' => '',
+      'street' => '',
+      'city' => '',
+      'state' => '',
+      'country' => 'US',
+      'zip' => '',
+      'nonce' => 'f8f21ce2a5',
+      'attr' => 'fnIyOmFSQkFxemZjVUVYMFAyZUVQcVZnVndRYkM2Ym03VDZxOmE3NjI5NjYyZTA2ZjYwYzRlNDc1MWIyNjJiN2Y4ODMwfOBRhdp0-T1DEX_DKtdCJrmG6xp9qMSnMeYlDMwsK_GRMu2PjGJLHZ506iDjiBtVHMQhfzZ4g2jLX7PdHsQ2P_v2OxRgKR0UlKaKLtU0DnzV7WbAtDpaZPhOJBNZMntaHfrP--OpV7lipzFppEG6pfS57kUH-kB8HmU9EkMq-9nSfLppmk9YbH7aAQ2Ue4JNai3wIhaYk3ki9Ch9zd6bPCoEe7yKToQo2uUJSq8dacJ5XK6GhEHRoORITxfxgMi8Ji3qcyolEGk8kAwnx4ZuUcNsZNCsZQrX9QSl7zxPNs13vKmS6sGtc2zbKW_ebhxi2QjF2gXopI74In_VJIJ6Q4txHQQVamPdJwfkQCOKD1--_IHuoHpUBxwd5jiXZGLUumpPr5WbiLZN5xgWtUqsB8Z4hCPbHQwJ03DAKZKio7Z__9xQPseQ92MBGrFuhmfICsapsKoaIQjXNs2La0sO5Z0lvUZw7OrFO4w6NElH_etMKla8uu2VRU9HiouiqStjKKbbKkxHVak_PK4ktBICbUia4pKk4Uf1Si2Jw2onfilo6FKhn8wrNLXXAXLuIPGnn_zsTiZdHvre96YNeP0GSKzqIzPHVcvh-qtWlLVYEmzlp_LXFYy6LzQVaVzbCtslDI9dktqKEARBSM0BBMLAw3lJDIZSTJ0j0xGgQXboPGrwHJl35aTeiqgQVMw2Hqqt0xRANy4QSaZe-6L2fhq4U0L4-bzOuQiNYPqIW-mm2h4_Ulc5rNf5Z4rOFPVZb_6gHT_53mzTAKvvjJtRxH4-JKLfcgfpoc1hPKtFp95SP1Fd1tIfV8jMQbCSNrRSm6SQtu0AXtqE2mHbVx6lpmfNaofvE1X6Nv8atmHCxpq_XQ3MXBhHUI-PZ_A70MF3mDzKOjKfbIyOHdCK1_EkAdd9tBrpFuOgSTtN19Ke1-24xGjhRXg6Hh2OQXk2wjaYFCXJZa7URmEhPOBzV7oTP9GdwQ9cNz0xWDOMs6QCeie4UkvAA4feaK0nMycY3pfqrG9U72RwtDQGHeoLO8wegxuyF--1pPSnJKm8hw8MTFfiYEJ3DxnweoRJFprwsn8taQp445NYYQ9bpKR5N5ikEzQNmfUz8nxWc3V4QaJKbq_wWbBlmbhl1QgcPZ4WbB-uUdhfjyGnPS_aBucVW_sjDQh_DPnW715zcrDa0NO2r5jcsWjJOAokDOThe8CNku1cWTV3z3woQ64sY9Gv6qXteNRYkSRY4BXghZJPMW_zWZet6_Zl4Sj9nQ2-HDPLqvfmUrLVNmguBo6d3MiLh75J9GzLFYSaKAVsbw-oHURnYaLPD8Fd',
+    ),
+    'ws_plugin__s2member_custom_reg_field_user_pass1' => 'xxxxxxxx/pass',
+    'ws_plugin__s2member_custom_reg_field_first_name' => 'Robin',
+    'ws_plugin__s2member_custom_reg_field_last_name' => 'Sanders',
+    'ws_plugin__s2member_custom_reg_field_opt_in' => '',
+    0 => '',
+  ),
+  'custom_reg_display_name' => 'full',
+  'reg_cookies' => 
+  array (
+    'subscr_gateway' => 'paypal',
+    'subscr_id' => 'FREE-5374184FD6F77',
+    'custom' => 'powinteractive.pairserver.com',
+    'item_number' => '1',
+  ),
+  'subscr_gateway' => 'paypal',
+  'subscr_id' => 'FREE-5374184FD6F77',
+  'custom' => 'powinteractive.pairserver.com',
+  'item_number' => '1',
+  'current_role' => 'subscriber',
+  'eotper' => NULL,
+  'ccaps' => NULL,
+  'level' => '1',
+  'role' => 's2member_level1',
+  'email' => 'robinsanders@test.com',
+  'login' => 'rsanders',
+  'ip' => '69.122.38.140',
+  'subscr_baid' => '',
+  'cv' => 
+  array (
+    0 => 'powinteractive.pairserver.com',
+  ),
+  'auto_eot_time' => '',
+  'notes' => '',
+  'opt_in' => false,
+  'fname' => 'Robin',
+  'lname' => 'Sanders',
+  'name' => 'Robin Sanders',
+  'pass' => 'xxxxxxxx/pass',
+  'fields' => 
+  array (
+  ),
+  'pr_times' => 
+  array (
+    'level' => 1400117328,
+    'level1' => 1400117328,
+  ),
+  'transient' => 's2m_081e79591d1ebf87fbdd0f9e36e77890',
+  'ipn_signup_vars' => false,
+  'subscr_payment' => false,
+  'subscr_eot' => false,
+  's2member_tracking' => 'fnIyOlJPMk9wbElMaXJmc1YyaGh3cno0YnlTRTVhSklHMzM4OjRlZTcwZjQ4YTRhMzM0MGRjOGYzNjBhMWQ1ZDMwNzVifB4jruTEV4zohPOlq_d8TwzZO3QWY6RHEG-VcZBJzH94',
+)
+

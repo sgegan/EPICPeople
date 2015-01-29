@@ -1,0 +1,63 @@
+/*
+Theme Name: DevDmBootstrap3-Child
+Theme URI: http://devdm.com/DevDmBootstrap3
+Author: Danny Machal
+Author URI: http://devdm.com/
+Description: A versatile and responsive Bootstrap WordPress starter theme FOR DEVELOPERS based on Twitter Bootstrap 3.0.3.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, rtl-language-support, theme-options, translation-ready
+Text Domain: devdmbootstrap3
+Template: devdmbootstrap3
+*/
+
+@import "../devdmbootstrap3/style.css";
+@import "css/bootstrap.css";
+@import url('css/lg.css');
+@import url('css/md.css')  (max-width: 1199px);
+@import url('css/sm.css')  (max-width: 991px);
+@import url('css/xs.css')  (max-width: 767px);
+@import url('http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic');
+@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic');
+
+/* YOU SHOULD BE MAKING A CHILD THEME. Don't let me be a bad guy and erase all your hard work with a theme update. I just want to bring you new amazing features. I don't want to destroy your world. I've include a child theme to use. Need help? http://devdm.com/DevDmBootstrap3/child-themes/ */
+
+/****************** Special Blank CSS classes for child themes to use without disturbing core bootstrap rules ****************/
+
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+}

@@ -1,0 +1,70 @@
+/*!
+Custom CSS Shea Styles for EPIC
+*/
+
+.sg-back {
+	background-color: #e6e6e6;	
+	height: 820px;
+
+}
+
+.sg-back-white {
+	background-color: #fff;
+	height: 820px;
+
+}
+
+
+.sg-back-head-1 {
+	background-color: #c7c7c6;
+	height: 40px;
+	padding: 10px 15px;
+	width: 115%
+
+}
+
+.sg-back-head-2 {
+	background-color: #b1b1b1;
+	height: 40px;
+	padding: 10px 15px;
+	width: 115%
+}
+
+.sg-back-head-3 {
+	background-color: #b3bec4;
+	padding: 15px;
+	margin-left: -15px;
+	width: 123%
+}
+
+.schedule-headers {
+	font-size: 18px;
+	font-weight: 400;
+	vertical-align: top;
+}
+
+.schedule-events {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+
+@import url('http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic');
+
+h4 {
+	color: #000000;
+	font-size:20px;
+	line-height: 28px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: 400;
+    vertical-align: middle;
+}
+
+h5 {
+	color: #000000;
+	font-size:13.5px;
+	line-height: 19px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: 400;
+    vertical-align: middle;
+}

@@ -1,0 +1,12 @@
+/* custom styles */
+
+
+input[type="text"], input[type="email"], input[type="url"], input[type="number"] {
+    width: 91%;
+}
+
+
+input[type="password"] {
+	width: 73%;
+	margin-top: 4px;
+}

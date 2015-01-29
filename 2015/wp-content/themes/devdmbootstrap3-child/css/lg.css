@@ -1,0 +1,772 @@
+/*!
+Custom CSS Styles for EPIC - LG
+*/
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0; /* bottom = footer height */
+    background-color: #2b4bac;
+}
+footer {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+}
+
+.push-down-headshots {
+	margin-top: 15px;
+}
+
+.push-up-headshot-info {
+	margin-top: -12px;
+}
+
+.learn-more-speakers {
+	text-align: right;
+}
+
+.horiz-line {
+	background-color: #bebebe;
+	width: 1108px;
+	height: 1px;
+	margin-left: 16px;
+}
+
+.horiz-line-home {
+	background-color: #bebebe;
+	width: 926px;
+	height: 1px;
+	margin-left: 16px;
+}
+
+.horiz-line-col {
+	background-color: #bebebe;
+	width: 100%;
+	height: 1px;
+	margin-left: 16px;
+}
+
+.masthead-container {
+	background-color: #FFF;
+	width: 100%;
+	height: 75px;
+}
+
+.jumbo-container {
+	background-color: #2b4bac;
+	width:100%;
+	height: 476px;
+}
+
+
+.footer-container {
+	background-color: #527380;
+	width: 100%;
+
+}
+
+.dmbs-container {
+	background-color: #FFF;
+
+}
+
+.content-container {
+	background-color: #FFF;
+	width: 100%;
+}  
+ 
+
+.dmbs-main {
+	width: 650px;
+	margin-left: -29px;
+	padding-bottom: 40px;
+}
+
+.dmbs-main-register {
+	width: 100%;
+	margin-left: -29px;
+	padding-bottom: 40px;
+}
+
+.right-col-placement {
+	margin-top:86px;
+}
+
+.row {
+	margin:0;
+}
+
+.dmbs-header {
+	width: 1240px;
+}
+
+.logo-placement {
+	padding: 20px 0 0 0;
+	margin-left: -12px;
+}
+
+.dmbs-header-img {
+
+}
+
+.committee-placement {
+	margin-left: -28px;
+}
+					/* schedule styles */
+
+/*
+
+#nav-daily-schedule ul { 
+	list-style-type: none;
+	margin: 0px;
+	padding: 0;
+	text-transform: uppercase;
+	background-color: #e9e9e9;
+
+
+
+}
+
+#nav-daily-schedule ul li {
+	display: inline;
+
+background-color: #e9e9e9;
+	min-width: 150px;
+
+	
+}
+
+
+#nav-daily-schedule ul li a {
+	text-decoration: none;
+	padding: 10px 6px;
+	margin: 25px 0px;
+	background-color: #e9e9e9;
+	border-style:solid;
+	border-width:1px;
+	border-color: #fff;
+
+}
+
+#nav-daily-schedule ul li a:hover {
+	background-color: #f1f1f1;
+	color: #902729;
+	width: 150px;
+
+}
+
+#nav-daily-schedule ul li a :active {
+	background-color: #bcbcbc;
+	color: #FFF;
+
+}
+
+#nav-daily-schedule ul li.current_page_item a:link,
+#nav-daily-schedule ul li.current_page_item a:active,
+#nav-daily-schedule ul li.current_page_item a:visited,
+#nav-daily-schedule ul li a:hover {
+	background-color:#bcbcbc;
+	color: #902729;
+}
+*/
+
+#nav-daily-schedule ul
+{
+	padding-left: 0;
+	margin-left: 0;
+	float: left;
+	width: 104%;
+}
+
+#nav-daily-schedule ul li { 
+	display: inline; 
+}
+
+#nav-daily-schedule ul li a
+{
+	background-color: #e9e9e9;
+	text-decoration: none;
+	float: left;
+	border-right: 1px solid #fff;
+	width: 25%;
+   	font-size:18px;
+   	font-weight: 400;
+	text-transform: uppercase;
+	border-style:solid;
+	border-width:1px;
+	border-color: #fff;
+	padding: 10px 0 10px 15px;
+}
+
+#nav-daily-schedule ul li a:hover {
+	background-color: #f1f1f1;
+	color: #902729;
+}
+
+#nav-daily-schedule ul li.current_page_item a:link,
+#nav-daily-schedule ul li.current_page_item a:active,
+#nav-daily-schedule ul li.current_page_item a:visited,
+#nav-daily-schedule ul li a:hover {
+	background-color:#bcbcbc;
+	color: #902729;
+
+}
+
+
+/*
+#nav-daily-schedule > .active > a, #nav-daily-schedule > .active > a:hover, #nav-daily-schedule > .active > a:focus {
+    background-color: #2b4bac;
+    color: #FFF;
+}*/
+.red-text {
+	color: #2b4bac;
+}
+
+.grey-text {
+	color: #9a9a9a;
+	margin-left: 16px;
+}
+
+.schedule-link-16 {
+	font-weight: 400;
+
+}
+
+.schedule-link-20 {
+	font-size: 20px;
+	font-weight: 400;
+	
+}
+
+.sg-topmargin {
+	margin-top: 0;
+}
+
+.placement-schedule {
+	margin-left: -13px;
+}
+
+.placement-schedule-nav {
+	margin: -2px 0px 13px -29px;
+}
+
+.accent-back-schedule {
+	margin-left: -15px;
+}
+
+.sg-back, .sg-back-2 {
+	background-color: #e6e6e6;	
+	height: 1500px;
+	overflow: hidden;
+}
+
+.sg-back-daily {
+  background-color: #e6e6e6;  
+}
+
+
+.sg-back-white, .sg-back-white-2 {
+	background-color: #fff;
+	height: 1500px;
+	overflow: hidden;
+}
+
+.sg-padding-daily {
+	padding: 0px 15px 15px 15px;
+	margin-left: 0px;
+}
+
+.sg-back-head-1 {
+	background-color: #c7c7c6;
+	height: 40px;
+	padding: 10px 15px;
+	width: 115%
+
+}
+
+.sg-back-head-2 {
+	background-color: #b1b1b1;
+	height: 40px;
+	padding: 10px 15px;
+	width: 115%
+}
+
+.sg-back-head-3 {
+	background-color: #b3bec4;
+	padding: 5px 15px;
+	margin-top: 15px;
+	margin-left: -15px;
+	margin-bottom: -15px;
+	width: 111%
+}
+
+.schedule-headers {
+	font-size: 18px;
+	font-weight: 400;
+	vertical-align: top;
+}
+
+.schedule-img {
+	width: 112%;
+}
+
+.schedule-img img {
+	width: 300px;
+	margin: 15px 0px 0px -15px;
+}
+
+					/* end schedule */
+
+.dmbs-header-text {
+	background-color: none;
+
+}
+
+.dmbs-top-menu {
+	height: 39px;
+	margin-left: -100px;
+}
+
+.dmbs-content {
+	background-color: #FFF;
+	width: 1230px;
+	margin: auto;
+}
+
+.content-above {
+	position:relative;
+	background-color: white;
+	z-index: 600;
+	width: 984px;
+	margin: -100px 0 0 88px;
+	/*border-style:solid;
+	border-width:1px;
+	border-color: red;*/
+}
+
+.pad-top {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+hr {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.clear{ 
+	clear:both
+}
+
+.dmbs-right {
+margin-top: 63px;
+}
+
+.dmbs-footer-menu {
+
+}
+
+.dmbs-author-credits {
+
+}
+
+.white-background {
+	background-color:#FFF;
+	width:1240px;
+	height:476px;
+}
+
+
+.white-background-two {
+	background-color:#FFF;
+	width: 100%;
+	height: 100%;
+}
+
+.white-background-three {
+	position: relative;
+	background-color:#FFF;
+	width: 100%;
+	height: 345px;
+}
+
+.dmbs-footer {
+	color: #FFF;
+    width: 100%;
+    padding: 35px 0;
+    height: 100%;
+
+/*margin-top: 400px;*/
+
+}
+
+.navbar-inverse {
+    background-color: #FFF;
+    border:none;
+}
+
+.navbar {
+	border-radius: 0px;
+	min-height: 39px;
+}
+
+.container > .navbar-header, .container > .navbar-collapse {
+    margin-left: 0px;
+}
+
+.navbar-nav > li > a {
+    padding: 10px 22px 9px 22px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #2b4bac;
+    color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #000;
+}
+
+.jumbo {
+    background-image: url("http://epicpeople.org/2015/wp-content/themes/devdmbootstrap3-child/img/graffitiBridge.png");
+    background-repeat: no-repeat;
+  	height: 476px;
+  	width: 100%;
+	background-position:center; 
+}
+
+.form-button {
+background-color: #2b4bac;
+border: none;
+color: #FFF;
+font-family: 'Lato', sans-serif;
+   	font-size:14px;
+   	text-transform: uppercase;
+   	font-weight: 700;
+   	padding: 3px 10px 0 10px;
+}
+
+.btn-primary {
+    background-color: #33ace0;
+    border-color: #33ace0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size:18px;
+	line-height: 25px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+}
+
+.background-blue {
+	margin: 20px 0 25px -5px;
+	padding: 2px 20px 20px 20px;
+	background-color: #d5e5ef;
+	color: #000;
+	width: 290px;
+}
+
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #2b4bac;
+  border-color: #2b4bac;
+}
+
+.btn, .comment-reply-link, .comment-respond #submit, #wp-calendar #prev a, #wp-calendar #next a, #searchform #searchsubmit {
+border-radius: 0px;
+padding: 6px 11px 4px 11px;
+}
+
+.cfp-left {
+	padding: 30px 50px 20px 15px;
+}
+
+.page-header {
+    border-bottom: none;
+    margin: 30px 0 10px 0;
+    padding-bottom: 9px;
+}
+
+.social-icons-placement {
+	margin: -40px 0 0 15px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #33ace0;
+    color: #FFF;
+}
+
+.navbar-default {
+    background-color: #FFF;
+    width: 100%;
+    border-color: #bebebe;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #2b4bac;
+}
+
+/* Type Styles */
+
+/*!
+Type Styles
+*/
+
+@import url('http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic');
+
+body {
+    color: #333333;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+ 	font-weight: 400;
+}
+
+a {
+    color: #2b4bac;
+    text-decoration: none;
+   	font-family: 'Lato', sans-serif;
+   	font-size:16px;
+   	line-height: 22px;
+   	font-weight: 700;
+}
+
+p {
+    margin: 15px 0 15px 0;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+ 	font-weight: 400;
+}
+
+h1 {
+	color: #2b4bac;
+	font-size:23px;
+	line-height: 28px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+    vertical-align: middle;
+    letter-spacing: 1px;
+}
+
+
+h2 {
+	color: #222222;
+	font-size:23px;
+	line-height: 28px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	text-transform: normal;
+    vertical-align: middle;
+}
+
+h3 {
+	font-size:18px;
+	line-height: 25px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+    vertical-align: middle;
+}
+
+h4 {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+ 	font-weight: 400;
+}
+
+h5 {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 13.5px;
+    line-height: 20px;
+ 	font-weight: 400;
+ 	margin-top: 15px;
+}
+
+
+.navbar-nav > li > a {
+	font-family: 'Lato', sans-serif;
+   	font-size:14px;
+   	text-transform: uppercase;
+   	font-weight: 700;
+}
+
+.navigation-custom {
+
+	background-color: #FFF;
+	color: 000;
+}
+
+.nav-text a:hover
+{ 
+	color: 000;text-decoration: none;
+}
+
+.navigation-custom a:hover {
+
+	background-color: #000;
+	color: 000;
+}
+
+.jumbo-copy {
+	font-family: 'Lato', sans-serif;
+   	font-size:31px;
+   	font-weight: 700;
+	color: #FFF;
+	line-height: 41px;
+	width: 750px;
+	margin: 83px 0 0 86px;
+	text-shadow: 1px 1px 1px #858484;
+}
+
+.white-text {
+	color: #FFF;
+}
+
+.white-text-link {
+	color: #FFF;
+	text-transform: underline;
+}
+
+.white-text a {
+	color: #FFF;
+	text-transform: underline;
+}
+
+
+.masthead-copy {
+	font-size:15px;
+	line-height: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: right;
+	padding: 17px -33px 0 0;
+	margin-top: 18px;
+	margin-right: 34px;
+	color: #2b4bac;
+}
+
+.masthead-copy-bold {
+	font-size:15px;
+	line-height: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.footer-copy {
+	font-family: 'Quattrocento Sans', serif;
+    font-size: 15px;
+    line-height: 20px;
+        margin-left: -29px;
+
+}
+
+.footer-copy a {
+	font-family: 'Quattrocento Sans', serif;
+    font-size: 15px;
+    line-height: 20px;
+    padding-top: 30px;
+    color: #FFF;
+    text-decoration: underline;
+}
+
+  .venue_container {
+    background-image: url("http://epiconference.com/2014/wp-content/themes/devdmbootstrap3-child/img/venue_container.png");
+    background-repeat: repeat;
+  	height: 100%;
+  	width: 637px;
+  	padding: 6px 25px 35px 25px;
+  	margin-top: 20px 0 0 0;
+  }
+
+    .about_container {
+    background-image: url("http://epiconference.com/2014/wp-content/themes/devdmbootstrap3-child/img/venue_container.png");
+    background-repeat: repeat;
+  	height: 100%;
+  	width:48%;
+  	padding: 6px 25px 35px 25px;
+  	margin: 0 0 0 15px;
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.twitter-width {
+	width: 100%;
+}
+
+.dropdown-menu > li > a {
+    clear: both;
+    color: #333333;
+    display: block;
+    font-weight: normal;
+    line-height: 1.42857;
+    padding: 3px 20px;
+    white-space: nowrap;
+    font-family: 'Lato', sans-serif;
+   	font-size:14px;
+   	text-transform: uppercase;
+   	font-weight: 700;
+}
+
+/* Committee Styles */
+
+
+.headshot-info {
+	padding: 15px 0 30px 0;
+}
+
+.box-header {
+	margin-bottom: 5px;
+}
+
+.organizers-bottom-page-pad {
+margin-bottom: 40px;
+
+/* CFP Styles */
+
+}
+
+.mwm-aal-sidebar-container li {
+    margin-bottom: 10px;
+    list-style-type: none;
+    font-size:18px;
+	line-height: 25px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.external-link {
+	background-color: #e3e9eb;
+	padding: 12px 21px;
+	margin-bottom: 10px;
+}
+
+.bottom-padding {
+
+	margin-bottom:30px;
+}
+

@@ -1,0 +1,2 @@
+[30-Nov-2014 19:03:28 UTC] PHP Fatal error:  Call to undefined function plugins_url() in /usr/www/users/epic1/epicpeople.org/wp-content/plugins/column-shortcodes/column-shortcodes.php on line 31
+[16-Dec-2014 04:29:52 UTC] PHP Fatal error:  Call to undefined function plugins_url() in /usr/www/users/epic1/epicpeople.org/wp-content/plugins/column-shortcodes/column-shortcodes.php on line 31

@@ -1,0 +1,106 @@
+.sortable-placeholder {
+	width: 95%;
+	border: 2px dotted #ccc;
+	height: 60px;
+	background: #fff;
+	padding: 10px;
+	margin: 0;
+	}
+
+.spinner-header {
+	width: 160px;
+	}
+
+	.spinner-header .spinner {
+		margin: 0;
+		}
+
+.slide {
+	border: 1px solid #e2e2e2;
+	background: #f6f6f6;
+	clear: both;
+	margin-bottom: 2px;
+	width: 95%;
+	padding: 10px;
+	display: table;
+	}
+
+	.slide .image,
+	.slide .text,
+	.slide .icon,
+	.slide .options {
+		display: table-cell;
+		vertical-align: middle;
+		}
+
+	.slide .icon {
+		cursor: pointer;
+		width: 30px;
+		}
+
+	.slide .image {
+		width: 150px;
+		}
+
+		.slide .image img {
+			width: 150px;
+			}
+
+		.slide .image span {
+			width: 150px;
+			height: 75px;
+			display: block;
+			background: #ccc;
+			}
+
+	.slide .text p {
+		clear: both;
+		margin: 0;
+		}
+
+	.slide strong {
+		width: 50px;
+		display: inline-block;
+		float: left;
+		text-align: right;
+		}
+
+		.slide .item {
+			padding-left: 60px;
+			display: block;
+			}
+
+	.slide .options {
+		width: 40px;
+		text-align: center;
+		padding-left: 20px;
+		}
+
+		.slide .options a {
+			text-decoration: none;
+			}
+
+.editing strong {
+	vertical-align: top;
+	padding: 3px 10px 0 0;
+	clear: both;
+	line-height: 1;
+	}
+
+	.editing textarea {
+		width: 80%;
+		}
+
+	.editing .buttons {
+		margin: 10px 0 0 62px;
+		}
+
+		.editing .button-primary {
+			margin-left: 10px;
+			}
+
+	.editing #change_image {
+		text-decoration: none;
+		display: block;
+		margin-left: 60px;
+		}

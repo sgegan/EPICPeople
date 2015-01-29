@@ -1,0 +1,300 @@
+/*!
+Custom CSS Styles for EPIC - XS
+*/
+
+/* Home Styles */
+
+html, body {
+    overflow-x: hidden;
+}
+
+.logo-placement {
+  padding: 20px 0 0 0;
+  margin-left: 15px;
+}
+
+.dmbs-header {
+  width: 100%;
+}
+
+.masthead-copy {
+	display: none;
+}
+
+.jumbo-container {
+	background-color: none;
+	height: 100%;
+	width: 100%;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #434343;
+    margin-right: 30px;
+}
+
+.jumbo {
+    background-image: url("http://epicpeople.org/2015/wp-content/themes/devdmbootstrap3-child/img/graffitiBridge.png");
+    background-repeat: no-repeat;
+	height: 100%;
+  	width: 100%;
+	background-position:center; 
+}
+
+.jumbo-copy {
+  font-family: 'Lato', sans-serif;
+    font-size:61px;
+    font-weight: 500;
+  color: #FFF;
+  line-height: 63px;
+  width: 80%;
+  margin: 73px 0 80px 15px;
+  text-transform: uppercase;
+
+}
+
+.jumbo-sub-copy {
+  font-family: 'Lato', sans-serif;
+    font-size:21px;
+    font-weight: 400;
+  color: #FFF;
+  line-height: 36px;
+  width: 80%;
+  margin: -80px 0 50px 15px;
+  text-transform: uppercase;
+}
+
+.content-above {
+	position:relative;
+	width: 100%;
+    margin: 0 0 0 15px;
+
+	/*border-style:solid;
+	border-width:1px;
+	border-color: red;*/
+}
+
+.cfp-left {
+  padding: 0;
+  margin-left:0px;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.dmbs-top-menu {
+	height: 40px;
+	margin-left: 0px;
+}
+
+.headshot-size {
+  height:96%;
+  width:96%;
+  margin: 0 15px 0 0;
+}
+
+.venue_container {
+    background-image: url("http://epiconference.com/2014/wp-content/themes/devdmbootstrap3-child/img/venue_container.png");
+    background-repeat: repeat;
+  	height: 100%;
+  	width: 111%;
+  	padding: 6px 30px 35px 17px;
+  	margin: 0 0 0 -15px;
+  }
+
+
+
+.dmbs-footer {
+	color: #FFF;
+    width: 100%;
+    padding: 35px 0 0 0;
+    height: 100%;
+
+/*margin-top: 400px;*/
+
+}
+
+
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    min-height: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+
+}
+
+  /* CFP */
+
+
+.dmbs-main {
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0 13px 40px 13px;
+}
+
+ .dmbs-content {
+  background-color: #FFF;
+  width: 100%;
+  margin: auto;
+  padding-right: 30px;
+}
+
+
+
+.navbar-default .navbar-nav > li > a {
+    color: #000000;
+    /*border-style:solid;
+  border-width:1px;
+  border-color: #bebebe;*/
+  background-color: #FFF;
+  padding-left: 15px;
+
+}
+
+ .footer-copy {
+  font-family: 'Crimson Text', serif;
+    font-size: 15px;
+    line-height: 20px;
+        margin: 0 15px 0 15px;
+
+}
+
+.committee-placement {
+  margin-left: 15px;
+}
+/* schedule styles */
+
+#nav-daily-schedule ul {
+  width: 100%;
+}
+
+#nav-daily-schedule ul li {
+  display: list-item;
+  line-height: 30px;
+}
+
+.placement-schedule {
+  margin: 15px;
+}
+
+.placement-schedule-nav {
+  margin: -2px 15px 13px 15px;
+}
+
+.accent-back-schedule {
+  margin-left: 0px;
+}
+
+.sg-back, .sg-back-2 {
+  background-color: #e6e6e6;  
+  width: 100%;
+  overflow: hidden;
+}
+
+.sg-back-daily {
+  background-color: #e6e6e6;  
+  width: 100%;
+  overflow: hidden;
+}
+
+.sg-back-white, .sg-back-white-2 {
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sg-back-white {
+  height: 1255px;
+} 
+
+.sg-back-white-2 {
+  height: 615px;
+}
+
+.sg-padding-daily {
+  padding: 0px 15px 15px 15px;
+
+}
+
+.sg-back-head-1 {
+  background-color: #c7c7c6;
+  height: 40px;
+  padding: 10px 15px;
+  width: 100%;
+
+}
+
+.sg-back-head-2 {
+  background-color: #b1b1b1;
+  height: 40px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.sg-back-head-3 {
+  background-color: #b3bec4;
+  padding: 15px 25px 15px 15px;
+  margin-left: -15px;
+  width: 120%;
+  
+
+}
+
+.schedule-img img {
+  margin: 15px 335px 0px -15px;
+  
+
+}
+/* schedule end */
+
+.horiz-line-home {
+  display: none;
+}
+
+
+    .about_container {
+    background-image: url("http://epiconference.com/2014/wp-content/themes/devdmbootstrap3-child/img/venue_container.png");
+    background-repeat: repeat;
+    height: 100%;
+    width:100%;
+    padding: 6px 25px 35px 25px;
+    margin: 0 0 0 0;
+  }
+
+
+ .right-col-placement {
+  margin: -30px 0 0 0; 
+  padding: 15px;
+}
+
+.background-blue {
+  margin: 30px 0 30px -5px;
+  background-color: #d5e5ef;
+  color: #000;
+  width: 100%;
+  padding: 2px 20px 20px 20px;
+
+}
+
+#nav-daily-schedule ul li { 
+  display: inline; 
+}
+
+
+#nav-daily-schedule ul li a
+{
+  background-color: #e9e9e9;
+  text-decoration: none;
+  float: left;
+  border-right: 1px solid #fff;
+  width: 100%;
+  text-transform: uppercase;
+  border-style:solid;
+  border-width:1px;
+  border-color: #fff;
+  list-style-type: none;
+}
+
+.learn-more-speakers {
+  margin-top: 0px;
+  text-align: left;
+}

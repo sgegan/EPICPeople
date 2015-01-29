@@ -1,0 +1,1 @@
+[19-Dec-2014 13:29:42 UTC] PHP Fatal error:  Call to undefined function add_action() in /usr/www/users/epic1/epicpeople.org/wp-includes/admin-bar.php on line 48

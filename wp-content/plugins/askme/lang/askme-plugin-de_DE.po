@@ -1,0 +1,179 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ask Me\n"
+"POT-Creation-Date: 2014-04-10 14:54+0100\n"
+"PO-Revision-Date: 2014-04-10 14:54+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Basepath: C:\\Dropbox\\PHP\\AskMeWork\\trunk\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: askme.php:22 askme.php:23 askme.php:306
+msgid "Ask Me"
+msgstr "Ask Me"
+
+#: askme.php:24 askme.php:27
+msgid "New Ask Me"
+msgstr "Neues Ask Me"
+
+#: askme.php:25
+msgid "Add new Ask Me"
+msgstr "Neues Ask Me hinzufügen"
+
+#: askme.php:26
+msgid "Edit Ask Me"
+msgstr "Bearbeite Ask Me"
+
+#: askme.php:28
+msgid "View Ask Me"
+msgstr "Zeige Ask Me"
+
+#: askme.php:29
+msgid "Search Ask Me s"
+msgstr "Durchsuche Ask Mes"
+
+#: askme.php:30
+msgid "No Ask Me found"
+msgstr "Kein Ask Me gefunden"
+
+#: askme.php:31
+msgid "No Ask Me found in Trash"
+msgstr "Kein Ask Me im Papierkorb gefunden"
+
+#: askme.php:36
+msgid "Ask me"
+msgstr "Ask Me"
+
+#: askme.php:61
+msgid "your question here"
+msgstr "Deine Frage hier:"
+
+#: askme.php:110 askme.php:148
+msgid "<b>Success!</b> Ask Me is now ready for approval."
+msgstr "<b>Erfolgreich!</b> Ask Me wird jetzt überprüft."
+
+#: askme.php:123 askme.php:161
+msgid "New Ask Me Received"
+msgstr "Neues Ask Me erhalten."
+
+#: askme.php:133
+msgid "<b>Error!</b> The Captcha was wrong."
+msgstr "<b>Fehler!</b> Das Captcha war falsch."
+
+#: askme.php:169
+msgid "<b>Error!</b> You have to fill out the Captcha."
+msgstr "<b>Fehler!</b> Du musst das Captcha ausfüllen."
+
+#: askme.php:174
+msgid "<b>Error!</b> You have to fill out the Question."
+msgstr "<b>Fehler!</b> Du musst eine Frage eingeben."
+
+#: askme.php:181
+msgid "Question to ask"
+msgstr "Die Frage"
+
+#: askme.php:227
+msgid "Name"
+msgstr "Name"
+
+#: askme.php:231 askme.php:309
+msgid "Email"
+msgstr "E-Mail"
+
+#: askme.php:233
+msgid ""
+"If you provide an Email you will receive a message, once your Question is "
+"Answered."
+msgstr ""
+"Wenn du deine E-Mail an gibst, erhälst du eine Nachricht sobald geantwortet "
+"wurde."
+
+#: askme.php:236
+msgid "Advanced Options"
+msgstr "Mehr Optionen"
+
+#: askme.php:305
+msgid "Date"
+msgstr "Datum"
+
+#: askme.php:307
+msgid "Answer"
+msgstr "Antwort"
+
+#: askme.php:308
+msgid "Username"
+msgstr "Benutzername"
+
+#: askme.php:377
+msgid "Page"
+msgstr "Seite"
+
+#: askme.php:377
+msgid "of"
+msgstr "von"
+
+#: askme.php:436
+msgid "published"
+msgstr "veröffentlicht"
+
+#: askme.php:447
+msgid "open"
+msgstr "offen"
+
+#: askme.php:461
+msgid "Ask Me Settings"
+msgstr "Ask Me Einstellungen"
+
+#: askme.php:468
+msgid "E-Mail Alert on new Ask"
+msgstr "E-Mail Benachrichtigung bei neuem Ask Me"
+
+#: askme.php:478
+msgid "Show Captcha"
+msgstr "Zeige Captcha"
+
+#: askme.php:488
+msgid "Captcha Public Key"
+msgstr "Captcha Public Key"
+
+#: askme.php:498
+msgid "Captcha Private Key"
+msgstr "Captcha Private Key"
+
+#: askme.php:508
+msgid "User Fields"
+msgstr "Weitere Benutzerfelder"
+
+#: askme.php:520
+msgid "Configure your Asks"
+msgstr "Stelle deine Asks ein"
+
+#: askme.php:532
+msgid ""
+"Would you like to display User Fields, like E-Mail and Username? This would "
+"give your users the possibility to receive a Notification if an Answer is "
+"answered."
+msgstr "Möchtest du Benutzerfelder wie E-Mail und Benutzername anzeigen="
+
+#: askme.php:537 askme.php:542
+msgid ""
+"Get a key from <a href=\"https://www.google.com/recaptcha/admin/create\" "
+"target=\"_blank\">https://www.google.com/recaptcha/admin/create</a>"
+msgstr ""
+"Die Keys bekommst du unter <a href=\"https://www.google.com/recaptcha/admin/"
+"create\" target=\"_blank\">https://www.google.com/recaptcha/admin/create</a>"
+
+#: askme.php:576
+msgid " - Ask Me - Answer Received"
+msgstr "- Ask Me - Antwort erhalten"
+
+#: askme.php:576
+msgid "Your Ask Me has been Answered!"
+msgstr "Dein Ask Me wurde beantwortet."
