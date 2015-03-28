@@ -1,5 +1,13 @@
 /* custom styles */
 
+.c9 {
+    padding-right: 10px;
+}
+
+.content-spacing-right {
+    width: 100%
+}
+
 #header-widgets.fl {
 	position: relative;
 	float: none;
@@ -27,7 +35,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
 }
 
 .widget-text-large {
-	font-size: 25px;
+	font-size: 25px !important;
 }
 
 h1, h1 a, .entry-title, .entry-title a {
@@ -42,6 +50,13 @@ h2 {
 	font-size: 12px !important;
 }
 
+/* s2member registration page */
+
+form.s2member-pro-paypal-form {
+	width: 100%;
+}
+
+/* end s2member registration page */
 /* Papers Landing Page */
 
 .papers-featured li {

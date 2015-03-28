@@ -1,5 +1,0 @@
-[15-Jan-2015 19:28:59 UTC] PHP Fatal error:  Call to undefined function the_field() in /usr/www/users/epic1/epicpeople.org/2015/wp-content/themes/devdmbootstrap3-child/template-home3.php on line 18
-[15-Jan-2015 19:29:10 UTC] PHP Fatal error:  Call to undefined function the_field() in /usr/www/users/epic1/epicpeople.org/2015/wp-content/themes/devdmbootstrap3-child/template-home3.php on line 18
-[15-Jan-2015 19:30:16 UTC] PHP Fatal error:  Call to undefined function the_field() in /usr/www/users/epic1/epicpeople.org/2015/wp-content/themes/devdmbootstrap3-child/template-home3.php on line 18
-[15-Jan-2015 19:31:17 UTC] PHP Fatal error:  Call to undefined function the_field() in /usr/www/users/epic1/epicpeople.org/2015/wp-content/themes/devdmbootstrap3-child/template-home2.php on line 18
-[15-Jan-2015 19:37:04 UTC] PHP Fatal error:  Call to undefined function the_field() in /usr/www/users/epic1/epicpeople.org/2015/wp-content/themes/devdmbootstrap3-child/template-home3.php on line 18

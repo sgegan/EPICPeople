@@ -19,18 +19,18 @@
  *   See: {@link http://www.s2member.com/prices/}
  *
  * Unless you have our prior written consent, you must NOT directly or indirectly license,
- * sub-license, sell, resell, or provide for free; part (2) of the s2Member Pro Module;
+ * sub-license, sell, resell, or provide for free; part (2) of the s2Member Pro Add-on;
  * or make an offer to do any of these things. All of these things are strictly
- * prohibited with part (2) of the s2Member Pro Module.
+ * prohibited with part (2) of the s2Member Pro Add-on.
  *
  * Your purchase of s2Member Pro includes free lifetime upgrades via s2Member.com
- * (i.e. new features, bug fixes, updates, improvements); along with full access
+ * (i.e., new features, bug fixes, updates, improvements); along with full access
  * to our video tutorial library: {@link http://www.s2member.com/videos/}
  *
  * @package s2Member\Imports
  * @since 1.5
  */
-if(realpath(__FILE__) === realpath($_SERVER['SCRIPT_FILENAME']))
+if(!defined('WPINC')) // MUST have WordPress.
 	exit('Do not access this file directly.');
 
 if(!class_exists('c_ws_plugin__s2member_pro_imports_simple_in'))
@@ -130,7 +130,7 @@ if(!class_exists('c_ws_plugin__s2member_pro_imports_simple_in'))
 						{
 							$ID = $data[0];
 
-							$user_login = (is_multisite()) ? strtolower($data[1]) : $data[1];
+							$user_login = is_multisite() ? strtolower($data[1]) : $data[1];
 							$user_login = preg_replace('/\s+/', '', sanitize_user($user_login, is_multisite()));
 							$user_pass  = $data[2];
 
@@ -194,7 +194,7 @@ if(!class_exists('c_ws_plugin__s2member_pro_imports_simple_in'))
 																	if(is_multisite() && c_ws_plugin__s2member_utils_conds::is_multisite_farm() && !is_main_site())
 																		unset($user_details['user_login'], $user_details['user_pass']);
 
-																	if(($user_id = wp_update_user($user_details)))
+																	if(($user_id = wp_update_user(wp_slash($user_details))))
 																	{
 																		$user = new WP_User($ID); // Refresh object value.
 
@@ -303,12 +303,12 @@ if(!class_exists('c_ws_plugin__s2member_pro_imports_simple_in'))
 												{
 													if(!is_multisite() || (($_ = wpmu_validate_user_signup($user_login, $user_email)) && (!is_wp_error($_['errors']) || !$_['errors']->get_error_code())))
 													{
-														if(($user_id = wp_insert_user($user_details)))
+														if(($user_id = wp_insert_user(wp_slash(empty($user_details['user_pass']) ? array_merge($user_details, array('user_pass' => wp_generate_password(12, FALSE))) : $user_details))))
 														{
 															if(is_object($user = new WP_User($user_id)) && $user->ID)
 															{
 																if($user_pass) // If we are given an 'un-encrypted Password'.
-																	wp_update_user(array('ID' => $user_id, 'user_pass' => $user_pass));
+																	wp_update_user(wp_slash(array('ID' => $user_id, 'user_pass' => $user_pass)));
 
 																if(is_multisite()) // New Users on a Multisite Network need this too.
 																	update_user_meta($user_id, 's2member_originating_blog', $current_blog->blog_id);

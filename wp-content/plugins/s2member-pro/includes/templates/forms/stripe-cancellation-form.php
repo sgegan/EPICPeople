@@ -1,11 +1,11 @@
 <?php
-if (realpath (__FILE__) === realpath ($_SERVER["SCRIPT_FILENAME"]))
+if(!defined('WPINC')) // MUST have WordPress.
 	exit("Do not access this file directly.");
 ?>
 
 <div id="s2p-form"></div><!-- This is for hash anchors; do NOT remove please. -->
 
-<form id="s2member-pro-stripe-cancellation-form" class="s2member-pro-stripe-form s2member-pro-stripe-cancellation-form" method="post" action="%%action%%">
+<form id="s2member-pro-stripe-cancellation-form" class="s2member-pro-stripe-form s2member-pro-stripe-cancellation-form" method="post" action="%%action%%" autocomplete="off">
 
 	<!-- Response Section (this is auto-filled after form submission). -->
 	<div id="s2member-pro-stripe-cancellation-form-response-section" class="s2member-pro-stripe-form-section s2member-pro-stripe-cancellation-form-section s2member-pro-stripe-form-response-section s2member-pro-stripe-cancellation-form-response-section">

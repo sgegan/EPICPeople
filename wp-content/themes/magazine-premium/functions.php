@@ -347,10 +347,10 @@ function mp_add_js() {
 	}
 
 	if ( $font_string )
-		wp_enqueue_style( 'google_fonts', 'http://fonts.googleapis.com/css?family=' . $font_string, false, null, 'all' );
+		wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=' . $font_string, false, null, 'all' );
 
 	wp_enqueue_style( 'theme_stylesheet', get_stylesheet_uri() );
-	wp_enqueue_style( 'font_awesome', 'http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css', false, null, 'all' );
+	wp_enqueue_style( 'font_awesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css', false, null, 'all' );
 }
 endif; // mp_add_js
 
@@ -869,33 +869,3 @@ function themename_redirect_author_archive_to_profile() {
     wp_redirect( bp_core_get_user_domain( $user_id ) );
   }
 }
-
-/**
- * function to return an undo unsbscribe string for MailPoet newsletters
- * you could place it in the functions.php of your theme
- * @return string
- */
-function mpoet_get_undo_unsubscribe(){
- if(class_exists('WYSIJA') && !empty($_REQUEST['wysija-key'])){
- 
- $undo_paramsurl = array(
- 'wysija-page'=>1,
- 'controller'=>'confirm',
- 'action'=>'undounsubscribe',
- 'wysija-key'=>$_REQUEST['wysija-key']
- );
- 
- $model_config = WYSIJA::get('config','model');
- $link_undo_unsubscribe = WYSIJA::get_permalink($model_config->getValue('confirmation_page'),$undo_paramsurl);
- 
- $undo_unsubscribe = str_replace(
- array('[link]','[/link]'),
- array('<a href="'.$link_undo_unsubscribe.'">','</a>'),
- '<p><b>'.__('You made a mistake? [link]Undo unsubscribe[/link].',WYSIJA)).'</b><p>';
- 
- return $undo_unsubscribe;
- }
- return '';
-}
- 
-add_shortcode('mailpoet_undo_unsubscribe', 'mpoet_get_undo_unsubscribe');

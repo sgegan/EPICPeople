@@ -14,7 +14,7 @@
  * @package s2Member\Registrations
  * @since 3.5
  */
-if(realpath(__FILE__) === realpath($_SERVER['SCRIPT_FILENAME']))
+if(!defined('WPINC')) // MUST have WordPress.
 	exit ('Do not access this file directly.');
 
 if(!class_exists('c_ws_plugin__s2member_registrations'))
@@ -300,7 +300,7 @@ if(!class_exists('c_ws_plugin__s2member_registrations'))
 						if(!empty($user_already_exists) && c_ws_plugin__s2member_utils_users::ms_user_login_email_exists_but_not_on_blog($user_login, $user_email, $meta['add_to_blog']))
 						{
 							add_user_to_blog($meta['add_to_blog'], $user_id, $meta['new_role']); // Add this User to the specified Blog.
-							wp_update_user(array('ID' => $user_id, 'user_pass' => $password)); // Update Password so it's the same as in the following msg.
+							wp_update_user(wp_slash(array('ID' => $user_id, 'user_pass' => $password))); // Update Password so it's the same as in the following msg.
 							wpmu_welcome_user_notification($user_id, $password, $meta); // Send welcome letter via email just like ``wpmu_activate_signup()`` does.
 
 							do_action('wpmu_activate_user', $user_id, $password, $meta); // Process Hook that would have been fired inside ``wpmu_activate_signup()``.
@@ -503,7 +503,7 @@ if(!class_exists('c_ws_plugin__s2member_registrations'))
 				{
 					$role = get_option('default_role'); // Use default Role.
 					add_existing_user_to_blog(array('user_id' => $user_id, 'role' => $role)); // Add User.
-					wp_update_user(array('ID' => $user_id, 'user_pass' => $user_pass)); // Update to ``$user_pass``.
+					wp_update_user(wp_slash(array('ID' => $user_id, 'user_pass' => $user_pass))); // Update to ``$user_pass``.
 
 					do_action('ws_plugin__s2member_during_ms_create_existing_user', get_defined_vars());
 					do_action('user_register', $user_id); // So s2Member knows a User is registering.
@@ -586,7 +586,7 @@ if(!class_exists('c_ws_plugin__s2member_registrations'))
 										if(!is_admin() && (!c_ws_plugin__s2member_utils_conds::pro_is_installed() || !c_ws_plugin__s2member_pro_remote_ops::is_remote_op('create_user')) && ($reg_cookies = c_ws_plugin__s2member_register_access::reg_cookies_ok()) && extract($reg_cookies))
 										{ /* This routine could be processed through `/wp-login.php?action=register`, `/wp-activate.php`, or `/activate` via BuddyPress`.
 																	This may also be processed through a standard BuddyPress installation, or another plugin calling `user_register`.
-																	If processed through `/wp-activate.php`, it could've originated inside the admin — via `/user-new.php`. */
+																	If processed through `/wp-activate.php`, it could've originated inside the admin—via `/user-new.php`. */
 											/**
 											 * @var $subscr_gateway string Reference for IDEs.
 											 * @var $subscr_id string Reference for IDEs.
@@ -669,13 +669,13 @@ if(!class_exists('c_ws_plugin__s2member_registrations'))
 											if(!$user->display_name || $user->display_name === $user->user_login)
 											{
 												if($custom_reg_display_name === 'full' && $name)
-													wp_update_user(array('ID' => $user_id, 'display_name' => $name));
+													wp_update_user(wp_slash(array('ID' => $user_id, 'display_name' => $name)));
 												else if($custom_reg_display_name === 'first' && $fname)
-													wp_update_user(array('ID' => $user_id, 'display_name' => $fname));
+													wp_update_user(wp_slash(array('ID' => $user_id, 'display_name' => $fname)));
 												else if($custom_reg_display_name === 'last' && $lname)
-													wp_update_user(array('ID' => $user_id, 'display_name' => $lname));
+													wp_update_user(wp_slash(array('ID' => $user_id, 'display_name' => $lname)));
 												else if($custom_reg_display_name === 'login' && $login)
-													wp_update_user(array('ID' => $user_id, 'display_name' => $login));
+													wp_update_user(wp_slash(array('ID' => $user_id, 'display_name' => $login)));
 											}
 											if(is_multisite()) // Should we handle Main Site permissions and Originating Blog ID#?
 											{
@@ -844,13 +844,13 @@ if(!class_exists('c_ws_plugin__s2member_registrations'))
 											if(!$user->display_name || $user->display_name === $user->user_login)
 											{
 												if($custom_reg_display_name === 'full' && $name)
-													wp_update_user(array('ID' => $user_id, 'display_name' => $name));
+													wp_update_user(wp_slash(array('ID' => $user_id, 'display_name' => $name)));
 												else if($custom_reg_display_name === 'first' && $fname)
-													wp_update_user(array('ID' => $user_id, 'display_name' => $fname));
+													wp_update_user(wp_slash(array('ID' => $user_id, 'display_name' => $fname)));
 												else if($custom_reg_display_name === 'last' && $lname)
-													wp_update_user(array('ID' => $user_id, 'display_name' => $lname));
+													wp_update_user(wp_slash(array('ID' => $user_id, 'display_name' => $lname)));
 												else if($custom_reg_display_name === 'login' && $login)
-													wp_update_user(array('ID' => $user_id, 'display_name' => $login));
+													wp_update_user(wp_slash(array('ID' => $user_id, 'display_name' => $login)));
 											}
 											if(is_multisite( /* Should we handle Main Site permissions and Originating Blog ID#? */))
 											{
@@ -939,11 +939,11 @@ if(!class_exists('c_ws_plugin__s2member_registrations'))
 
 											$opt_in = (!empty($_pmr['ws_plugin__s2member_custom_reg_field_opt_in'])) ? TRUE : FALSE;
 
-											if(!($fname = $user->first_name)) // `Users -› Add New`.
+											if(!($fname = $user->first_name)) // `Users ⥱ Add New`.
 												if(!empty($_pmr['ws_plugin__s2member_custom_reg_field_first_name']))
 													$fname = (string)$_pmr['ws_plugin__s2member_custom_reg_field_first_name'];
 
-											if(!($lname = $user->last_name)) // `Users -› Add New`.
+											if(!($lname = $user->last_name)) // `Users ⥱ Add New`.
 												if(!empty($_pmr['ws_plugin__s2member_custom_reg_field_last_name']))
 													$lname = (string)$_pmr['ws_plugin__s2member_custom_reg_field_last_name'];
 
@@ -958,7 +958,7 @@ if(!class_exists('c_ws_plugin__s2member_registrations'))
 												if(!empty($GLOBALS['ws_plugin__s2member_generate_password_return']))
 													$pass = (string)$GLOBALS['ws_plugin__s2member_generate_password_return'];
 
-											if(!$pass) // Also try the `Users -› Add New` form.
+											if(!$pass) // Also try the `Users ⥱ Add New` form.
 												if(!empty($_pmr['pass1'])) // Field in `/user-new.php`.
 													$pass = (string)$_pmr['pass1'];
 
@@ -985,13 +985,13 @@ if(!class_exists('c_ws_plugin__s2member_registrations'))
 											if(!$user->display_name || $user->display_name === $user->user_login)
 											{
 												if($custom_reg_display_name === 'full' && $name)
-													wp_update_user(array('ID' => $user_id, 'display_name' => $name));
+													wp_update_user(wp_slash(array('ID' => $user_id, 'display_name' => $name)));
 												else if($custom_reg_display_name === 'first' && $fname)
-													wp_update_user(array('ID' => $user_id, 'display_name' => $fname));
+													wp_update_user(wp_slash(array('ID' => $user_id, 'display_name' => $fname)));
 												else if($custom_reg_display_name === 'last' && $lname)
-													wp_update_user(array('ID' => $user_id, 'display_name' => $lname));
+													wp_update_user(wp_slash(array('ID' => $user_id, 'display_name' => $lname)));
 												else if($custom_reg_display_name === 'login' && $login)
-													wp_update_user(array('ID' => $user_id, 'display_name' => $login));
+													wp_update_user(wp_slash(array('ID' => $user_id, 'display_name' => $login)));
 											}
 											if(is_multisite()) // Should we handle Main Site permissions and Originating Blog ID#?
 											{
@@ -1190,6 +1190,7 @@ if(!class_exists('c_ws_plugin__s2member_registrations'))
 												Logging now supports Multisite Networking as well. */
 
 											$reg_vars = get_defined_vars(); // All defined vars.
+											$reg_vars['_COOKIE'] = $_COOKIE; // Record cookies also.
 											// No need to include these in the logs. Unset before log entry.
 											unset($reg_vars['wpdb'], $reg_vars['current_site'], $reg_vars['current_blog']);
 											c_ws_plugin__s2member_utils_logs::log_entry('reg-handler', $reg_vars);

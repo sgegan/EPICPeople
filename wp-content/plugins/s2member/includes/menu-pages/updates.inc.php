@@ -14,7 +14,7 @@
  * @package s2Member\Menu_Pages
  * @since 111205
  */
-if(realpath(__FILE__) === realpath($_SERVER["SCRIPT_FILENAME"]))
+if(!defined('WPINC')) // MUST have WordPress.
 	exit("Do not access this file directly.");
 
 if(!class_exists("c_ws_plugin__s2member_menu_pages_updates"))
@@ -31,7 +31,7 @@ if(!class_exists("c_ws_plugin__s2member_menu_pages_updates"))
 		{
 			if(is_object($user = wp_get_current_user()) && ($user_id = $user->ID))
 			{
-				echo '<form id="ws-updates-form" action="http://websharks-inc.us1.list-manage1.com/subscribe/post?u=8f347da54d66b5298d13237d9&amp;id=19e9d213bc" method="post" target="_blank">'."\n";
+				echo '<form id="ws-updates-form" action="http://websharks-inc.us1.list-manage1.com/subscribe/post?u=8f347da54d66b5298d13237d9&amp;id=19e9d213bc" method="post" target="_blank" autocomplete="off">'."\n";
 
 				if(!is_ssl() && !c_ws_plugin__s2member_utils_conds::is_localhost())
 				{

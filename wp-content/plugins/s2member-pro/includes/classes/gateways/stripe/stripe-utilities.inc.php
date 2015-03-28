@@ -19,18 +19,18 @@
  *   See: {@link http://www.s2member.com/prices/}
  *
  * Unless you have our prior written consent, you must NOT directly or indirectly license,
- * sub-license, sell, resell, or provide for free; part (2) of the s2Member Pro Module;
+ * sub-license, sell, resell, or provide for free; part (2) of the s2Member Pro Add-on;
  * or make an offer to do any of these things. All of these things are strictly
- * prohibited with part (2) of the s2Member Pro Module.
+ * prohibited with part (2) of the s2Member Pro Add-on.
  *
  * Your purchase of s2Member Pro includes free lifetime upgrades via s2Member.com
- * (i.e. new features, bug fixes, updates, improvements); along with full access
+ * (i.e., new features, bug fixes, updates, improvements); along with full access
  * to our video tutorial library: {@link http://www.s2member.com/videos/}
  *
  * @package s2Member\Stripe
  * @since 140617
  */
-if(realpath(__FILE__) === realpath($_SERVER['SCRIPT_FILENAME']))
+if(!defined('WPINC')) // MUST have WordPress.
 	exit('Do not access this file directly.');
 
 if(!class_exists('c_ws_plugin__s2member_pro_stripe_utilities'))
@@ -51,7 +51,7 @@ if(!class_exists('c_ws_plugin__s2member_pro_stripe_utilities'))
 		 * @param string  $fname Customer's first name (optional).
 		 * @param string  $lname Customer's last name (optional).
 		 * @param array   $metadata Any metadata (optional).
-		 * @param array   $post_vars Pro Form post vars (optional).
+		 * @param array   $post_vars Pro-Form post vars (optional).
 		 *
 		 * @return Stripe_Customer|string Customer object; else error message.
 		 */
@@ -118,15 +118,15 @@ if(!class_exists('c_ws_plugin__s2member_pro_stripe_utilities'))
 		}
 
 		/**
-		 * Set a Stripe customer card/token.
+		 * Set a Stripe customer source.
 		 *
 		 * @param string $customer_id Customer ID in Stripe.
-		 * @param string $card_token Stripe token.
-		 * @param array  $post_vars Pro Form post vars (optional).
+		 * @param string $source_token Stripe source card/bank/bitcoin token.
+		 * @param array  $post_vars Pro-Form post vars (optional).
 		 *
 		 * @return Stripe_Customer|string Customer object; else error message.
 		 */
-		public static function set_customer_card_token($customer_id, $card_token, $post_vars = array())
+		public static function set_customer_source($customer_id, $source_token, $post_vars = array())
 		{
 			$input_time = time(); // Initialize.
 			$input_vars = get_defined_vars(); // Arguments.
@@ -134,13 +134,13 @@ if(!class_exists('c_ws_plugin__s2member_pro_stripe_utilities'))
 			require_once dirname(__FILE__).'/stripe-sdk/lib/Stripe.php';
 			Stripe::setApiKey($GLOBALS['WS_PLUGIN__']['s2member']['o']['pro_stripe_api_secret_key']);
 
-			$metadata     = self::_additional_customer_metadata($post_vars);
-			$card_details = self::_additional_customer_card_details($post_vars);
+			$metadata       = self::_additional_customer_metadata($post_vars);
+			$source_details = self::_additional_customer_source_details($post_vars);
 
-			try // Attempt to update the customer's card/token.
+			try // Attempt to update the customer's source token.
 			{
-				$customer       = Stripe_Customer::retrieve($customer_id);
-				$customer->card = $card_token; // Update.
+				$customer         = Stripe_Customer::retrieve($customer_id);
+				$customer->source = $source_token; // Update.
 
 				if($metadata) // Customer metadata?
 				{
@@ -152,16 +152,27 @@ if(!class_exists('c_ws_plugin__s2member_pro_stripe_utilities'))
 
 				self::log_entry(__FUNCTION__, $input_time, $input_vars, time(), $customer);
 
-				if($card_details) // Additional details we should save?
+				if($source_details) // Additional details we should save?
 				{
-					$card = $customer->cards->data[0]; // Just one card!
-					/** @var Stripe_Card $card Reference for IDEs. */
+					$source = $customer->sources->data[0]; // Just one source.
+					/** @var Stripe_Card|Stripe_BitcoinReceiver $source */
 
-					foreach($card_details as $_key => $_value)
-						$card->{$_key} = $_value; // e.g. `address_zip`, etc.
-					unset($_key, $_value); // Housekeeping.
+					if($source instanceof Stripe_Card)
+					{
+						foreach($source_details as $_key => $_value)
+							$source->{$_key} = $_value;
+						unset($_key, $_value);
 
-					$card->save(); // Update.
+						$source->save(); // Update.
+					}
+					else if($source instanceof Stripe_BitcoinReceiver)
+					{
+						foreach($source_details as $_key => $_value)
+							$source->metadata->{$_key} = $_value;
+						unset($_key, $_value);
+
+						$source->save(); // Update.
+					}
 				}
 				return $customer;
 			}
@@ -173,7 +184,7 @@ if(!class_exists('c_ws_plugin__s2member_pro_stripe_utilities'))
 			}
 		}
 
-		public static function _additional_customer_card_details($post_vars = array())
+		public static function _additional_customer_source_details($post_vars = array())
 		{
 			$post_vars = (array)$post_vars;
 			$details   = array(); // Initialize.
@@ -204,8 +215,8 @@ if(!class_exists('c_ws_plugin__s2member_pro_stripe_utilities'))
 		 * @param string               $currency Three character currency code.
 		 * @param string               $description Description of the charge.
 		 * @param array                $metadata Any additional metadata (optional).
-		 * @param array                $post_vars Pro Form post vars (optional).
-		 * @param array                $cost_calculations Pro Form cost calculations (optional).
+		 * @param array                $post_vars Pro-Form post vars (optional).
+		 * @param array                $cost_calculations Pro-Form cost calculations (optional).
 		 *
 		 * @return Stripe_Charge|string Charge object; else error message.
 		 */
@@ -368,8 +379,8 @@ if(!class_exists('c_ws_plugin__s2member_pro_stripe_utilities'))
 		 * @param string $customer_id Customer ID in Stripe.
 		 * @param string $plan_id Subscription plan ID in Stripe.
 		 * @param array  $metadata Any additional metadata (optional).
-		 * @param array  $post_vars Pro Form post vars (optional).
-		 * @param array  $cost_calculations Pro Form cost calculations (optional).
+		 * @param array  $post_vars Pro-Form post vars (optional).
+		 * @param array  $cost_calculations Pro-Form cost calculations (optional).
 		 *
 		 * @return Stripe_Subscription|string Subscription object; else error message.
 		 */
@@ -473,7 +484,7 @@ if(!class_exists('c_ws_plugin__s2member_pro_stripe_utilities'))
 		 *
 		 * @param boolean $at_period_end Defaults to a `TRUE` value (optional).
 		 *    If `TRUE`, cancellation is delayed until the end of the current period.
-		 *    If `FALSE`, cancellation is NOT delayed; i.e. it occurs immediately.
+		 *    If `FALSE`, cancellation is NOT delayed; i.e., it occurs immediately.
 		 *
 		 * @return Stripe_Subscription|string Subscription object; else error message.
 		 */
@@ -770,14 +781,14 @@ if(!class_exists('c_ws_plugin__s2member_pro_stripe_utilities'))
 			if((float)$GLOBALS['WS_PLUGIN__']['s2member']['o']['pro_default_tax'] > 0)
 				return TRUE;
 
-			else if($GLOBALS['WS_PLUGIN__']['s2member']['o']['pro_tax_rates'])
+			if($GLOBALS['WS_PLUGIN__']['s2member']['o']['pro_tax_rates'])
 				return TRUE;
 
 			return FALSE;
 		}
 
 		/**
-		 * Handles the return of Tax for Pro Forms, via AJAX; through a JSON object.
+		 * Handles the return of Tax for Pro-Forms, via AJAX; through a JSON object.
 		 *
 		 * @package s2Member\Stripe
 		 * @since 140617
@@ -846,15 +857,19 @@ if(!class_exists('c_ws_plugin__s2member_pro_stripe_utilities'))
 		 * @param int|string $zip Optional. The Postal/Zip Code where the Customer is billed.
 		 * @param string     $currency Optional. Expects a 3 character Currency Code.
 		 * @param string     $desc Optional. Description of the sale.
+		 * @param boolean    $is_bitcoin A Bitcoin transaction?
 		 *
 		 * @return array Array of calculations.
 		 */
-		public static function cost($trial_sub_total = '', $sub_total = '', $state = '', $country = '', $zip = '', $currency = '', $desc = '')
+		public static function cost($trial_sub_total = '', $sub_total = '', $state = '', $country = '', $zip = '', $currency = '', $desc = '', $is_bitcoin = FALSE)
 		{
 			$state   = strtoupper(c_ws_plugin__s2member_pro_utilities::full_state($state, ($country = strtoupper($country))));
 			$rates   = apply_filters('ws_plugin__s2member_pro_tax_rates_before_cost_calculation', strtoupper($GLOBALS['WS_PLUGIN__']['s2member']['o']['pro_tax_rates']), get_defined_vars());
 			$default = $GLOBALS['WS_PLUGIN__']['s2member']['o']['pro_default_tax'];
 			$ps      = _x('%', 's2member-front percentage-symbol', 's2member');
+
+			if($is_bitcoin) // Ignore all of these if it's a Bitcoin transaction.
+				$rates = $default = $state = $country = $zip = ''; // Not applicable at this time.
 
 			$trial_tax = $tax = $trial_tax_per = $tax_per = $trial_total = $total = NULL; // Initialize.
 			foreach(array('trial_sub_total' => $trial_sub_total, 'sub_total' => $sub_total) as $this_key => $this_sub_total)
@@ -992,7 +1007,7 @@ if(!class_exists('c_ws_plugin__s2member_pro_stripe_utilities'))
 		 * @package s2Member\Stripe
 		 * @since 140617
 		 *
-		 * @param array  $attr An array of Pro Form Attributes (optional).
+		 * @param array  $attr An array of Pro-Form Attributes (optional).
 		 * @param string $coupon_code Optional. A possible Coupon Code supplied by the Customer.
 		 * @param string $return Optional. Return type. One of `response|attr`. Defaults to `attr`.
 		 * @param array  $process Optional. An array of additional processing routines to run here.
@@ -1003,277 +1018,8 @@ if(!class_exists('c_ws_plugin__s2member_pro_stripe_utilities'))
 		 */
 		public static function apply_coupon($attr = array(), $coupon_code = '', $return = '', $process = array())
 		{
-			if(($coupon_code = trim(strtolower($coupon_code))) || ($coupon_code = trim(strtolower($attr['coupon']))))
-				if($attr['accept_coupons'] && $GLOBALS['WS_PLUGIN__']['s2member']['o']['pro_coupon_codes'])
-				{
-					$cs = c_ws_plugin__s2member_utils_cur::symbol($attr['cc']);
-					$tx = (c_ws_plugin__s2member_pro_stripe_utilities::tax_may_apply()) ? _x(' + tax', 's2member-front', 's2member') : '';
-					$ps = _x('%', 's2member-front percentage-symbol', 's2member');
-
-					$full_coupon_code = ''; // Initialize.
-					if(strlen($affiliate_suffix_chars = $GLOBALS['WS_PLUGIN__']['s2member']['o']['pro_affiliate_coupon_code_suffix_chars']))
-						if(preg_match('/^(.+?)'.preg_quote($affiliate_suffix_chars, '/').'([0-9]+)$/i', $coupon_code, $m))
-							($full_coupon_code = $m[0]).($coupon_code = $m[1]).($affiliate_id = $m[2]);
-					unset($affiliate_suffix_chars, $m); // Just a little housekeeping here.
-
-					foreach(c_ws_plugin__s2member_utils_strings::trim_deep(preg_split('/['."\r\n\t".']+/', $GLOBALS['WS_PLUGIN__']['s2member']['o']['pro_coupon_codes'])) as $_line)
-					{
-						if(($_line = trim($_line, ' '."\r\n\t\0\x0B".'|')) && is_array($_coupon = preg_split('/\|/', $_line)))
-						{
-							$coupon['code'] = (!empty($_coupon[0])) ? trim(strtolower($_coupon[0])) : '';
-
-							$coupon['percentage'] = (!empty($_coupon[1]) && preg_match('/%/', $_coupon[1])) ? (float)$_coupon[1] : 0;
-							$coupon['flat-rate']  = (!empty($_coupon[1]) && !preg_match('/%/', $_coupon[1])) ? (float)$_coupon[1] : 0;
-
-							$coupon['expired'] = (!empty($_coupon[2]) && strtotime($_coupon[2]) < time()) ? $_coupon[2] : FALSE;
-
-							$coupon['directive'] = (!empty($_coupon[3]) && ($_coupon[3] = strtolower($_coupon[3]))) ? preg_replace('/_/', '-', $_coupon[3]) : 'all';
-							$coupon['directive'] = (preg_match('/^(ta-only|ra-only|all)$/', $coupon['directive'])) ? $coupon['directive'] : 'all';
-
-							$coupon['singulars'] = (!empty($_coupon[4]) && ($_coupon[4] = strtolower($_coupon[4])) && $_coupon[4] !== 'all') ? $_coupon[4] : 'all';
-							$coupon['singulars'] = ($coupon['singulars'] !== 'all') ? preg_split('/['."\r\n\t".'\s;,]+/', trim(preg_replace('/[^0-9,]/', '', $coupon['singulars']), ',')) : array('all');
-
-							unset($_line, $_coupon); // Just a little housekeeping here. Unset these temporary variables.
-
-							if($coupon_code === $coupon['code'] && !$coupon['expired'] /* And it's NOT yet expired, or lasts forever? */)
-							{
-								if($coupon['singulars'] === array('all') || in_array($attr['singular'], $coupon['singulars']))
-								{
-									$coupon_accepted = TRUE; // Yes, this Coupon Code has been accepted.
-
-									if($coupon['flat-rate']) // If it's a flat-rate Coupon.
-									{
-										if(($coupon['directive'] === 'ra-only' || $coupon['directive'] === 'all') && $attr['sp'])
-										{
-											$coupon_applies = TRUE; // Applying.
-
-											$ta = number_format($attr['ta'], 2, '.', '');
-											$ta = ($ta >= 0.50) ? $ta : '0.00';
-
-											$ra = number_format($attr['ra'] - $coupon['flat-rate'], 2, '.', '');
-											$ra = ($ra >= 0.50) ? $ra : '0.00';
-
-											$desc     = sprintf(_x('COUPON %s off. (Now: %s)', 's2member-front', 's2member'), $cs.number_format($coupon['flat-rate'], 2, '.', ''), $cs.$ra.$tx);
-											$response = sprintf(_x('<div>Coupon: <strong>%s off</strong>. (Now: <strong>%s</strong>)</div>', 's2member-front', 's2member'), $cs.number_format($coupon['flat-rate'], 2, '.', ''), $cs.$ra.$tx);
-										}
-										else if($coupon['directive'] === 'ta-only' && $attr['tp'] && !$attr['sp'])
-										{
-											$coupon_applies = TRUE; // Applying.
-
-											$ta = number_format($attr['ta'] - $coupon['flat-rate'], 2, '.', '');
-											$ta = ($ta >= 0.50) ? $ta : '0.00';
-
-											$ra = number_format($attr['ra'], 2, '.', '');
-											$ra = ($ra >= 0.50) ? $ra : '0.00';
-
-											$desc     = sprintf(_x('COUPON %s off. (Now: %s, then %s)', 's2member-front', 's2member'), $cs.number_format($coupon['flat-rate'], 2, '.', ''), $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ta, $attr['tp'].' '.$attr['tt']).$tx, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']));
-											$response = sprintf(_x('<div>Coupon: <strong>%s off</strong>. (Now: <strong>%s, then %s</strong>)</div>', 's2member-front', 's2member'), $cs.number_format($coupon['flat-rate'], 2, '.', ''), $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ta, $attr['tp'].' '.$attr['tt']).$tx, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']));
-										}
-										else if($coupon['directive'] === 'ra-only' && $attr['tp'] && !$attr['sp'])
-										{
-											$coupon_applies = TRUE; // Applying.
-
-											$ta = number_format($attr['ta'], 2, '.', '');
-											$ta = ($ta >= 0.50) ? $ta : '0.00';
-
-											$ra = number_format($attr['ra'] - $coupon['flat-rate'], 2, '.', '');
-											$ra = ($ra >= 0.50) ? $ra : '0.00';
-
-											$desc     = sprintf(_x('COUPON %s off. (Now: %s, then %s)', 's2member-front', 's2member'), $cs.number_format($coupon['flat-rate'], 2, '.', ''), $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ta, $attr['tp'].' '.$attr['tt']).$tx, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']));
-											$response = sprintf(_x('<div>Coupon: <strong>%s off</strong>. (Now: <strong>%s, then %s</strong>)</div>', 's2member-front', 's2member'), $cs.number_format($coupon['flat-rate'], 2, '.', ''), $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ta, $attr['tp'].' '.$attr['tt']).$tx, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']));
-										}
-										else if($coupon['directive'] === 'all' && $attr['tp'] && !$attr['sp'])
-										{
-											$coupon_applies = TRUE; // Applying.
-
-											$ta = number_format($attr['ta'] - $coupon['flat-rate'], 2, '.', '');
-											$ta = ($ta >= 0.50) ? $ta : '0.00';
-
-											$ra = number_format($attr['ra'] - $coupon['flat-rate'], 2, '.', '');
-											$ra = ($ra >= 0.50) ? $ra : '0.00';
-
-											$desc     = sprintf(_x('COUPON %s off. (Now: %s, then %s)', 's2member-front', 's2member'), $cs.number_format($coupon['flat-rate'], 2, '.', ''), $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ta, $attr['tp'].' '.$attr['tt']).$tx, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']));
-											$response = sprintf(_x('<div>Coupon: <strong>%s off</strong>. (Now: <strong>%s, then %s</strong>)</div>', 's2member-front', 's2member'), $cs.number_format($coupon['flat-rate'], 2, '.', ''), $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ta, $attr['tp'].' '.$attr['tt']).$tx, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']));
-										}
-										else if($coupon['directive'] === 'ra-only' && !$attr['tp'] && !$attr['sp'])
-										{
-											$coupon_applies = TRUE; // Applying.
-
-											$ta = number_format($attr['ta'], 2, '.', '');
-											$ta = ($ta >= 0.50) ? $ta : '0.00';
-
-											$ra = number_format($attr['ra'] - $coupon['flat-rate'], 2, '.', '');
-											$ra = ($ra >= 0.50) ? $ra : '0.00';
-
-											$desc     = sprintf(_x('COUPON %s off. (Now: %s)', 's2member-front', 's2member'), $cs.number_format($coupon['flat-rate'], 2, '.', ''), $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']).$tx);
-											$response = sprintf(_x('<div>Coupon: <strong>%s off</strong>. (Now: <strong>%s</strong>)</div>', 's2member-front', 's2member'), $cs.number_format($coupon['flat-rate'], 2, '.', ''), $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']).$tx);
-										}
-										else if($coupon['directive'] === 'all' && !$attr['tp'] && !$attr['sp'])
-										{
-											$coupon_applies = TRUE; // Applying.
-
-											$ta = number_format($attr['ta'] - $coupon['flat-rate'], 2, '.', '');
-											$ta = ($ta >= 0.50) ? $ta : '0.00';
-
-											$ra = number_format($attr['ra'] - $coupon['flat-rate'], 2, '.', '');
-											$ra = ($ra >= 0.50) ? $ra : '0.00';
-
-											$desc     = sprintf(_x('COUPON %s off. (Now: %s)', 's2member-front', 's2member'), $cs.number_format($coupon['flat-rate'], 2, '.', ''), $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']).$tx);
-											$response = sprintf(_x('<div>Coupon: <strong>%s off</strong>. (Now: <strong>%s</strong>)</div>', 's2member-front', 's2member'), $cs.number_format($coupon['flat-rate'], 2, '.', ''), $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']).$tx);
-										}
-										else // Otherwise, we need a default response to display.
-											$response = _x('<div>Sorry, your Coupon is not applicable.</div>', 's2member-front', 's2member');
-									}
-									else if($coupon['percentage']) // Else if it's a percentage.
-									{
-										if(($coupon['directive'] === 'ra-only' || $coupon['directive'] === 'all') && $attr['sp'])
-										{
-											$coupon_applies = TRUE; // Applying.
-
-											$p  = ($attr['ta'] / 100) * $coupon['percentage'];
-											$ta = number_format($attr['ta'], 2, '.', '');
-											$ta = ($ta >= 0.50) ? $ta : '0.00';
-
-											$p  = ($attr['ra'] / 100) * $coupon['percentage'];
-											$ra = number_format($attr['ra'] - $p, 2, '.', '');
-											$ra = ($ra >= 0.50) ? $ra : '0.00';
-
-											$desc     = sprintf(_x('COUPON %s off. (Now: %s)', 's2member-front', 's2member'), number_format($coupon['percentage'], 0).$ps, $cs.$ra.$tx);
-											$response = sprintf(_x('<div>Coupon: <strong>%s off</strong>. (Now: <strong>%s</strong>)</div>', 's2member-front', 's2member'), number_format($coupon['percentage'], 0).$ps, $cs.$ra.$tx);
-										}
-										else if($coupon['directive'] === 'ta-only' && $attr['tp'] && !$attr['sp'])
-										{
-											$coupon_applies = TRUE; // Applying.
-
-											$p  = ($attr['ta'] / 100) * $coupon['percentage'];
-											$ta = number_format($attr['ta'] - $p, 2, '.', '');
-											$ta = ($ta >= 0.50) ? $ta : '0.00';
-
-											$p  = ($attr['ra'] / 100) * $coupon['percentage'];
-											$ra = number_format($attr['ra'], 2, '.', '');
-											$ra = ($ra >= 0.50) ? $ra : '0.00';
-
-											$desc     = sprintf(_x('COUPON %s off. (Now: %s, then %s)', 's2member-front', 's2member'), number_format($coupon['percentage'], 0).$ps, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ta, $attr['tp'].' '.$attr['tt']).$tx, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']));
-											$response = sprintf(_x('<div>Coupon: <strong>%s off</strong>. (Now: <strong>%s, then %s</strong>)</div>', 's2member-front', 's2member'), number_format($coupon['percentage'], 0).$ps, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ta, $attr['tp'].' '.$attr['tt']).$tx, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']));
-										}
-										else if($coupon['directive'] === 'ra-only' && $attr['tp'] && !$attr['sp'])
-										{
-											$coupon_applies = TRUE; // Applying.
-
-											$p  = ($attr['ta'] / 100) * $coupon['percentage'];
-											$ta = number_format($attr['ta'], 2, '.', '');
-											$ta = ($ta >= 0.50) ? $ta : '0.00';
-
-											$p  = ($attr['ra'] / 100) * $coupon['percentage'];
-											$ra = number_format($attr['ra'] - $p, 2, '.', '');
-											$ra = ($ra >= 0.50) ? $ra : '0.00';
-
-											$desc     = sprintf(_x('COUPON %s off. (Now: %s, then %s)', 's2member-front', 's2member'), number_format($coupon['percentage'], 0).$ps, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ta, $attr['tp'].' '.$attr['tt']).$tx, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']));
-											$response = sprintf(_x('<div>Coupon: <strong>%s off</strong>. (Now: <strong>%s, then %s</strong>)</div>', 's2member-front', 's2member'), number_format($coupon['percentage'], 0).$ps, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ta, $attr['tp'].' '.$attr['tt']).$tx, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']));
-										}
-										else if($coupon['directive'] === 'all' && $attr['tp'] && !$attr['sp'])
-										{
-											$coupon_applies = TRUE; // Applying.
-
-											$p  = ($attr['ta'] / 100) * $coupon['percentage'];
-											$ta = number_format($attr['ta'] - $p, 2, '.', '');
-											$ta = ($ta >= 0.50) ? $ta : '0.00';
-
-											$p  = ($attr['ra'] / 100) * $coupon['percentage'];
-											$ra = number_format($attr['ra'] - $p, 2, '.', '');
-											$ra = ($ra >= 0.50) ? $ra : '0.00';
-
-											$desc     = sprintf(_x('COUPON %s off. (Now: %s, then %s)', 's2member-front', 's2member'), number_format($coupon['percentage'], 0).$ps, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ta, $attr['tp'].' '.$attr['tt']).$tx, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']));
-											$response = sprintf(_x('<div>Coupon: <strong>%s off</strong>. (Now: <strong>%s, then %s</strong>)</div>', 's2member-front', 's2member'), number_format($coupon['percentage'], 0).$ps, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ta, $attr['tp'].' '.$attr['tt']).$tx, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']));
-										}
-										else if($coupon['directive'] === 'ra-only' && !$attr['tp'] && !$attr['sp'])
-										{
-											$coupon_applies = TRUE; // Applying.
-
-											$p  = ($attr['ta'] / 100) * $coupon['percentage'];
-											$ta = number_format($attr['ta'], 2, '.', '');
-											$ta = ($ta >= 0.50) ? $ta : '0.00';
-
-											$p  = ($attr['ra'] / 100) * $coupon['percentage'];
-											$ra = number_format($attr['ra'] - $p, 2, '.', '');
-											$ra = ($ra >= 0.50) ? $ra : '0.00';
-
-											$desc     = sprintf(_x('COUPON %s off. (Now: %s)', 's2member-front', 's2member'), number_format($coupon['percentage'], 0).$ps, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']).$tx);
-											$response = sprintf(_x('<div>Coupon: <strong>%s off</strong>. (Now: <strong>%s</strong>)</div>', 's2member-front', 's2member'), number_format($coupon['percentage'], 0).$ps, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']).$tx);
-										}
-										else if($coupon['directive'] === 'all' && !$attr['tp'] && !$attr['sp'])
-										{
-											$coupon_applies = TRUE; // Applying.
-
-											$p  = ($attr['ta'] / 100) * $coupon['percentage'];
-											$ta = number_format($attr['ta'] - $p, 2, '.', '');
-											$ta = ($ta >= 0.50) ? $ta : '0.00';
-
-											$p  = ($attr['ra'] / 100) * $coupon['percentage'];
-											$ra = number_format($attr['ra'] - $p, 2, '.', '');
-											$ra = ($ra >= 0.50) ? $ra : '0.00';
-
-											$desc     = sprintf(_x('COUPON %s off. (Now: %s)', 's2member-front', 's2member'), number_format($coupon['percentage'], 0).$ps, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']).$tx);
-											$response = sprintf(_x('<div>Coupon: <strong>%s off</strong>. (Now: <strong>%s</strong>)</div>', 's2member-front', 's2member'), number_format($coupon['percentage'], 0).$ps, $cs.c_ws_plugin__s2member_utils_time::amount_period_term($ra, $attr['rp'].' '.$attr['rt'], $attr['rr']).$tx);
-										}
-										else // Otherwise, we need a default response to display.
-											$response = _x('<div>Sorry, your Coupon is not applicable.</div>', 's2member-front', 's2member');
-									}
-
-									else // Else there was no discount applied at all.
-										$response = sprintf(_x('<div>Coupon: <strong>%s0.00 off</strong>.</div>', 's2member-front', 's2member'), $cs);
-								}
-
-								else // Otherwise, we need a response that indicates not applicable for this purchase.
-									$response = _x('<div>Sorry, your Coupon cannot be applied to this particular purchase.</div>', 's2member-front', 's2member');
-							}
-
-							else if($coupon_code === $coupon['code'] && $coupon['expired'])
-								$response = sprintf(_x('<div>Sorry, your Coupon <strong>expired</strong>: <em>%s</em>.</div>', 's2member-front', 's2member'), $coupon['expired']);
-						}
-					}
-					if(isset($coupon_applies, $full_coupon_code, $desc) && $coupon_applies /* Need to modify the description dynamically? */)
-						// translators: `%1$s` is new price/description, after coupon applied. `%2$s` is original description.
-						$attr['desc'] = sprintf(_x('%1$s %2$s ~ ORIGINALLY: %3$s', 's2member-front', 's2member'), strtoupper($full_coupon_code), $desc, $attr['desc']);
-
-					$attr['ta'] = (isset($coupon_applies, $ta) && $coupon_applies) ? $ta : $attr['ta']; // Do we have a new Trial Amount?
-					$attr['ra'] = (isset($coupon_applies, $ra) && $coupon_applies) ? $ra : $attr['ra']; // A new Regular Amount?
-
-					if(is_array($process) && (in_array('affiliates-silent-post', $process) || in_array('affiliates-1px-response', $process)) /* Processing affiliates? */)
-						if(isset($coupon_applies) && $coupon_applies && !empty($affiliate_id) /* Now, is this an Affiliate Coupon Code? Contains an affiliate ID? */)
-							if(empty($_COOKIE['idev']) /* Special consideration here. iDevAffiliate must NOT have already tracked this customer. */)
-								if(($_urls = $GLOBALS['WS_PLUGIN__']['s2member']['o']['pro_affiliate_coupon_code_tracking_urls']))
-
-									foreach(preg_split('/['."\r\n\t".']+/', $_urls) as $_url /* Notify each of the URLs. */)
-
-										if(($_url = preg_replace('/%%full_coupon_code%%/i', c_ws_plugin__s2member_utils_strings::esc_refs(urlencode($full_coupon_code)), $_url)))
-											if(($_url = preg_replace('/%%coupon_code%%/i', c_ws_plugin__s2member_utils_strings::esc_refs(urlencode($coupon_code)), $_url)))
-												if(($_url = preg_replace('/%%(?:coupon_affiliate_id|affiliate_id)%%/i', c_ws_plugin__s2member_utils_strings::esc_refs(urlencode($affiliate_id)), $_url)))
-													if(($_url = preg_replace('/%%user_ip%%/i', c_ws_plugin__s2member_utils_strings::esc_refs(urlencode($_SERVER['REMOTE_ADDR'])), $_url)))
-													{
-														if(($_url = trim(preg_replace('/%%(.+?)%%/i', '', $_url))) /* Cleanup any remaining Replacement Codes. */)
-
-															if(!($_r = 0) && ($_url = preg_replace('/^silent-php\|/i', '', $_url, 1, $_r)) && $_r && in_array('affiliates-silent-post', $process))
-																c_ws_plugin__s2member_utils_urls::remote($_url, FALSE, array('blocking' => FALSE));
-
-															else if(!($_r = 0) && ($_url = preg_replace('/^img-1px\|/i', '', $_url, 1, $_r)) && $_r && in_array('affiliates-1px-response', $process))
-																if(!empty($response) && $return === 'response' /* Now, we MUST also have a ``$response``, and MUST be returning ``$response``. */)
-																	$response .= '\n'.'<img src="'.esc_attr($_url).'" style="width:0; height:0; border:0;" alt="" />';
-													}
-					unset($_urls, $_url, $_r); // Just a little housekeeping here. Unset these variables.
-
-					if(empty($response)) // Is ``$response`` NOT set by now? If it's not, we need a default ``$response``.
-						$response = _x('<div>Sorry, your Coupon is N/A, invalid or expired.</div>', 's2member-front', 's2member');
-				}
-				else // Otherwise, we need a default response to display.
-					$response = _x('<div>Sorry, your Coupon is N/A, invalid or expired.</div>', 's2member-front', 's2member');
-
-			$attr['_coupon_applies']      = (isset($coupon_applies) && $coupon_applies) ? '1' : '0';
-			$attr['_coupon_code']         = (isset($coupon_applies) && $coupon_applies) ? $coupon_code : '';
-			$attr['_full_coupon_code']    = (isset($coupon_applies) && $coupon_applies && !empty($full_coupon_code)) ? $full_coupon_code : ((isset($coupon_applies) && $coupon_applies) ? $coupon_code : '');
-			$attr['_coupon_affiliate_id'] = (isset($coupon_applies) && $coupon_applies && !empty($affiliate_id) && empty($_COOKIE['idev'])) ? $affiliate_id : '';
-
-			return ($return === 'response') ? (!empty($response) ? (string)$response : '') : $attr;
+			$coupons = new c_ws_plugin__s2member_pro_coupons();
+			return $coupons->apply($attr, $coupon_code, $return, $process);
 		}
 	}
 }

@@ -19,18 +19,18 @@
  *   See: {@link http://www.s2member.com/prices/}
  *
  * Unless you have our prior written consent, you must NOT directly or indirectly license,
- * sub-license, sell, resell, or provide for free; part (2) of the s2Member Pro Module;
+ * sub-license, sell, resell, or provide for free; part (2) of the s2Member Pro Add-on;
  * or make an offer to do any of these things. All of these things are strictly
- * prohibited with part (2) of the s2Member Pro Module.
+ * prohibited with part (2) of the s2Member Pro Add-on.
  *
  * Your purchase of s2Member Pro includes free lifetime upgrades via s2Member.com
- * (i.e. new features, bug fixes, updates, improvements); along with full access
+ * (i.e., new features, bug fixes, updates, improvements); along with full access
  * to our video tutorial library: {@link http://www.s2member.com/videos/}
  *
  * @package s2Member\API_Remote_Ops
  * @since 110713
  */
-if(realpath(__FILE__) === realpath($_SERVER['SCRIPT_FILENAME']))
+if(!defined('WPINC')) // MUST have WordPress.
 	exit('Do not access this file directly.');
 
 if(!class_exists('c_ws_plugin__s2member_pro_remote_ops_in'))
@@ -67,10 +67,10 @@ if(!class_exists('c_ws_plugin__s2member_pro_remote_ops_in'))
 				else if(!empty($op['data']['user_email']) && ($_user = get_user_by('email', (string)$op['data']['user_email'])) && !empty($_user->ID))
 					$user = $_user;
 
-				else return 'Error: Failed to locate this User. Unable to obtain WP_User object instance with data supplied (i.e. ID/Username/Email not found).';
+				else return 'Error: Failed to locate this User. Unable to obtain WP_User object instance with data supplied (i.e., ID/Username/Email not found).';
 
 				if(is_multisite() && !is_user_member_of_blog($user->ID))
-					return 'Error: Failed to locate this User. Unable to obtain WP_User object instance with data supplied (i.e. ID/Username/Email not a part of this Blog).';
+					return 'Error: Failed to locate this User. Unable to obtain WP_User object instance with data supplied (i.e., ID/Username/Email not a part of this Blog).';
 
 				$role  = c_ws_plugin__s2member_user_access::user_access_role($user);
 				$level = c_ws_plugin__s2member_user_access::user_access_role_to_level($role);
@@ -123,10 +123,10 @@ if(!class_exists('c_ws_plugin__s2member_pro_remote_ops_in'))
 				if(!empty($op['data']['user_login']) && !empty($op['data']['user_pass']) && ($_user = wp_authenticate($op['data']['user_login'], $op['data']['user_pass'])) && !empty($_user->ID))
 					$user = $_user;
 
-				else return 'Error: Failed to authenticate this User. Unable to authenticate User/Member with data supplied (i.e. Username/Password invalid).';
+				else return 'Error: Failed to authenticate this User. Unable to authenticate User/Member with data supplied (i.e., Username/Password invalid).';
 
 				if(is_multisite() && !is_user_member_of_blog($user->ID))
-					return 'Error: Failed to authenticate this User (i.e. the supplied Username is not a part of this Blog).';
+					return 'Error: Failed to authenticate this User (i.e., the supplied Username is not a part of this Blog).';
 
 				return serialize(array('ID' => $user->ID));
 			}
@@ -232,10 +232,10 @@ if(!class_exists('c_ws_plugin__s2member_pro_remote_ops_in'))
 				else if(!empty($op['data']['user_login']) && ($_user = new WP_User((string)$op['data']['user_login'])) && !empty($_user->ID))
 					$user = $_user;
 
-				else return 'Error: Modification failed. Unable to obtain WP_User object instance with data supplied (i.e. ID/Username not found).';
+				else return 'Error: Modification failed. Unable to obtain WP_User object instance with data supplied (i.e., ID/Username not found).';
 
 				if(is_multisite() && !is_user_member_of_blog($user->ID))
-					return 'Error: Modification failed. Unable to obtain WP_User object instance with data supplied (i.e. ID/Username not a part of this Blog).';
+					return 'Error: Modification failed. Unable to obtain WP_User object instance with data supplied (i.e., ID/Username not a part of this Blog).';
 
 				if(is_super_admin($user->ID) || $user->has_cap('administrator'))
 					return 'Error: Modification failed. This API will not modify Administrators.';
@@ -269,7 +269,7 @@ if(!class_exists('c_ws_plugin__s2member_pro_remote_ops_in'))
 					if(c_ws_plugin__s2member_user_access::user_access_role($user) !== 's2member_level'.(integer)$op['data']['s2member_level'])
 						$userdata['role'] = 's2member_level'.(integer)$op['data']['s2member_level'];
 				}
-				wp_update_user($userdata); // OK. Now send this array for an update.
+				wp_update_user(wp_slash($userdata)); // OK. Now send this array for an update.
 
 				$old_user = unserialize(serialize($user)); // Copy existing user obj.
 				$user     = new WP_User($user->ID); // Update our object instance.

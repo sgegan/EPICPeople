@@ -19,18 +19,18 @@
 * 	See: {@link http://www.s2member.com/prices/}
 *
 * Unless you have our prior written consent, you must NOT directly or indirectly license,
-* sub-license, sell, resell, or provide for free; part (2) of the s2Member Pro Module;
+* sub-license, sell, resell, or provide for free; part (2) of the s2Member Pro Add-on;
 * or make an offer to do any of these things. All of these things are strictly
-* prohibited with part (2) of the s2Member Pro Module.
+* prohibited with part (2) of the s2Member Pro Add-on.
 *
 * Your purchase of s2Member Pro includes free lifetime upgrades via s2Member.com
-* (i.e. new features, bug fixes, updates, improvements); along with full access
+* (i.e., new features, bug fixes, updates, improvements); along with full access
 * to our video tutorial library: {@link http://www.s2member.com/videos/}
 *
 * @package s2Member\PayPal
 * @since 1.5
 */
-if(realpath(__FILE__) === realpath($_SERVER["SCRIPT_FILENAME"]))
+if(!defined('WPINC')) // MUST have WordPress.
 	exit("Do not access this file directly.");
 
 if(!class_exists("c_ws_plugin__s2member_pro_paypal_checkout_pf_in"))
@@ -44,7 +44,7 @@ if(!class_exists("c_ws_plugin__s2member_pro_paypal_checkout_pf_in"))
 		class c_ws_plugin__s2member_pro_paypal_checkout_pf_in
 			{
 				/**
-				* Handles processing of Pro Form checkouts.
+				* Handles processing of Pro-Form checkouts.
 				*
 				* @package s2Member\PayPal
 				* @since 1.5
@@ -882,7 +882,6 @@ if(!class_exists("c_ws_plugin__s2member_pro_paypal_checkout_pf_in"))
 																					if(isset($post_vars["custom_fields"][$field_var]))
 																						$_POST["ws_plugin__s2member_custom_reg_field_".$field_var] = $post_vars["custom_fields"][$field_var];
 																				}
-
 																		$_COOKIE["s2member_subscr_gateway"] = c_ws_plugin__s2member_utils_encryption::encrypt("paypal"); // Fake this for registration configuration.
 																		$_COOKIE["s2member_subscr_id"] = c_ws_plugin__s2member_utils_encryption::encrypt($new__subscr_id); // Fake this for registration configuration.
 																		$_COOKIE["s2member_custom"] = c_ws_plugin__s2member_utils_encryption::encrypt($post_vars["attr"]["custom"]); // Fake this for registration configuration.

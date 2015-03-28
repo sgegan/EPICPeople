@@ -18,12 +18,12 @@
 * 	See: {@link http://www.s2member.com/prices/}
 *
 * Unless you have our prior written consent, you must NOT directly or indirectly license,
-* sub-license, sell, resell, or provide for free; part (2) of the s2Member Pro Module;
+* sub-license, sell, resell, or provide for free; part (2) of the s2Member Pro Add-on;
 * or make an offer to do any of these things. All of these things are strictly
-* prohibited with part (2) of the s2Member Pro Module.
+* prohibited with part (2) of the s2Member Pro Add-on.
 *
 * Your purchase of s2Member Pro includes free lifetime upgrades via s2Member.com
-* (i.e. new features, bug fixes, updates, improvements); along with full access
+* (i.e., new features, bug fixes, updates, improvements); along with full access
 * to our video tutorial library: {@link http://www.s2member.com/videos/}
 *
 * @package s2Member
@@ -77,7 +77,35 @@ div.ws-plugin--s2member-pro-login-widget-profile-summary-name
 	font-size   : 120%;
 	font-weight : bold;
 }
-
+/*
+Structural styles for the `[s2Member-Gift-Codes /]` shortcode.
+These are basic CSS rules. You can override any of these
+through the `/style.css` file for your WordPress theme.
+*/
+table.ws-plugin--s2member-gift-codes > thead > tr > th
+{
+	vertical-align : middle;
+}
+table.ws-plugin--s2member-gift-codes > thead > tr > th.-code::before
+{
+	vertical-align : middle;
+	margin         : 0 .25em 0 0;
+	display        : inline-block;
+	content        : url('<?php echo $i; ?>/coupon-icon.png');
+}
+table.ws-plugin--s2member-gift-codes > tbody > tr > td.-code
+{
+	font-family : 'Menlo', 'Monaco', 'Consolas', monospace;
+}
+table.ws-plugin--s2member-gift-codes > tbody > tr > td.-code > a
+{
+	border          : 0;
+	text-decoration : none;
+}
+table.ws-plugin--s2member-gift-codes > tbody > tr > td.-status
+{
+	font-variant : small-caps;
+}
 /*
 Structural styles for the `[s2Member-List /]` shortcode.
 These are basic CSS rules. You can override any of these
@@ -194,7 +222,6 @@ div.ws-plugin--s2member-list ul.ws-plugin--s2member-list-pagination li a:hover
 {
 	opacity : 1;
 }
-
 /*
 Structural styles for the `[s2Member-List-Search /]` shortcode.
 These are basic CSS rules. You can override any of these

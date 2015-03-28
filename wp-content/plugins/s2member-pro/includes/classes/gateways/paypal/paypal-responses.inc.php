@@ -1,6 +1,6 @@
 <?php
 /**
-* PayPal Pro Form responses.
+* PayPal Pro-Form responses.
 *
 * Copyright: © 2009-2011
 * {@link http://www.websharks-inc.com/ WebSharks, Inc.}
@@ -19,24 +19,24 @@
 * 	See: {@link http://www.s2member.com/prices/}
 *
 * Unless you have our prior written consent, you must NOT directly or indirectly license,
-* sub-license, sell, resell, or provide for free; part (2) of the s2Member Pro Module;
+* sub-license, sell, resell, or provide for free; part (2) of the s2Member Pro Add-on;
 * or make an offer to do any of these things. All of these things are strictly
-* prohibited with part (2) of the s2Member Pro Module.
+* prohibited with part (2) of the s2Member Pro Add-on.
 *
 * Your purchase of s2Member Pro includes free lifetime upgrades via s2Member.com
-* (i.e. new features, bug fixes, updates, improvements); along with full access
+* (i.e., new features, bug fixes, updates, improvements); along with full access
 * to our video tutorial library: {@link http://www.s2member.com/videos/}
 *
 * @package s2Member\PayPal
 * @since 1.5
 */
-if(realpath(__FILE__) === realpath($_SERVER["SCRIPT_FILENAME"]))
+if(!defined('WPINC')) // MUST have WordPress.
 	exit("Do not access this file directly.");
 
 if(!class_exists("c_ws_plugin__s2member_pro_paypal_responses"))
 	{
 		/**
-		* PayPal Pro Form responses.
+		* PayPal Pro-Form responses.
 		*
 		* @package s2Member\PayPal
 		* @since 1.5
@@ -49,7 +49,7 @@ if(!class_exists("c_ws_plugin__s2member_pro_paypal_responses"))
 				* @package s2Member\PayPal
 				* @since 1.5
 				*
-				* @param array $attr An array of Pro Form Attributes.
+				* @param array $attr An array of Pro-Form Attributes.
 				* @return array An array of response details.
 				*/
 				public static function paypal_cancellation_response($attr = FALSE)
@@ -78,7 +78,7 @@ if(!class_exists("c_ws_plugin__s2member_pro_paypal_responses"))
 				* @package s2Member\PayPal
 				* @since 1.5
 				*
-				* @param array $attr An array of Pro Form Attributes.
+				* @param array $attr An array of Pro-Form Attributes.
 				* @return array An array of response details.
 				*/
 				public static function paypal_update_response($attr = FALSE)
@@ -107,7 +107,7 @@ if(!class_exists("c_ws_plugin__s2member_pro_paypal_responses"))
 				* @package s2Member\PayPal
 				* @since 1.5
 				*
-				* @param array $attr An array of Pro Form Attributes.
+				* @param array $attr An array of Pro-Form Attributes.
 				* @return array An array of response details.
 				*/
 				public static function paypal_registration_response($attr = FALSE)
@@ -136,7 +136,7 @@ if(!class_exists("c_ws_plugin__s2member_pro_paypal_responses"))
 				* @package s2Member\PayPal
 				* @since 1.5
 				*
-				* @param array $attr An array of Pro Form Attributes.
+				* @param array $attr An array of Pro-Form Attributes.
 				* @return array An array of response details.
 				*/
 				public static function paypal_sp_checkout_response($attr = FALSE)
@@ -165,7 +165,7 @@ if(!class_exists("c_ws_plugin__s2member_pro_paypal_responses"))
 				* @package s2Member\PayPal
 				* @since 1.5
 				*
-				* @param array $attr An array of Pro Form Attributes.
+				* @param array $attr An array of Pro-Form Attributes.
 				* @return array An array of response details.
 				*/
 				public static function paypal_checkout_response($attr = FALSE)
@@ -196,7 +196,7 @@ if(!class_exists("c_ws_plugin__s2member_pro_paypal_responses"))
 				* @package s2Member\PayPal
 				* @since 1.5
 				*
-				* @param array $attr An array of Pro Form Attributes.
+				* @param array $attr An array of Pro-Form Attributes.
 				* @return null|array Null if there are no errors, else a response array.
 				*/
 				public static function paypal_form_api_validation_errors($attr = FALSE)
@@ -223,7 +223,7 @@ if(!class_exists("c_ws_plugin__s2member_pro_paypal_responses"))
 				* @package s2Member\PayPal
 				* @since 1.5
 				*
-				* @param array $attr An array of Pro Form Attributes.
+				* @param array $attr An array of Pro-Form Attributes.
 				* @return null|array Null if there are no errors, else a response array.
 				*/
 				public static function paypal_form_attr_validation_errors($attr = FALSE)
@@ -349,8 +349,8 @@ if(!class_exists("c_ws_plugin__s2member_pro_paypal_responses"))
 										else if($attr["exp"] < 1)
 											$response = array("response" => _x('Invalid form configuration. Invalid "exp" attribute. Specific Post/Page Expiration (in hours). Must be >= 1.', "s2member-admin", "s2member"), "error" => true);
 
-										else if($attr["exp"] > 43800)
-											$response = array("response" => _x('Invalid form configuration. Invalid "exp" attribute. Specific Post/Page Expiration (in hours). Must be <= 43800.', "s2member-admin", "s2member"), "error" => true);
+										else if($attr["exp"] > 438291)
+											$response = array("response" => _x('Invalid form configuration. Invalid "exp" attribute. Specific Post/Page Expiration (in hours). Must be <= 438291.', "s2member-admin", "s2member"), "error" => true);
 
 										else if(!$attr["sp_ids_exp"] || !is_string($attr["sp_ids_exp"]))
 											$response = array("response" => _x('Invalid form configuration. Missing "sp_ids_exp" internal attribute. Please check Shortcode Attributes.', "s2member-admin", "s2member"), "error" => true);
@@ -508,7 +508,7 @@ if(!class_exists("c_ws_plugin__s2member_pro_paypal_responses"))
 											$response = array("response" => _x('Invalid form configuration. Invalid "rt, rp, rr" attributes. The "rt" (Regular Term) attribute is "M", "rp" (Regular Period) > 12, and "rr" is not "BN" (Buy Now).', "s2member-admin", "s2member"), "error" => true);
 
 										else if($attr["rr"] !== "BN" && $GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["paypal_payflow_api_username"] && !in_array($attr["rp"]."-".$attr["rt"], array("1-D", "1-W", "2-W", "1-M", "3-M", "6-M", "1-Y"), TRUE)) // We allow daily here in case Payflow begins to support this in the future.
-											$response = array("response" => _x('Invalid Payflow form configuration. Invalid "rt, rp, rr" attributes. Payflow supports a specific set of recurring intervals. Pro Forms can be configured to charge: weekly, bi-weekly, monthly, quarterly, semi-yearly or yearly. Any other combination results in this error. This is a Payflow limitation.', "s2member-admin", "s2member"), "error" => true);
+											$response = array("response" => _x('Invalid Payflow form configuration. Invalid "rt, rp, rr" attributes. Payflow supports a specific set of recurring intervals. Pro-Forms can be configured to charge: weekly, bi-weekly, monthly, quarterly, semi-yearly or yearly. Any other combination results in this error. This is a Payflow limitation.', "s2member-admin", "s2member"), "error" => true);
 
 										else if($attr["rt"] === "Y" && $attr["rp"] > 5 && $attr["rr"] !== "BN")
 											$response = array("response" => _x('Invalid form configuration. Invalid "rt, rp, rr" attributes. The "rt" (Regular Term) attribute is "Y", "rp" (Regular Period) > 5, and "rr" is not "BN" (Buy Now).', "s2member-admin", "s2member"), "error" => true);
@@ -581,8 +581,8 @@ if(!class_exists("c_ws_plugin__s2member_pro_paypal_responses"))
 				* @package s2Member\PayPal
 				* @since 1.5
 				*
-				* @param string $form The type of Pro Form being submitted.
-				* @param array $s An array of data submitted through the Pro Form.
+				* @param string $form The type of Pro-Form being submitted.
+				* @param array $s An array of data submitted through the Pro-Form.
 				* @return null|array Null if there are no errors, else a response array.
 				*/
 				public static function paypal_form_submission_validation_errors($form = FALSE, $s = FALSE)
@@ -676,16 +676,16 @@ if(!class_exists("c_ws_plugin__s2member_pro_paypal_responses"))
 										else if(is_multisite() && !c_ws_plugin__s2member_utils_users::ms_user_login_email_can_join_blog($s["username"], $s["email"]) && ($_response = wpmu_validate_user_signup($s["username"], $s["email"])) && is_wp_error($_errors = $_response["errors"]) && $_errors->get_error_message())
 											$response = array("response" => $_errors->get_error_message(), "error" => true);
 
-										else if((empty($s["password1"]) || !is_string($s["password1"])) && $GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["custom_reg_password"])
+										else if($GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["custom_reg_password"] && (empty($s["password1"]) || !is_string($s["password1"])))
 											$response = array("response" => _x('Missing Password. Please try again.', "s2member-front", "s2member"), "error" => true);
 
-										else if(strlen($s["password1"]) < 6 && $GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["custom_reg_password"])
+										else if($GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["custom_reg_password"] && strlen($s["password1"]) < 6)
 											$response = array("response" => _x('Invalid Password. Must be at least 6 characters. Please try again.', "s2member-front", "s2member"), "error" => true);
 
-										else if(strlen($s["password1"]) > 20 && $GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["custom_reg_password"])
+										else if($GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["custom_reg_password"] && strlen($s["password1"]) > 20)
 											$response = array("response" => _x('Invalid Password. Max length is 20 characters. Please try again.', "s2member-front", "s2member"), "error" => true);
 
-										else if((empty($s["password2"]) || $s["password2"] !== $s["password1"]) && $GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["custom_reg_password"])
+										else if($GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["custom_reg_password"] && (empty($s["password2"]) || $s["password2"] !== $s["password1"]))
 											$response = array("response" => _x('Password fields do NOT match. Please try again.', "s2member-front", "s2member"), "error" => true);
 
 										else if(($custom_field_validation_errors = c_ws_plugin__s2member_custom_reg_fields::validation_errors(isset($s["custom_fields"]) ? $s["custom_fields"] : array(), c_ws_plugin__s2member_custom_reg_fields::custom_fields_configured_at_level($s["attr"]["level"], "registration", TRUE))))
@@ -788,16 +788,16 @@ if(!class_exists("c_ws_plugin__s2member_pro_paypal_responses"))
 										else if(!is_user_logged_in() && is_multisite() && !c_ws_plugin__s2member_utils_users::ms_user_login_email_can_join_blog($s["username"], $s["email"]) && ($_response = wpmu_validate_user_signup($s["username"], $s["email"])) && is_wp_error($_errors = $_response["errors"]) && $_errors->get_error_message())
 											$response = array("response" => $_errors->get_error_message(), "error" => true);
 
-										else if(!is_user_logged_in() && (empty($s["password1"]) || !is_string($s["password1"])) && $GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["custom_reg_password"])
+										else if($GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["custom_reg_password"] && !is_user_logged_in() && (empty($s["password1"]) || !is_string($s["password1"])))
 											$response = array("response" => _x('Missing Password. Please try again.', "s2member-front", "s2member"), "error" => true);
 
-										else if(!is_user_logged_in() && strlen($s["password1"]) < 6 && $GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["custom_reg_password"])
+										else if($GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["custom_reg_password"] && !is_user_logged_in() && strlen($s["password1"]) < 6)
 											$response = array("response" => _x('Invalid Password. Must be at least 6 characters. Please try again.', "s2member-front", "s2member"), "error" => true);
 
-										else if(!is_user_logged_in() && strlen($s["password1"]) > 20 && $GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["custom_reg_password"])
+										else if($GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["custom_reg_password"] && !is_user_logged_in() && strlen($s["password1"]) > 20)
 											$response = array("response" => _x('Invalid Password. Max length is 20 characters. Please try again.', "s2member-front", "s2member"), "error" => true);
 
-										else if(!is_user_logged_in() && (empty($s["password2"]) || $s["password2"] !== $s["password1"]) && $GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["custom_reg_password"])
+										else if($GLOBALS["WS_PLUGIN__"]["s2member"]["o"]["custom_reg_password"] && !is_user_logged_in() && (empty($s["password2"]) || $s["password2"] !== $s["password1"]))
 											$response = array("response" => _x('Password fields do NOT match. Please try again.', "s2member-front", "s2member"), "error" => true);
 
 										else if(!is_user_logged_in() && ($custom_field_validation_errors = c_ws_plugin__s2member_custom_reg_fields::validation_errors(isset($s["custom_fields"]) ? $s["custom_fields"] : array(), c_ws_plugin__s2member_custom_reg_fields::custom_fields_configured_at_level($s["attr"]["level"] === "*" ? "auto-detection" : $s["attr"]["level"], "registration", TRUE))))

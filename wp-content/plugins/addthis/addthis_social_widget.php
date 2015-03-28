@@ -147,7 +147,7 @@ function addthis_script_to_content($content)
 add_filter('language_attributes', 'addthis_language_attributes');
 function addthis_language_attributes($input)
 {
-    return $input . ' xmlns:fb="http://ogp.me/ns/fb#" xmlns:addthis="http://www.addthis.com/help/api-spec" ';
+    return $input . ' xmlns:fb="//ogp.me/ns/fb#" xmlns:addthis="//www.addthis.com/help/api-spec" ';
 }
 
 

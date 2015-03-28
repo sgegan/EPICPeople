@@ -19,48 +19,47 @@
  *   See: {@link http://www.s2member.com/prices/}
  *
  * Unless you have our prior written consent, you must NOT directly or indirectly license,
- * sub-license, sell, resell, or provide for free; part (2) of the s2Member Pro Module;
+ * sub-license, sell, resell, or provide for free; part (2) of the s2Member Pro Add-on;
  * or make an offer to do any of these things. All of these things are strictly
- * prohibited with part (2) of the s2Member Pro Module.
+ * prohibited with part (2) of the s2Member Pro Add-on.
  *
  * Your purchase of s2Member Pro includes free lifetime upgrades via s2Member.com
- * (i.e. new features, bug fixes, updates, improvements); along with full access
+ * (i.e., new features, bug fixes, updates, improvements); along with full access
  * to our video tutorial library: {@link http://www.s2member.com/videos/}
  *
  * @package s2Member\Shortcodes
  * @since 140328
  */
-if(realpath(__FILE__) === realpath($_SERVER["SCRIPT_FILENAME"]))
-	exit("Do not access this file directly.");
+if(!defined('WPINC')) // MUST have WordPress.
+	exit('Do not access this file directly.');
 
-if(!class_exists("c_ws_plugin__s2member_pro_sc_drip"))
+if(!class_exists('c_ws_plugin__s2member_pro_sc_drip'))
+{
+	/**
+	 * [s2Drip] Shortcode.
+	 *
+	 * @package s2Member\Shortcodes
+	 * @since 140328
+	 */
+	class c_ws_plugin__s2member_pro_sc_drip
 	{
 		/**
 		 * [s2Drip] Shortcode.
 		 *
 		 * @package s2Member\Shortcodes
 		 * @since 140328
+		 *
+		 * @attaches-to ``add_shortcode('s2Drip');``
+		 *
+		 * @param array  $attr An array of Attributes.
+		 * @param string $content Content inside the Shortcode.
+		 * @param string $shortcode The actual Shortcode name itself.
+		 *
+		 * @return string Return-value of inner routine.
 		 */
-		class c_ws_plugin__s2member_pro_sc_drip
+		public static function shortcode($attr = array(), $content = '', $shortcode = '')
 		{
-			/**
-			 * [s2Drip] Shortcode.
-			 *
-			 * @package s2Member\Shortcodes
-			 * @since 140328
-			 *
-			 * @attaches-to ``add_shortcode("s2Drip");``
-			 *
-			 * @param array $attr An array of Attributes.
-			 * @param string   $content Content inside the Shortcode.
-			 * @param string   $shortcode The actual Shortcode name itself.
-			 *
-			 * @return inner Return-value of inner routine.
-			 */
-			public static function shortcode($attr = FALSE, $content = FALSE, $shortcode = FALSE)
-				{
-					return c_ws_plugin__s2member_pro_sc_drip_in::shortcode($attr, $content, $shortcode);
-				}
+			return c_ws_plugin__s2member_pro_sc_drip_in::shortcode($attr, $content, $shortcode);
 		}
 	}
-?>
+}

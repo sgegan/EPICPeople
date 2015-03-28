@@ -10,3 +10,7 @@
 [18-Jan-2015 07:37:43 UTC] PHP Fatal error:  Call to undefined function register_activation_hook() in /usr/www/users/epic1/epicpeople.org/wp-content/plugins/contact-form-plugin/contact_form.php on line 2579
 [18-Jan-2015 14:39:21 UTC] PHP Fatal error:  Call to undefined function register_activation_hook() in /usr/www/users/epic1/epicpeople.org/wp-content/plugins/contact-form-plugin/contact_form.php on line 2579
 [18-Jan-2015 14:39:25 UTC] PHP Fatal error:  Call to undefined function register_activation_hook() in /usr/www/users/epic1/epicpeople.org/wp-content/plugins/contact-form-plugin/contact_form.php on line 2579
+[06-Mar-2015 19:46:35 UTC] PHP Fatal error:  Call to undefined function register_activation_hook() in /usr/www/users/epic1/epicpeople.org/wp-content/plugins/contact-form-plugin/contact_form.php on line 2579
+[06-Mar-2015 19:48:20 UTC] PHP Fatal error:  Call to undefined function register_activation_hook() in /usr/www/users/epic1/epicpeople.org/wp-content/plugins/contact-form-plugin/contact_form.php on line 2579
+[14-Mar-2015 23:27:44 UTC] PHP Fatal error:  Call to undefined function register_activation_hook() in /usr/www/users/epic1/epicpeople.org/wp-content/plugins/contact-form-plugin/contact_form.php on line 2579
+[14-Mar-2015 23:27:57 UTC] PHP Fatal error:  Call to undefined function register_activation_hook() in /usr/www/users/epic1/epicpeople.org/wp-content/plugins/contact-form-plugin/contact_form.php on line 2579

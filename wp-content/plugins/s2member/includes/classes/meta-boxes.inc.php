@@ -14,7 +14,7 @@
 * @package s2Member\Meta_Boxes
 * @since 3.5
 */
-if (realpath (__FILE__) === realpath ($_SERVER["SCRIPT_FILENAME"]))
+if(!defined('WPINC')) // MUST have WordPress.
 	exit ("Do not access this file directly.");
 
 if (!class_exists ("c_ws_plugin__s2member_meta_boxes"))
@@ -38,7 +38,7 @@ if (!class_exists ("c_ws_plugin__s2member_meta_boxes"))
 				*
 				* @attaches-to ``add_action("add_meta_boxes");``
 				*
-				* @param string $type String indicating type of Post, or another classification *( i.e. `nav_menu_item` )*.
+				* @param string $type String indicating type of Post, or another classification *( i.e., `nav_menu_item` )*.
 				* @return null
 				*/
 				public static function add_meta_boxes ($type = FALSE)

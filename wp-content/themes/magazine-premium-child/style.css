@@ -16,8 +16,8 @@
 @import url('css/sm.css')  (max-width: 767px);
 @import url('css/xs.css')  (max-width: 320px);
 
-@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic);
-@import url(http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic);
+@import url(//fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic);
+@import url(//fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic);
 
 
 /* =Theme customization starts here

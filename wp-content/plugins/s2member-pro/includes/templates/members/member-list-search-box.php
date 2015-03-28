@@ -1,5 +1,5 @@
 <?php
-if(realpath(__FILE__) === realpath($_SERVER["SCRIPT_FILENAME"]))
+if(!defined('WPINC')) // MUST have WordPress.
 	exit("Do not access this file directly.");
 
 /** @var $attr array */
@@ -14,7 +14,7 @@ else $s_val = ""; // No query yet.
 	<div class="ws-plugin--s2member-list-search-box-container">
 		<div class="ws-plugin--s2member-list-search-box">
 
-			<form action="<?php echo esc_attr($attr["action"]); ?>" method="get">
+			<form action="<?php echo esc_attr($attr["action"]); ?>" method="get" autocomplete="off">
 				%%hidden_inputs%% <!-- Replaced dynamically by s2Member. Please leave this here. -->
 				<table>
 					<tbody>

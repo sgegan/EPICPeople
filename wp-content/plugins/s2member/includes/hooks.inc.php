@@ -14,11 +14,13 @@
  * @package s2Member
  * @since 3.0
  */
-if(realpath(__FILE__) === realpath($_SERVER['SCRIPT_FILENAME']))
+if(!defined('WPINC')) // MUST have WordPress.
 	exit('Do not access this file directly.');
 /*
 Add the plugin Actions/Filters here.
 */
+add_action('set_current_user', 'c_ws_plugin__s2member_user_securities::set_current_user', 2);
+
 add_action('init', 'c_ws_plugin__s2member_translations::load', 2);
 
 add_action('init', 'c_ws_plugin__s2member_ssl::check_force_ssl', 3);

@@ -10,3 +10,30 @@ input[type="password"] {
 	width: 73%;
 	margin-top: 4px;
 }
+
+blockquote {
+    border-left: none;
+    padding-left: 24px;
+    margin: 0 1.625em 15px 0 !important;
+}
+
+/* text styles */
+
+.centered-text {
+    padding: 0 0 0 8px;
+}
+
+/* buttons */
+
+.subscription-button {
+    width: 100%;
+}
+
+.subscription-button a {
+    padding: 30px;
+}
+
+
+.subscription-sm-button a {
+    padding: 10px 30px;
+}
