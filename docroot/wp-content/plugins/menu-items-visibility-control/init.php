@@ -3,8 +3,8 @@
 Plugin Name:    Menu Items Visibility Control
 Description:    Control the display logic of individual menu items.
 Author:         Hassan Derakhshandeh
-Version:        0.3
-Author URI:     http://tween.ir/
+Version:        0.3.1
+Author URI:     http://shazdeh.me/
 
 		This program is free software; you can redistribute it and/or modify
 		it under the terms of the GNU General Public License as published by
@@ -30,13 +30,12 @@ class Menu_Items_Visibility_Control {
 	 *
 	 * @return	A single instance of this class.
 	 */
-	public function get_instance() {
+	public static function get_instance() {
 		return null == self::$instance ? self::$instance = new self : self::$instance;
 	}
 
 	function __construct() {
 		if( is_admin() ) {
-			require_once( dirname( __FILE__ ) . '/includes/walker-nav-menu-edit.php' );
 			add_filter( 'wp_edit_nav_menu_walker', array( &$this, 'edit_nav_menu_walker' ) );
 			add_action( 'wp_nav_menu_item_custom_fields', array( &$this, 'option' ), 12, 4 );
 			add_action( 'wp_update_nav_menu_item', array( &$this, 'update_option' ), 10, 3 );
@@ -58,6 +57,7 @@ class Menu_Items_Visibility_Control {
 	 * @since 0.1
 	 */
 	function edit_nav_menu_walker( $walker ) {
+		require_once( dirname( __FILE__ ) . '/includes/walker-nav-menu-edit.php' );
 		return 'Boom_Walker_Nav_Menu_Edit';
 	}
 
@@ -102,6 +102,7 @@ class Menu_Items_Visibility_Control {
 				$hidden_items[$item->ID] = '1';
 			}
 		}
+
 		return $items;
 	}
 

@@ -3,8 +3,8 @@ Contributors: shazdeh
 Plugin Name: Menu Item Visibility Control
 Tags: menu, nav-menu, navigation, navigation menu, conditional tags, Context, filter
 Requires at least: 3.1
-Tested up to: 3.6
-Stable tag: 0.3
+Tested up to: 3.9.1
+Stable tag: 0.3.1
 
 Control individual menu items' visibility based on your desired condition.
 
@@ -36,6 +36,10 @@ To show the menu item only to users with "administrator" role:
 
 
 == Changelog ==
+
+= 0.3.1 =
+* Got rid of PHP notices in the admin area
+* Updated Walker_Nav_Menu_Edit
 
 = 0.3 =
 * Gantry 4.0 compatibility
