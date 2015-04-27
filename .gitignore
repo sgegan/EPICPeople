@@ -13,6 +13,7 @@ docroot/wp-content/wp-cache-config.php
 docroot/wp-content/cache
 docroot/wp-content/avatars
 docroot/wp-content/w3tc
+docroot/wp-content/w3tc-config
 .DS_Store
 db
 REVISION

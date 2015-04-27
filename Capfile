@@ -16,6 +16,7 @@ namespace :deploy do
       dirs += [shared_path + "/#{domain}/files/avatars"]
       dirs += [shared_path + "/#{domain}/files/uploads"]
       dirs += [shared_path + "/#{domain}/files/w3tc"]
+      dirs += [shared_path + "/#{domain}/files/w3tc-config"]
       dirs += [shared_path + "/#{domain}/files/cache"]
     end
     dirs += %w(system).map { |d| File.join(shared_path, d) }
@@ -25,6 +26,7 @@ namespace :deploy do
     run "chmod 2775 #{shared_path}/*/files/avatars"
     run "chmod 2775 #{shared_path}/*/files/uploads"
     run "chmod 2775 #{shared_path}/*/files/w3tc"
+    run "chmod 2775 #{shared_path}/*/files/w3tc-config"
     run "chmod 2775 #{shared_path}/*/files/cache"
     run "chgrp #{httpd_group} #{shared_path}/*/files"
     run "chgrp #{httpd_group} #{shared_path}/*/files/*"
@@ -61,6 +63,7 @@ EOF
       # Link Various files directories (uploads, w3tc, avatars, cache)
       run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/uploads #{release_path}/#{app_root}/wp-content/uploads"
       run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/w3tc #{release_path}/#{app_root}/wp-content/w3tc"
+      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/w3tc-config #{release_path}/#{app_root}/wp-content/w3tc-config"
       run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/avatars #{release_path}/#{app_root}/wp-content/avatars"
       run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/cache #{release_path}/#{app_root}/wp-content/cache"
     end
