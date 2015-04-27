@@ -44,6 +44,9 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', true);
 
+// WP object caching.
+define('WP_CACHE', true);
+
 
 if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
     include( dirname( __FILE__ ) . '/local-config.php' );
