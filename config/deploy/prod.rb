@@ -11,7 +11,7 @@ role :web, "epicpeople.com"
 role :db, "epicpeople.com", :primary => true
 
 # The path to wp-cli
-set :wp, "cd #{current_path}/#{app_root} ; /usr/bin/wp"
+set :wp, "cd #{current_path}/#{app_root} ; /usr/local/bin/wp"
 
 # The username on the target system, if different from your local username
 ssh_options[:user] = 'deploy'
