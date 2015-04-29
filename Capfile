@@ -123,8 +123,8 @@ namespace :db do
       run_locally "mkdir -p db"
       run "cd #{deploy_to}/current/webroot && #{wp} db export #{temp} && cd -"
       download("#{temp}", "db/#{filename}", :via=> :scp)
-      search = "#{application}-#{stage}.metaltoad.com"
-      replace = local_domain
+      search = Regexp.quote("#{application}-#{stage}.metaltoad.com")
+      replace = Regexp.quote(local_domain)
       puts "searching (#{search}) and replacing (#{replace}) domain information"
       run_locally "sed -e 's/#{search}/#{replace}/g' -i .bak db/#{filename}"
       run "rm #{temp}"
@@ -145,8 +145,8 @@ namespace :db do
       filename = "#{domain}_#{stage}.sql"
       temp = "/tmp/#{release_name}_#{application}_#{filename}"
       run "touch #{temp} && chmod 600 #{temp}"
-      replace = "#{stage_domain}"
-      search = local_domain
+      replace = Regexp.quote("#{stage_domain}")
+      search = Regexp.quote(local_domain)
       puts "searching (#{search}) and replacing (#{replace}) domain information"
       run_locally "sed -e 's/#{search}/#{replace}/g' -i .bak db/#{filename}"
       upload("db/#{filename}", "#{temp}", :via=> :scp)

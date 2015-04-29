@@ -42,7 +42,8 @@ $table_prefix  = 'wp_';
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', true);
+// Because of buddypress and the theme and s2member not cleaning their php notices, I've turned this off.
+define('WP_DEBUG', false);
 
 // WP object caching.
 define('WP_CACHE', true);
