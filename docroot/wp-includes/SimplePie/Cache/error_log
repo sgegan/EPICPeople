@@ -1,7 +1,0 @@
-[28-Feb-2015 11:58:43 UTC] PHP Fatal error:  Interface 'SimplePie_Cache_Base' not found in /usr/www/users/epic1/epicpeople.org/wp-includes/SimplePie/Cache/DB.php on line 52
-[28-Feb-2015 11:58:52 UTC] PHP Fatal error:  Interface 'SimplePie_Cache_Base' not found in /usr/www/users/epic1/epicpeople.org/wp-includes/SimplePie/Cache/File.php on line 52
-[28-Feb-2015 11:59:10 UTC] PHP Fatal error:  Class 'SimplePie_Cache_DB' not found in /usr/www/users/epic1/epicpeople.org/wp-includes/SimplePie/Cache/MySQL.php on line 58
-[28-Feb-2015 11:59:18 UTC] PHP Fatal error:  Interface 'SimplePie_Cache_Base' not found in /usr/www/users/epic1/epicpeople.org/wp-includes/SimplePie/Cache/Memcache.php on line 59
-[03-Mar-2015 19:19:35 UTC] PHP Fatal error:  Interface 'SimplePie_Cache_Base' not found in /usr/www/users/epic1/epicpeople.org/wp-includes/SimplePie/Cache/File.php on line 52
-[04-Mar-2015 01:33:23 UTC] PHP Fatal error:  Class 'SimplePie_Cache_DB' not found in /usr/www/users/epic1/epicpeople.org/wp-includes/SimplePie/Cache/MySQL.php on line 58
-[04-Mar-2015 10:46:50 UTC] PHP Fatal error:  Interface 'SimplePie_Cache_Base' not found in /usr/www/users/epic1/epicpeople.org/wp-includes/SimplePie/Cache/DB.php on line 52
