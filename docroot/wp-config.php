@@ -49,6 +49,9 @@ define('WP_DEBUG', false);
 define('WP_CACHE', true);
 
 
+define( 'DB_CHARSET', 'utf8' );
+
+
 if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
     include( dirname( __FILE__ ) . '/local-config.php' );
 } else {
