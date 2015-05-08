@@ -36,8 +36,8 @@ before 'multistage:ensure' do
 
   # Extra reminders for production.
   if (stage == :prod)
-    before "deploy", "deploy:quality"
-    after "deploy", "deploy:notify"
+    # before "deploy", "deploy:quality"
+    # after "deploy", "deploy:notify"
   end
 
   # Tag staging and production releases
