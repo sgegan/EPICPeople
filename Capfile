@@ -60,7 +60,7 @@ EOF
     domains.each do |domain|
       # link settings file
       run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/local-config.php #{release_path}/#{app_root}/local-config.php"
-      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/2015/local-config.php #{release_path}/#{app_root}/2015-local-config.php"
+      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/2015-local-config.php #{release_path}/#{app_root}/2015/local-config.php"
       # Link Various files directories (uploads, w3tc, avatars, cache)
       run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/uploads #{release_path}/#{app_root}/wp-content/uploads"
       run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/w3tc #{release_path}/#{app_root}/wp-content/w3tc"
