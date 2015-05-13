@@ -14,6 +14,14 @@ docroot/wp-content/cache
 docroot/wp-content/avatars
 docroot/wp-content/w3tc
 docroot/wp-content/w3tc-config
+docroot/2015/wp-content/cache
+docroot/2015/wp-content/upgrade
+docroot/2015/wp-content/uploads
+docroot/2015/wp-content/wp-cache-config.php
+docroot/2015/wp-content/cache
+docroot/2015/wp-content/avatars
+docroot/2015/wp-content/w3tc
+docroot/2015/wp-content/w3tc-config
 .DS_Store
 db
 REVISION
