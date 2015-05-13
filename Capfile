@@ -18,6 +18,11 @@ namespace :deploy do
       dirs += [shared_path + "/#{domain}/files/w3tc"]
       dirs += [shared_path + "/#{domain}/files/w3tc-config"]
       dirs += [shared_path + "/#{domain}/files/cache"]
+      dirs += [shared_path + "/#{domain}/files/2015avatars"]
+      dirs += [shared_path + "/#{domain}/files/2015uploads"]
+      dirs += [shared_path + "/#{domain}/files/2015w3tc"]
+      dirs += [shared_path + "/#{domain}/files/2015w3tc-config"]
+      dirs += [shared_path + "/#{domain}/files/2015cache"]
     end
     dirs += %w(system).map { |d| File.join(shared_path, d) }
     run "mkdir -m 0775 -p #{dirs.join(' ')}"
@@ -28,6 +33,11 @@ namespace :deploy do
     run "chmod 2775 #{shared_path}/*/files/w3tc"
     run "chmod 2775 #{shared_path}/*/files/w3tc-config"
     run "chmod 2775 #{shared_path}/*/files/cache"
+    run "chmod 2775 #{shared_path}/*/files/2015avatars"
+    run "chmod 2775 #{shared_path}/*/files/2015uploads"
+    run "chmod 2775 #{shared_path}/*/files/2015w3tc"
+    run "chmod 2775 #{shared_path}/*/files/2015w3tc-config"
+    run "chmod 2775 #{shared_path}/*/files/2015cache"
     run "chgrp #{httpd_group} #{shared_path}/*/files"
     run "chgrp #{httpd_group} #{shared_path}/*/files/*"
   end
@@ -67,6 +77,13 @@ EOF
       run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/w3tc-config #{release_path}/#{app_root}/wp-content/w3tc-config"
       run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/avatars #{release_path}/#{app_root}/wp-content/avatars"
       run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/cache #{release_path}/#{app_root}/wp-content/cache"
+
+
+      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/2015uploads #{release_path}/#{app_root}/2015/wp-content/uploads"
+      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/2015w3tc #{release_path}/#{app_root}/2015/wp-content/w3tc"
+      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/2015w3tc-config #{release_path}/#{app_root}/2015/wp-content/w3tc-config"
+      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/2015avatars #{release_path}/#{app_root}/2015/wp-content/avatars"
+      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/2015cache #{release_path}/#{app_root}/2015/wp-content/cache"
     end
   end
 
