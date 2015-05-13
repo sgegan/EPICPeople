@@ -14,42 +14,16 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('DB_NAME', 'epic1_2015');
+/**
+*
+* YOU SHOULD BE EDITING local-config.php !!!!!
+*
+* DON'T SET ENVIRONMENT SPECIFC SETTINGS IN THIS FILE, THEY BELONG IN local-config.php
+*
+**/
 
-/** MySQL database username */
-define('DB_USER', 'epic1_10');
 
-/** MySQL database password */
-define('DB_PASSWORD', 'hB4Ljd7d');
 
-/** MySQL hostname */
-define('DB_HOST', 'db152a.pair.com');
-
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
-
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
-
-/**#@+
- * Authentication Unique Keys and Salts.
- *
- * Change these to different unique phrases!
- * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
- * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
- *
- * @since 2.6.0
- */
-define('AUTH_KEY',         '@_/%dj/-/zsw[~Z2AY79^$Js2It:ok3L[6}df,]-o_;#`8LI:a}#G7eQ!-ch_z[ ');
-define('SECURE_AUTH_KEY',  'k.[0>PMiIl X5xlQj pa:Id}N@dD<UuT<8vW1*%o ;g7v3W(]fQpV[,D^/!/%{<`');
-define('LOGGED_IN_KEY',    '66M]O[@f]{7!.&iWZA:}{b|vMw!MYfU~uR)?JrO3c2R=GOLh_Vc|wSMg|OR{9$*p');
-define('NONCE_KEY',        'n49RK;-dJ i[9,x.X4+sCvp)(^QpJ8$+*6C+xN5%Z}iFL12wbfIEEYj/[r)+@%+9');
-define('AUTH_SALT',        '.T3gG>l{|}J(nRosRo|D-<>s5M34nVI^^Rp*@GA_E-NyVn+m}5oB/;-IQB]Rl/+`');
-define('SECURE_AUTH_SALT', '5{cngb)-`UX9D)40eO|j9-1j`D$LsRIoEwDN`2o=-VmEsE!/XU2OLA[Z|Ku#?E/f');
-define('LOGGED_IN_SALT',   'x}*SNL9B><s /n5-OQ[9^-/7:wEwuo-|IQJ)n0D@KiJD9](=F}X4C3F|.|pt-s~Z');
-define('NONCE_SALT',       '-2rowpu/Zowz%cCGc4i<|uq/@Z>LkU(XDQ|1|%G5XE_lpV^9TO+Wr&]F%kd`ji=}');
 
 /**#@-*/
 
@@ -68,13 +42,38 @@ $table_prefix  = 'wp_';
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
+// Because of buddypress and the theme and s2member not cleaning their php notices, I've turned this off.
 define('WP_DEBUG', false);
+
+// WP object caching.
+define('WP_CACHE', true);
+
+
+define( 'DB_CHARSET', 'utf8' );
+
+
+if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
+    include( dirname( __FILE__ ) . '/local-config.php' );
+} else {
+  // ** MySQL settings - You can get this info from your web host ** //
+  /** The name of the database for WordPress */
+  define('DB_NAME', 'database_name_here');
+
+  /** MySQL database username */
+  define('DB_USER', 'username_here');
+
+  /** MySQL database password */
+  define('DB_PASSWORD', 'password_here');
+
+  /** MySQL hostname */
+  define('DB_HOST', 'localhost');
+}
 
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+  define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');

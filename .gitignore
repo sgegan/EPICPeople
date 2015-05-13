@@ -2,6 +2,7 @@
 sitemap.xml
 sitemap.xml.gz
 docroot/local-config.php
+local-config.php
 docroot/wp-content/backup-db
 docroot/wp-content/backups
 docroot/wp-content/blogs.dir
