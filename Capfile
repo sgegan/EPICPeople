@@ -18,11 +18,12 @@ namespace :deploy do
       dirs += [shared_path + "/#{domain}/files/w3tc"]
       dirs += [shared_path + "/#{domain}/files/w3tc-config"]
       dirs += [shared_path + "/#{domain}/files/cache"]
-      dirs += [shared_path + "/#{domain}/files/2015avatars"]
-      dirs += [shared_path + "/#{domain}/files/2015uploads"]
-      dirs += [shared_path + "/#{domain}/files/2015w3tc"]
-      dirs += [shared_path + "/#{domain}/files/2015w3tc-config"]
-      dirs += [shared_path + "/#{domain}/files/2015cache"]
+      dirs += [shared_path + "/#{domain}/2015/files"]
+      dirs += [shared_path + "/#{domain}/2015/files/avatars"]
+      dirs += [shared_path + "/#{domain}/2015/files/uploads"]
+      dirs += [shared_path + "/#{domain}/2015/files/w3tc"]
+      dirs += [shared_path + "/#{domain}/2015/files/w3tc-config"]
+      dirs += [shared_path + "/#{domain}/2015/files/cache"]
     end
     dirs += %w(system).map { |d| File.join(shared_path, d) }
     run "mkdir -m 0775 -p #{dirs.join(' ')}"
@@ -33,13 +34,15 @@ namespace :deploy do
     run "chmod 2775 #{shared_path}/*/files/w3tc"
     run "chmod 2775 #{shared_path}/*/files/w3tc-config"
     run "chmod 2775 #{shared_path}/*/files/cache"
-    run "chmod 2775 #{shared_path}/*/files/2015avatars"
-    run "chmod 2775 #{shared_path}/*/files/2015uploads"
-    run "chmod 2775 #{shared_path}/*/files/2015w3tc"
-    run "chmod 2775 #{shared_path}/*/files/2015w3tc-config"
-    run "chmod 2775 #{shared_path}/*/files/2015cache"
+    run "chmod 2775 #{shared_path}/*/2015/files/avatars"
+    run "chmod 2775 #{shared_path}/*/2015/files/uploads"
+    run "chmod 2775 #{shared_path}/*/2015/files/w3tc"
+    run "chmod 2775 #{shared_path}/*/2015/files/w3tc-config"
+    run "chmod 2775 #{shared_path}/*/2015/files/cache"
     run "chgrp #{httpd_group} #{shared_path}/*/files"
     run "chgrp #{httpd_group} #{shared_path}/*/files/*"
+    run "chgrp #{httpd_group} #{shared_path}/*/2015/files"
+    run "chgrp #{httpd_group} #{shared_path}/*/2015/files/*"
   end
 
   desc "Create local local_config.php in shared/config"
@@ -79,11 +82,11 @@ EOF
       run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/cache #{release_path}/#{app_root}/wp-content/cache"
 
 
-      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/2015uploads #{release_path}/#{app_root}/2015/wp-content/uploads"
-      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/2015w3tc #{release_path}/#{app_root}/2015/wp-content/w3tc"
-      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/2015w3tc-config #{release_path}/#{app_root}/2015/wp-content/w3tc-config"
-      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/2015avatars #{release_path}/#{app_root}/2015/wp-content/avatars"
-      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/2015cache #{release_path}/#{app_root}/2015/wp-content/cache"
+      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/2015/files/uploads #{release_path}/#{app_root}/2015/wp-content/uploads"
+      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/2015/files/w3tc #{release_path}/#{app_root}/2015/wp-content/w3tc"
+      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/2015/files/w3tc-config #{release_path}/#{app_root}/2015/wp-content/w3tc-config"
+      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/2015/files/avatars #{release_path}/#{app_root}/2015/wp-content/avatars"
+      run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/2015/files/cache #{release_path}/#{app_root}/2015/wp-content/cache"
     end
   end
 
@@ -194,8 +197,10 @@ namespace :files do
     domains.each do |domain|
       if exists?(:gateway)
         run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh='ssh #{ssh_options[:user]}@#{gateway} ssh  #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}' --compress --human-readable --progress --exclude 'webroot/plugins' --exclude 'webroot/themes' :#{deploy_to}/#{shared_dir}/#{domain}/files/ webroot/wp-content/")
+        run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh='ssh #{ssh_options[:user]}@#{gateway} ssh  #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}' --compress --human-readable --progress --exclude 'webroot/plugins' --exclude 'webroot/themes' :#{deploy_to}/#{shared_dir}/#{domain}/2015files/ webroot/2015/wp-content/")
       else
         run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh=ssh --compress --human-readable --progress --exclude 'webroot/plugins' --exclude 'webroot/themes' #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}:#{deploy_to}/#{shared_dir}/#{domain}/files/ webroot/wp-content/")
+        run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh=ssh --compress --human-readable --progress --exclude 'webroot/plugins' --exclude 'webroot/themes' #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}:#{deploy_to}/#{shared_dir}/#{domain}/2015/files/ webroot/2015/wp-content/")
       end
     end
   end
@@ -205,8 +210,10 @@ namespace :files do
     domains.each do |domain|
       if exists?(:gateway)
         run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh='ssh #{ssh_options[:user]}@#{gateway} ssh  #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}' --compress --human-readable --progress --exclude 'webroot/plugins' --exclude 'webroot/themes' webroot/wp-content/ :#{deploy_to}/#{shared_dir}/#{domain}/files/")
+        run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh='ssh #{ssh_options[:user]}@#{gateway} ssh  #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}' --compress --human-readable --progress --exclude 'webroot/plugins' --exclude 'webroot/themes' webroot/2015/wp-content/ :#{deploy_to}/#{shared_dir}/#{domain}/2015/files/")
       else
         run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh=ssh --compress --human-readable --progress --exclude 'webroot/plugins' --exclude 'webroot/themes' webroot/wp-content/ #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}:#{deploy_to}/#{shared_dir}/#{domain}/files/")
+        run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh=ssh --compress --human-readable --progress --exclude 'webroot/plugins' --exclude 'webroot/themes' webroot/2015/wp-content/ #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}:#{deploy_to}/#{shared_dir}/#{domain}/2015/files/")
       end
     end
   end
